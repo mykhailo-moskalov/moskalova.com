@@ -1,0 +1,20 @@
+.main {
+  color: var(--foreground);
+}
+
+.section {
+  padding: 16px 0;
+  &:nth-child(1) {
+    padding-top: calc(var(--header-height) + 32px);
+  }
+  &:nth-child(2) {
+    padding: 16px 0;
+  }
+  &:last-of-type {
+    padding-bottom: calc(32px + var(--footer-height));
+  }
+}
+
+.heading {
+  font-size: 28px;
+}

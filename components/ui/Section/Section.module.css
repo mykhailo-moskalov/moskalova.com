@@ -1,0 +1,11 @@
+.section {
+  padding: 28px 0;
+
+  &:nth-child(2) {
+    padding: 56px 0 28px;
+  }
+
+  &:last-of-type {
+    padding: 28px 0 calc(56px + var(--footer-height));
+  }
+}

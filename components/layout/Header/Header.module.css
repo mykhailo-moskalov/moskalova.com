@@ -1,0 +1,83 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 4px 0;
+  z-index: 999;
+  background-color: var(--primary-color-op);
+  box-shadow: none;
+
+  @media only screen and (min-width: 768px) {
+    padding: 16px 0;
+  }
+}
+
+.header.scrolled {
+  background-color: var(--primary-color);
+  box-shadow: var(--box-shadow);
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (min-width: 768px) {
+    position: relative;
+  }
+}
+
+.nav {
+  @media screen and (min-width: 768px) {
+    padding-right: 68px;
+  }
+}
+
+.backBtn {
+  display: flex;
+  gap: 4px;
+
+  color: var(--background);
+
+  & svg {
+    height: 1lh;
+    width: 1lh;
+  }
+
+  &:hover,
+  &:focus {
+    transform: translateY(-20%);
+    box-shadow: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-right: 68px;
+  }
+}
+
+.burger {
+  height: 32px;
+  width: 32px;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.15);
+  }
+}
+
+.burger svg {
+  color: var(--background);
+}
+
+.btnLang {
+  position: absolute;
+  right: 100;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &:hover,
+  &:focus {
+    transform: translateY(-50%) scale(1.1);
+  }
+}

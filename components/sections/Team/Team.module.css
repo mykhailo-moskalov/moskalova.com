@@ -1,0 +1,97 @@
+.swiper {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  margin-bottom: 16px;
+
+  & .swiperSlide {
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+}
+
+.swiperSlide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  height: 502.5px;
+
+  position: relative;
+  top: 0;
+  left: 0;
+
+  @media screen and (min-width: 1440px) {
+    height: 702px;
+  }
+}
+
+.swiperBottom {
+  height: 90px;
+  width: 100%;
+
+  & .swiperSlide {
+    width: 60px !important;
+    height: 100%;
+    opacity: 0.4;
+    overflow: hidden;
+  }
+
+  & :global(.swiper-slide-thumb-active) {
+    opacity: 1;
+  }
+
+  @media screen and (min-width: 1440px) {
+    height: 126px;
+
+    & .swiperSlide {
+      width: 84px !important;
+    }
+  }
+}
+
+.navBox {
+  display: flex;
+  gap: 8px;
+
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  z-index: 600;
+}
+
+.navBtn {
+  color: var(--background);
+
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--primary-color-op);
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: var(--primary-color);
+  }
+}
+
+.slideDesc {
+  opacity: 0.8;
+  color: var(--background);
+
+  position: absolute;
+  bottom: 4px;
+  left: 8px;
+  max-width: 223px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    max-width: 275px;
+  }
+}

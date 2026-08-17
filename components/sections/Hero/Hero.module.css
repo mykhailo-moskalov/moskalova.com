@@ -1,0 +1,120 @@
+.hero {
+  padding: calc(40px + var(--header-height)) 0
+    calc(28px + var(--bottom-div-height)) !important;
+  height: 640px;
+  max-width: 375px;
+  margin: 0 auto;
+
+  color: var(--background);
+
+  position: relative;
+
+  @media screen and (max-width: 767px) {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(43, 43, 43, 0.35) 0%,
+        rgba(43, 43, 43, 0.85) 100%
+      ),
+      url("/hero/hero.jpg") no-repeat center/cover;
+  }
+
+  @media screen and (max-width: 767px) and (min-resolution: 2x) {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(43, 43, 43, 0.35) 0%,
+        rgba(43, 43, 43, 0.85) 100%
+      ),
+      url("/hero/hero@2x.jpg") no-repeat center/cover;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    height: 840px;
+    background:
+      linear-gradient(
+        90deg,
+        rgba(43, 43, 43, 0.35) 0%,
+        rgba(43, 43, 43, 0.85) 100%
+      ),
+      url("/hero/hero-tab.jpg") no-repeat center/cover;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
+    background:
+      linear-gradient(
+        90deg,
+        rgba(43, 43, 43, 0.35) 0%,
+        rgba(43, 43, 43, 0.85) 100%
+      ),
+      url("/hero/hero-desk.jpg") no-repeat center/cover;
+  }
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  text-transform: uppercase;
+}
+
+.subHeading {
+  text-transform: uppercase;
+  align-self: end;
+  text-align: right;
+  font-size: 32px;
+  line-height: 120%;
+  font-weight: bold;
+  max-width: 300px;
+  margin-top: 48px;
+
+  @media only screen and (min-width: 768px) {
+    margin-top: 80px;
+  }
+  @media only screen and (min-width: 1440px) {
+    font-size: 36px;
+  }
+}
+
+.link {
+  width: fit-content;
+  padding: 12px;
+  margin-top: auto;
+
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  box-shadow: var(--box-shadow);
+
+  &:hover,
+  &:focus {
+    background-color: var(--primary-color);
+    transform: scale(1.15);
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    padding: 20px;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.bottomDiv {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik0zMjAgMjhDMTYwIDI4IDgwIDQ5IDAgNzBWMGgxMjgwdjcwYy04MCAyMS0xNjAgNDItMzIwIDQyLTMyMCAwLTMyMC04NC02NDAtODR6Ii8+PC9nPjwvc3ZnPg");
+  background-size: 100% 101%;
+  width: calc(100% + 1px);
+  height: 80px;
+  z-index: 500;
+  transform: scale(1, -1);
+  position: absolute;
+  left: -1;
+  bottom: -1;
+}
