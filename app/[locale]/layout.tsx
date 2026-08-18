@@ -1,18 +1,18 @@
 import type { Metadata, Viewport } from "next";
-import { Poppins } from "next/font/google";
-import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { Poppins } from "next/font/google"; //?
+// import { NextIntlClientProvider } from "next-intl";
+// import { getMessages } from "next-intl/server";
 
 import "../globals.css";
 
-import MobileLayout from "@/components/layout/MobileLayout/MobileLayout";
+// import MobileLayout from "@/components/layout/MobileLayout/MobileLayout";
 
 const poppins = Poppins({
   weight: ["400", "700"],
   variable: "--font-poppins",
   display: "swap",
   subsets: ["latin"],
-});
+}); //?
 
 export const viewport: Viewport = {
   themeColor: "#000001",
@@ -21,54 +21,44 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Black Fire",
-  description:
-    "Cheerdance team bringing energy and passion to every performance.",
+  title: "", //?
+  description: "", //?
   appleWebApp: {
-    title: "Black Fire",
+    title: "NM photo",
     statusBarStyle: "black-translucent",
     capable: true,
   },
   openGraph: {
-    title: "Black Fire",
-    description:
-      "Cheerdance team bringing energy and passion to every performance.",
-    url: `https://black-fire-gamma.vercel.app`,
-    siteName: "Black Fire Cheer",
+    title: "", //?
+    description: "", //?
+    url: `https://moskalova.com`,
+    siteName: "", //?
     images: [
       {
-        url: "https://black-fire-gamma.vercel.app/bfq-og-meta.jpg",
+        url: "https://moskalova.com/", //?
         width: 1200,
         height: 630,
-        alt: "Black Fire Cheer",
+        alt: "", //?
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: `Black Fire`,
-    description:
-      "Cheerdance team bringing energy and passion to every performance.",
-    images: ["https://black-fire-gamma.vercel.app/bfq-og-meta.jpg"],
+    title: "", //?
+    description: "", //?
+    images: ["https://moskalova.com/"], //?
   },
   icons: {
-    icon: "/icon0.svg",
-    apple: "/apple-icon.png",
+    icon: [{ url: "/manifest/icon0.svg", type: "image/svg+xml" }],
+    apple: "/manifest/apple-icon.png",
   },
   robots: {
     index: true,
     follow: true,
     nocache: false,
   },
-  keywords: [
-    "cheerdance",
-    "Black Fire",
-    "cheerleading Austria",
-    "cheerleading Austria",
-    "competitive cheer",
-    "dance team",
-  ],
+  keywords: [], //?
 };
 
 export default async function RootLayout({
@@ -79,37 +69,16 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>;
 }>) {
   const { locale } = await params;
-  const messages = await getMessages();
+  // const messages = await getMessages();
   return (
     <html lang={locale}>
-      <head>
-        <link
-          rel="preload"
-          as="image"
-          href="/hero/hero.jpg"
-          imageSrcSet="/hero/hero.jpg 1x, /hero/hero@2x.jpg 2x"
-          fetchPriority="high"
-          media="(max-width: 767px)"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="/hero/hero-tab.jpg"
-          fetchPriority="high"
-          media="(min-width: 768px) and (max-width: 1439px)"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href="/hero/hero-desk.jpg"
-          fetchPriority="high"
-          media="(min-width: 1440px)"
-        />
-      </head>
       <body className={`${poppins.variable} ${poppins.className}`}>
-        <NextIntlClientProvider messages={messages}>
-          <MobileLayout>{children}</MobileLayout>
-        </NextIntlClientProvider>
+        {/* <NextIntlClientProvider messages={messages}> */}
+        {/* <MobileLayout> */}
+        {children}
+
+        {/* </MobileLayout> */}
+        {/* </NextIntlClientProvider> */}
       </body>
     </html>
   );

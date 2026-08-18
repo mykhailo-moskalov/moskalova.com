@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Non-existent page",
     description: "This page does not exist",
-    url: `https://blackfirecheer.at/not-found`,
+    url: `https://moskalova.com/not-found`,
     images: [
       {
         url: "/app/icon1.png",
         width: 96,
         height: 96,
-        alt: "Black Fire Cheer",
+        alt: "", //?
       },
     ],
     type: "website",

@@ -1,0 +1,33 @@
+@import "./css/reset.css";
+@import "./css/base.css";
+@import "modern-normalize/modern-normalize.css";
+
+:root {
+  --background: #fff;
+  --foreground: #001;
+  --primary-color: #521a1a;
+  --primary-color-op: #521a1abb;
+  --primary-color-slide: #521a1ae5;
+  --box-shadow: 0 5px 15px rgba(75, 53, 53, 0.3);
+}
+
+html {
+  scroll-padding-top: var(--header-height);
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  min-width: 320px;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+  }
+}
