@@ -3,11 +3,11 @@
 @import "modern-normalize/modern-normalize.css";
 
 :root {
-  --background: #fff;
-  --foreground: #001;
-  --primary-color: #521a1a;
-  --primary-color-op: #521a1abb;
-  --primary-color-slide: #521a1ae5;
+  --black: #000001;
+  --white: #fff;
+  --dark-grey: #202020;
+  --grey: #838383;
+  --green: #444935;
   --box-shadow: 0 5px 15px rgba(75, 53, 53, 0.3);
 }
 
@@ -23,8 +23,8 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--black);
+  background: var(--white);
   min-width: 320px;
 
   @media screen and (min-width: 1440px) {

@@ -10,10 +10,10 @@ interface LogoProps {
 const Logo = ({ width, height }: LogoProps) => (
   <Link href="/" className={css.logo}>
     <Image
-      alt="Black Fire Logo"
-      src="/logo-transparent.png"
+      alt="Natalia Moskalova Logo"
+      src="/logo/logo-black_low-res.png"
       width={width}
-      height={height ?? width}
+      height={height}
       style={!height ? { height: "auto" } : undefined}
       className={css.img}
     />
