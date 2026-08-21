@@ -116,6 +116,22 @@
     "heading1": "Our",
     "heading2": "Sponsor"
   },
+  "contact": {
+    "heading1": "Get in",
+    "heading2": "Touch",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "message": "Message",
+    "messagePlaceholder": "Tell me about your shoot",
+    "submit": "Send message",
+    "sending": "Sending",
+    "success": "Thank you! Your message has been sent.",
+    "invalid": "Please check the form and try again.",
+    "tooMany": "Too many messages sent. Please try again later.",
+    "error": "Something went wrong. Please try again later."
+  },
   "footer": {
     "legal": "Legal Notice",
     "copyright": " Verein BlackFire Cheer&Dance"

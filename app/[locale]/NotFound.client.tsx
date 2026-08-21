@@ -8,6 +8,5 @@ export default function ClientRedirect() {
     const timer = setTimeout(() => router.push("/"), 3000);
     return () => clearTimeout(timer);
   }, [router]);
-
   return null;
 }

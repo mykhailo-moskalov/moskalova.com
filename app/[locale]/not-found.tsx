@@ -11,10 +11,10 @@ export const metadata: Metadata = {
     url: `https://moskalova.com/not-found`,
     images: [
       {
-        url: "/app/icon1.png",
+        url: "/manifest/icon1.png",
         width: 96,
         height: 96,
-        alt: "", //?
+        alt: "Natalia Moskalova Photography",
       },
     ],
     type: "website",
@@ -23,11 +23,11 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `Non-existent page`,
     description: "This page does not exist",
-    images: ["/app/icon1.png"],
+    images: ["/manifest/icon1.png"],
   },
 };
 
-const NotFound = () => {
+export default function NotFound() {
   return (
     <Section>
       <Container>
@@ -37,6 +37,4 @@ const NotFound = () => {
       </Container>
     </Section>
   );
-};
-
-export default NotFound;
+}

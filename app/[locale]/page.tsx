@@ -5,6 +5,8 @@
 // import Sponsors from "@/components/sections/Sponsors/Sponsors";
 // import BackToTop from "@/components/ui/BackToTop/BackToTop";
 
+import Contact from "@/components/sections/Contact/Contact";
+
 export default function Home() {
   return (
     <main>
@@ -15,6 +17,7 @@ export default function Home() {
       <Team />
       <Sponsors />
       <BackToTop /> */}
+      <Contact />
     </main>
   );
 }
