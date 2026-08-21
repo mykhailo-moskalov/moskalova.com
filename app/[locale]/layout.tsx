@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Alice, Forum } from "next/font/google"; //?
+import { Alice, Forum } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 

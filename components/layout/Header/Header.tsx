@@ -1,90 +1,90 @@
-// "use client";
+"use client";
 
-// import { IoArrowBack, IoMenu } from "react-icons/io5";
-// import Logo from "../../ui/Logo/Logo";
-// import Container from "../../ui/Container/Container";
-// import Navigation from "../Navigation/Navigation";
-// import css from "./Header.module.css";
-// import { useSidebarStore } from "@/lib/store/sidebarStore";
-// import { useWidthStore } from "@/lib/store/widthStore";
-// import { useEffect, useRef, useState } from "react";
-// import { usePathname, useRouter } from "@/lib/navigation";
-// import { useTranslations } from "next-intl";
-// import LangSwitcher from "@/components/ui/LangSwitcher/LangSwitcher";
+import { IoArrowBack, IoMenu } from "react-icons/io5";
+import Logo from "../../ui/Logo/Logo";
+import Container from "../../ui/Container/Container";
+import Navigation from "../Navigation/Navigation";
+import css from "./Header.module.css";
+import { useSidebarStore } from "@/lib/store/sidebarStore";
+import { useWidthStore } from "@/lib/store/widthStore";
+import { useEffect, useRef, useState } from "react";
+import { usePathname, useRouter } from "@/lib/navigation";
+import { useTranslations } from "next-intl";
+import LangSwitcher from "@/components/ui/LangSwitcher/LangSwitcher";
 
-// const Header = () => {
-//   const setIsOpen = useSidebarStore((state) => state.setIsOpen);
-//   const isMobile = useWidthStore((state) => state.isMobile);
-//   const headerRef = useRef<HTMLElement>(null);
-//   const router = useRouter();
-//   const pathname = usePathname();
-//   const t = useTranslations("header");
-//   const ta = useTranslations("aria");
+const Header = () => {
+  const setIsOpen = useSidebarStore((state) => state.setIsOpen);
+  const isMobile = useWidthStore((state) => state.isMobile);
+  const headerRef = useRef<HTMLElement>(null);
+  const router = useRouter();
+  const pathname = usePathname();
+  const t = useTranslations("header");
+  const ta = useTranslations("aria");
 
-//   const isLegal = pathname === "/legal";
+  const isLegal = pathname === "/legal";
 
-//   const [scrolled, setScrolled] = useState(isLegal);
+  const [scrolled, setScrolled] = useState(isLegal);
 
-//   useEffect(() => {
-//     const updateHeight = () => {
-//       requestAnimationFrame(() => {
-//         if (headerRef.current) {
-//           document.documentElement.style.setProperty(
-//             "--header-height",
-//             `${Math.ceil(headerRef.current.offsetHeight)}px`,
-//           );
-//         }
-//       });
-//     };
+  useEffect(() => {
+    const updateHeight = () => {
+      requestAnimationFrame(() => {
+        if (headerRef.current) {
+          document.documentElement.style.setProperty(
+            "--header-height",
+            `${Math.ceil(headerRef.current.offsetHeight)}px`,
+          );
+        }
+      });
+    };
 
-//     updateHeight();
-//     window.addEventListener("resize", updateHeight);
+    updateHeight();
+    window.addEventListener("resize", updateHeight);
 
-//     if (isLegal)
-//       return () => window.removeEventListener("resize", updateHeight);
+    if (isLegal)
+      return () => window.removeEventListener("resize", updateHeight);
 
-//     const handleScroll = () => setScrolled(window.scrollY >= 300);
+    const handleScroll = () => setScrolled(window.scrollY >= 300);
 
-//     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-//     return () => {
-//       window.removeEventListener("resize", updateHeight);
-//       window.removeEventListener("scroll", handleScroll);
-//     };
-//   }, [isLegal]);
+    return () => {
+      window.removeEventListener("resize", updateHeight);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isLegal]);
 
-//   return (
-//     <header
-//       id="header"
-//       className={`${css.header} ${scrolled ? css.scrolled : ""}`}
-//       ref={headerRef}
-//     >
-//       <Container className={css.headerContainer}>
-//         <Logo width={40} />
-//         {isLegal ? (
-//           <button
-//             aria-label={ta("goBack")}
-//             onClick={router.back}
-//             className={css.backBtn}
-//           >
-//             <IoArrowBack />
-//             {t("goBack")}
-//           </button>
-//         ) : isMobile ? (
-//           <button
-//             aria-label={ta("openMenu")}
-//             className={css.burger}
-//             onClick={() => setIsOpen(true)}
-//           >
-//             <IoMenu />
-//           </button>
-//         ) : (
-//           <Navigation className={css.nav} />
-//         )}
-//         {isMobile ? "" : <LangSwitcher className={css.btnLang} />}
-//       </Container>
-//     </header>
-//   );
-// };
+  return (
+    <header
+      id="header"
+      className={`${css.header} ${scrolled ? css.scrolled : ""}`}
+      ref={headerRef}
+    >
+      <Container className={css.headerContainer}>
+        <Logo width={40} />
+        {isLegal ? (
+          <button
+            aria-label={ta("goBack")}
+            onClick={router.back}
+            className={css.backBtn}
+          >
+            <IoArrowBack />
+            {t("goBack")}
+          </button>
+        ) : isMobile ? (
+          <button
+            aria-label={ta("openMenu")}
+            className={css.burger}
+            onClick={() => setIsOpen(true)}
+          >
+            <IoMenu />
+          </button>
+        ) : (
+          <Navigation className={css.nav} />
+        )}
+        {isMobile ? "" : <LangSwitcher className={css.btnLang} />}
+      </Container>
+    </header>
+  );
+};
 
-// export default Header;
+export default Header;
