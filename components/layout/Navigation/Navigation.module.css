@@ -1,13 +1,24 @@
 .navigation {
-  color: var(--background);
+  color: var(--white);
+  text-transform: capitalize;
+  font-family: var(--font-alice);
 
   display: flex;
   flex-direction: column;
-  gap: 36px;
-
+  align-items: center;
+  gap: 40px;
   @media only screen and (min-width: 768px) {
     flex-direction: row;
+    justify-content: space-between;
+    color: var(--black);
   }
+}
+
+ul.navLeft,
+ul.navRight {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .navigationItem {
@@ -18,96 +29,4 @@
   display: inline-block;
 
   width: 100%;
-}
-
-.accordionItem {
-  position: relative;
-}
-
-.accordionTrigger {
-  text-align: left;
-
-  transform: none !important;
-}
-
-.navigationTitle {
-  color: var(--background);
-  @media only screen and (min-width: 768px) {
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-  }
-}
-
-.chevronBtn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 150px;
-
-  width: 30px;
-  height: 32px;
-
-  @media only screen and (min-width: 768px) {
-    margin-left: 8px;
-  }
-}
-.accordionTrigger[data-state="open"] .chevronBtn {
-  transform: rotate(180deg);
-}
-.accordionTrigger[data-state="closed"] .chevronBtn {
-  transform: rotate(0deg);
-}
-
-.accordionContent {
-  overflow: hidden;
-  will-change: height;
-
-  @media only screen and (min-width: 768px) {
-    position: fixed;
-    top: var(--header-height);
-    left: auto;
-    text-align: right;
-    background-color: var(--primary-color-op);
-    border-radius: 0 0 8px 8px;
-    padding: 16px;
-    z-index: 100;
-  }
-}
-.accordionContent[data-state="open"] {
-  animation: slideDown 0.3s ease-in-out;
-}
-.accordionContent[data-state="closed"] {
-  animation: slideUp 0.3s ease-in-out;
-}
-
-.subNavigation {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-top: 12px;
-  padding-left: 12px;
-
-  @media only screen and (min-width: 768px) {
-    margin: 0;
-    padding: 0;
-  }
-}
-
-@keyframes slideDown {
-  from {
-    height: 0;
-  }
-  to {
-    height: var(--radix-accordion-content-height);
-  }
-}
-
-@keyframes slideUp {
-  from {
-    height: var(--radix-accordion-content-height);
-  }
-  to {
-    height: 0;
-  }
 }

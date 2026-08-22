@@ -1,20 +1,14 @@
 import { Link } from "@/lib/navigation";
 import css from "./Logo.module.css";
 import Image from "next/image";
+import logo from "@/public/logo/logo-black_low-res.png";
 
-interface LogoProps {
-  width: number;
-  height?: number;
-}
-
-const Logo = ({ width, height }: LogoProps) => (
+const Logo = ({ height }: { height: number }) => (
   <Link href="/" className={css.logo}>
     <Image
       alt="Natalia Moskalova Logo"
-      src="/logo/logo-black_low-res.png"
-      width={width}
-      height={height}
-      style={!height ? { height: "auto" } : undefined}
+      src={logo}
+      style={{ height, width: "auto" }}
       className={css.img}
     />
   </Link>

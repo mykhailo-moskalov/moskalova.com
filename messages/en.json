@@ -3,118 +3,13 @@
     "goBack": "Back to Homepage"
   },
   "nav": {
-    "about": "About Us",
-    "teams": "Our Teams"
-  },
-  "hero": {
-    "heading": "No Limits",
-    "subtitle": "no path is impossible with a family",
-    "cta": "Our Trainings"
-  },
-  "story": {
-    "heading1": "Our",
-    "heading2": "Story",
-    "story1": "Black Fire Cheer and Dance was founded in January 2025 by Anna (founder, head coach & sports director) together with Bettina.",
-    "story2": "Just a few weeks after the founding, we competed in our first championship in March — and immediately won the state championship title in the Pom and HipHop categories.",
-    "story3": "Shortly after followed our first international championship, which we completed with great success: 1st place in Pom and 1st place in HipHop!",
-    "story4": "We are proud of our athletes, our team spirit and the energy that makes Black Fire Cheer and Dance special.",
-    "story5": "Do you want to become part of our team? Then get in touch with us — we look forward to hearing from you!"
-  },
-  "trainings": {
-    "heading1": "Our",
-    "heading2": "Trainings",
-    "trainingsH": "Trainings",
-    "ageH": "Age",
-    "hint": "Swipe to see more ",
-    "teams": {
-      "miniFlames": {
-        "name": "Mini Flames",
-        "trainings": {
-          "training1": {
-            "time": "Tuesday 4:30 PM to 5:30 PM,",
-            "place": "1100 Vienna"
-          }
-        },
-        "age": "3 years to 7 years"
-      },
-      "fairies": {
-        "name": "Fairies",
-        "trainings": {
-          "training1": {
-            "time": "Monday 4:30 PM to 6:00 PM,",
-            "place": "1100 Vienna"
-          },
-          "training2": {
-            "time": "Friday 4:00 PM to 5:00 PM,",
-            "place": "Brunn am Gebirge"
-          }
-        },
-        "age": "6 years to 8 years"
-      },
-      "fireflies": {
-        "name": "Fireflies",
-        "trainings": {
-          "training1": {
-            "time": "Tuesday 5:00 PM to 6:30 PM,",
-            "place": "1100 Vienna"
-          },
-          "training2": {
-            "time": "Thursday 5:00 PM to 7:00 PM,",
-            "place": "1100 Vienna"
-          },
-          "training3": {
-            "time": "Friday 5:00 PM to 7:00 PM,",
-            "place": "Brunn am Gebirge"
-          }
-        },
-        "age": "8 years to 12 years"
-      },
-      "firebirds": {
-        "name": "Firebirds",
-        "trainings": {
-          "training1": {
-            "time": "Monday 6:00 PM to 7:30 PM,",
-            "place": "1100 Vienna"
-          },
-          "training2": {
-            "time": "Tuesday 6:00 PM to 8:09 PM,",
-            "place": "1100 Vienna"
-          },
-          "training3": {
-            "time": "Friday 7:00 PM to 9:00 PM,",
-            "place": "Brunn am Gebirge"
-          }
-        },
-        "age": "12 years to 15 years"
-      },
-      "forces": {
-        "name": "Forces",
-        "trainings": {},
-        "age": "14 years to 18 years"
-      },
-      "firestorm": {
-        "name": "Firestorm",
-        "trainings": {},
-        "age": "From 16 years"
-      }
-    }
-  },
-  "team": {
-    "heading1": "Our",
-    "heading2": "Team",
-    "slides": {
-      "founders": "Founders Anna Ableidinger & Bettina Beneda",
-      "fairies": "Fairies",
-      "fireflies": "Fireflies",
-      "firebirds": "Firebirds",
-      "all-level": "Championship 'All-Level'",
-      "united-cheer-cup": "United Cheer Cup '25",
-      "screaming-anna": ""
-    }
-  },
-  "sponsors": {
-    "heading1": "Our",
-    "heading2": "Sponsor"
+    "home": "Home",
+    "brand": "Brand",
+    "personal": "Personal",
+    "creatives": "Creatives",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact"
   },
   "contact": {
     "heading1": "Get in",
@@ -132,10 +27,7 @@
     "tooMany": "Too many messages sent. Please try again later.",
     "error": "Something went wrong. Please try again later."
   },
-  "footer": {
-    "legal": "Legal Notice",
-    "copyright": " Verein BlackFire Cheer&Dance"
-  },
+  "footer": {},
   "legal": {
     "heading": "Legal Notice",
     "ecg": {

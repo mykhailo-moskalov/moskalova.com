@@ -17,12 +17,17 @@
   right: 2.5%;
   z-index: 1001;
 
-  width: 65%;
+  width: max-content;
   height: 95%;
-  padding: 32px 0;
+  padding: 36px 32px 128px;
   border-radius: 16px;
 
-  background-color: var(--primary-color-op);
+  top: 0;
+  right: 0;
+  height: 100%;
+  border-radius: 0;
+
+  background-color: var(--transparent-light-green);
   box-shadow: var(--box-shadow);
 }
 .closed {
@@ -35,6 +40,7 @@
 .sidebarContainer {
   min-width: 0;
   height: 100%;
+  padding: 0;
 
   display: flex;
   flex-direction: column;
@@ -42,28 +48,27 @@
 }
 
 .sidebar button {
-  color: var(--background);
-
+  color: var(--white);
   &:hover,
   &:focus {
-    transform: scale(1.15);
+    transform: scale(1.1);
   }
 }
 
 .btnClose {
   align-self: flex-start;
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
+  margin-left: -16px;
+  /* & svg path {
+    stroke-width: 2px;
+  } */
 }
 
 .nav {
-  margin-top: auto;
+  margin-top: 196px;
 
   text-align: center;
-
-  @media only screen and (min-height: 800px) {
-    margin-top: 90%;
-  }
 }
 
 .btnLang {

@@ -10,7 +10,6 @@ import { useWidthStore } from "@/lib/store/widthStore";
 import { useEffect, useRef, useState } from "react";
 import { usePathname, useRouter } from "@/lib/navigation";
 import { useTranslations } from "next-intl";
-import LangSwitcher from "@/components/ui/LangSwitcher/LangSwitcher";
 
 const Header = () => {
   const setIsOpen = useSidebarStore((state) => state.setIsOpen);
@@ -60,7 +59,6 @@ const Header = () => {
       ref={headerRef}
     >
       <Container className={css.headerContainer}>
-        <Logo width={40} />
         {isLegal ? (
           <button
             aria-label={ta("goBack")}
@@ -71,17 +69,19 @@ const Header = () => {
             {t("goBack")}
           </button>
         ) : isMobile ? (
-          <button
-            aria-label={ta("openMenu")}
-            className={css.burger}
-            onClick={() => setIsOpen(true)}
-          >
-            <IoMenu />
-          </button>
+          <>
+            <Logo height={48} />
+            <button
+              aria-label={ta("openMenu")}
+              className={css.burger}
+              onClick={() => setIsOpen(true)}
+            >
+              <IoMenu />
+            </button>
+          </>
         ) : (
-          <Navigation className={css.nav} />
+          <Navigation className={css.nav} isLogo={true} />
         )}
-        {isMobile ? "" : <LangSwitcher className={css.btnLang} />}
       </Container>
     </header>
   );

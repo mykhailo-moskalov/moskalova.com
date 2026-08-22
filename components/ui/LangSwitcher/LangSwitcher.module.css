@@ -1,5 +1,66 @@
 .btn {
   width: 24px;
   height: 24px;
-  color: var(--white);
+  color: var(--black);
+}
+
+.accordionItem {
+  position: relative;
+}
+
+.accordionTrigger {
+  text-align: left;
+
+  transform: none !important;
+}
+
+.accordionContent {
+  overflow: hidden;
+  will-change: height;
+
+  @media only screen and (min-width: 768px) {
+    position: fixed;
+    top: var(--header-height);
+    left: auto;
+    background-color: var(--white);
+    border-radius: 0 0 2px 2px;
+    padding: 8px 12px;
+    z-index: 100;
+  }
+}
+.accordionContent[data-state="open"] {
+  animation: slideDown 0.3s ease-in-out;
+}
+.accordionContent[data-state="closed"] {
+  animation: slideUp 0.3s ease-in-out;
+}
+
+.subNavigation {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+
+  @media only screen and (min-width: 768px) {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
 }

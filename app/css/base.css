@@ -4,50 +4,41 @@
 
 h1,
 h2,
-h3,
-h4 {
-  font-family: var(--font-forum), sans-serif;
+h3 {
+  font-family: var(--font-alice), sans-serif;
 }
 
 h1 {
-  font-size: 40px;
+  /* font-size: 40px;
   line-height: 120%;
   @media only screen and (min-width: 768px) {
     font-size: 56px;
   }
-  @media only screen and (min-width: 1440px) {
-    font-size: 80px;
-  }
+  @media only screen and (min-width: 1440px) { */
+  font-size: 80px;
+  /* } */
 }
 
 h2 {
-  font-size: 36px;
+  /* font-size: 36px;
   line-height: 120%;
   margin-bottom: 32px;
-  @media only screen and (min-width: 768px) {
-    font-size: 48px;
-  }
+  @media only screen and (min-width: 768px) { */
+  font-size: 48px;
+  /* } */
 }
 
 h3 {
-  font-size: 24px;
+  /* font-size: 24px;
   line-height: 140%;
-  @media only screen and (min-width: 768px) {
-    font-size: 32px;
-  }
+  @media only screen and (min-width: 768px) { */
+  font-size: 32px;
+  /* } */
 }
 
-h4 {
-  font-size: 18px;
-  line-height: 140%;
-  @media only screen and (min-width: 768px) {
-    font-size: 20px;
-  }
-}
-
-span.pad {
+/* span.pad {
   padding-left: 0.25lh;
-}
+} */
 
 button {
   border: 0;

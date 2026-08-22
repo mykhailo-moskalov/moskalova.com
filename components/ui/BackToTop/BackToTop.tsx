@@ -23,6 +23,7 @@ export default function BackToTop() {
       onClick={() => smoothScrollTo("hero")}
     >
       <IoChevronUp />
+      <IoChevronUp />
     </button>
   );
 }

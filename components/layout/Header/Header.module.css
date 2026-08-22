@@ -3,18 +3,17 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 4px 0;
+  padding: 24px 32px;
   z-index: 999;
-  background-color: var(--primary-color-op);
+  background-color: var(--white);
   box-shadow: none;
 
   @media only screen and (min-width: 768px) {
-    padding: 16px 0;
+    padding: 24px 128px;
   }
 }
 
 .header.scrolled {
-  background-color: var(--primary-color);
   box-shadow: var(--box-shadow);
 }
 
@@ -28,17 +27,11 @@
   }
 }
 
-.nav {
-  @media screen and (min-width: 768px) {
-    padding-right: 68px;
-  }
-}
-
 .backBtn {
   display: flex;
   gap: 4px;
 
-  color: var(--background);
+  color: var(--black);
 
   & svg {
     height: 1lh;
@@ -62,12 +55,8 @@
 
   &:hover,
   &:focus {
-    transform: scale(1.15);
+    transform: scale(1.1);
   }
-}
-
-.burger svg {
-  color: var(--background);
 }
 
 .btnLang {

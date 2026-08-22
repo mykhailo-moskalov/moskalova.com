@@ -1,19 +1,19 @@
 .btn {
   position: fixed;
-  bottom: 24px;
+  bottom: 196px;
   right: 24px;
   z-index: 998;
 
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   padding: 8px;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  background-color: var(--primary-color-op);
-  color: var(--background);
+  background-color: var(--light-green);
   border-radius: 50%;
   box-shadow: var(--box-shadow);
 
@@ -22,7 +22,7 @@
 
   &:hover,
   &:focus {
-    background-color: var(--primary-color);
+    background-color: var(--green);
     transform: scale(1.15);
 
     @media screen and (min-width: 768px) {
@@ -31,6 +31,13 @@
         transform: scale(1.1);
       }
     }
+  }
+  & svg path {
+    stroke: var(--white);
+    stroke-width: 32;
+  }
+  & svg:last-child {
+    margin-top: -16px;
   }
 }
 .visible {
