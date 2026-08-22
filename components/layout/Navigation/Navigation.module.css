@@ -1,7 +1,7 @@
 .navigation {
-  color: var(--white);
   text-transform: capitalize;
   font-family: var(--font-alice);
+  text-align: center;
 
   display: flex;
   flex-direction: column;
@@ -9,8 +9,7 @@
   gap: 40px;
   @media only screen and (min-width: 768px) {
     flex-direction: row;
-    justify-content: space-between;
-    color: var(--black);
+    gap: unset;
   }
 }
 
@@ -19,6 +18,9 @@ ul.navRight {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 
 .navigationItem {
@@ -29,4 +31,9 @@ ul.navRight {
   display: inline-block;
 
   width: 100%;
+
+  &[aria-current="page"] {
+    color: var(--grey);
+    pointer-events: none;
+  }
 }

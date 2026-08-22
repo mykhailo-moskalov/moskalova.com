@@ -79,6 +79,14 @@ export default async function RootLayout({
   const messages = await getMessages();
   return (
     <html lang={locale}>
+      <head>
+        <link
+          rel="preload"
+          as="image"
+          href="/logo/logo-black_low-res.png"
+          fetchPriority="high"
+        />
+      </head>
       <body
         className={`${alice.variable} ${forum.variable} ${forum.className}`}
       >

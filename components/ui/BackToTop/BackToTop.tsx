@@ -20,7 +20,7 @@ export default function BackToTop() {
     <button
       aria-label={t("backToTop")}
       className={`${css.btn} ${visible ? css.visible : ""}`}
-      onClick={() => smoothScrollTo("hero")}
+      onClick={() => smoothScrollTo()}
     >
       <IoChevronUp />
       <IoChevronUp />

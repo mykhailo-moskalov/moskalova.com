@@ -1,14 +1,19 @@
-export const smoothScrollTo = (id: string) => {
-  const el = document.getElementById(id);
-  if (!el) return;
+export const smoothScrollTo = (target: string | number = 0) => {
+  let end: number;
+  if (typeof target === "number") {
+    end = target;
+  } else {
+    const el = document.getElementById(target);
+    if (!el) return;
+    const headerHeight = parseInt(
+      getComputedStyle(document.documentElement).getPropertyValue(
+        "--header-height",
+      ) || "0",
+    );
+    end = el.getBoundingClientRect().top + window.scrollY - headerHeight;
+  }
 
-  const headerHeight = parseInt(
-    getComputedStyle(document.documentElement).getPropertyValue(
-      "--header-height",
-    ) || "0",
-  );
   const start = window.scrollY;
-  const end = el.getBoundingClientRect().top + window.scrollY - headerHeight;
   const duration = 1000;
   const startTime = performance.now();
 

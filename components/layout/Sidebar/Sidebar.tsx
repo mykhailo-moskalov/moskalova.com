@@ -5,18 +5,14 @@ import css from "./Sidebar.module.css";
 import Navigation from "../Navigation/Navigation";
 
 import { useEffect } from "react";
-import { useWidthStore } from "@/lib/store/widthStore";
 import { useSidebarStore } from "@/lib/store/sidebarStore";
 import { IoCloseSharp } from "react-icons/io5";
 import Container from "../../ui/Container/Container";
-import { usePathname } from "@/lib/navigation";
 import { useTranslations } from "next-intl";
 
 export default function Sidebar() {
-  const isMobile = useWidthStore((state) => state.isMobile);
   const isOpen = useSidebarStore((state) => state.isOpen);
   const setIsOpen = useSidebarStore((state) => state.setIsOpen);
-  const pathname = usePathname();
   const t = useTranslations("aria");
 
   const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -38,8 +34,6 @@ export default function Sidebar() {
       document.documentElement.style.overflow = "";
     };
   }, [isOpen, setIsOpen]);
-
-  if (!isMobile || pathname === "/legal") return null;
 
   return (
     <div

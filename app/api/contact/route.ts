@@ -40,8 +40,6 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "invalid" }, { status: 400 });
   }
 
-  // Honeypot: hidden from humans, irresistible to bots.
-  // Answer 200 so the bot has nothing to learn from the response.
   if (asString(body.company) !== "") return NextResponse.json({ ok: true });
 
   const name = asString(body.name);
@@ -55,7 +53,6 @@ export async function POST(request: NextRequest) {
     EMAIL_PATTERN.test(email) &&
     message.length >= 10 &&
     message.length <= LIMITS.message &&
-    // newlines in a header field would let someone inject extra headers
     !/[\r\n]/.test(name + email);
 
   if (!isValid) return NextResponse.json({ error: "invalid" }, { status: 400 });
@@ -73,7 +70,6 @@ export async function POST(request: NextRequest) {
       )}&gt;</p><p style="white-space:pre-wrap">${escapeHtml(message)}</p>`,
     });
   } catch (error) {
-    // log the real reason, tell the visitor nothing about the mail server
     console.error("[contact] sendMail failed:", error);
     return NextResponse.json({ error: "send" }, { status: 500 });
   }

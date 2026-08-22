@@ -4,8 +4,8 @@ import { useTranslations } from "next-intl";
 import { useRouter, usePathname } from "@/lib/navigation";
 import css from "./LangSwitcher.module.css";
 import * as Accordion from "@radix-ui/react-accordion";
-import { IoGlobeOutline } from "react-icons/io5";
 import { useEffect, useRef, useState } from "react";
+import { CiGlobe } from "react-icons/ci";
 
 interface LangSwitcherProps {
   className?: string;
@@ -67,7 +67,7 @@ const LangSwitcher = ({ className }: LangSwitcherProps) => {
             ref={triggerRef}
             className={`${css.btn} ${css.accordionTrigger}`}
           >
-            <IoGlobeOutline />
+            <CiGlobe />
           </Accordion.Trigger>
           <Accordion.Content
             className={css.accordionContent}

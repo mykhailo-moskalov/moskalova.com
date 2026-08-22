@@ -1,14 +1,10 @@
-import Hero from "@/components/sections/Hero/Hero";
-import Story from "@/components/sections/Story/Story";
-import Sponsors from "@/components/sections/Sponsors/Sponsors";
+import Contact from "@/components/sections/Contact/Contact";
 import BackToTop from "@/components/ui/BackToTop/BackToTop";
 
 export default function Home() {
   return (
     <main>
-      <Hero />
-      <Story />
-      <Sponsors />
+      <Contact />
       <BackToTop />
     </main>
   );

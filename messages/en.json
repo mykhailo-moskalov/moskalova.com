@@ -27,39 +27,12 @@
     "tooMany": "Too many messages sent. Please try again later.",
     "error": "Something went wrong. Please try again later."
   },
-  "footer": {},
-  "legal": {
-    "heading": "Legal Notice",
-    "ecg": {
-      "heading": "Information pursuant to § 5 ECG",
-      "name": "Verein BlackFire Cheer&Dance",
-      "country": "Austria"
-    },
-    "contact": {
-      "heading": "Contact",
-      "phone": "Phone: "
-    },
-    "register": {
-      "heading": "Association Register",
-      "text": "Association registration number: 1092922401"
-    },
-    "liability": {
-      "heading": "Disclaimer",
-      "text": "The contents of this website have been created with the utmost care. However, we cannot guarantee the accuracy, completeness or timeliness of the content."
-    },
-    "privacyPolicy": {
-      "heading": "Privacy Policy",
-      "text": "The use of our website is generally possible without providing personal data. Where personal data is collected on our pages, this is done on a voluntary basis."
-    }
-  },
   "aria": {
     "mainNavigation": "Main navigation",
     "navigation": "Navigation menu",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "switchLanguage": "Switch language",
-    "prevPhoto": "Previous photo",
-    "nextPhoto": "Next photo",
     "backToTop": "Back to top",
     "goBack": "Back to Home"
   }

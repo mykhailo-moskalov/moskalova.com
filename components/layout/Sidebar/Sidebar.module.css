@@ -13,19 +13,13 @@
 
 .sidebar {
   position: fixed;
-  top: 2.5%;
-  right: 2.5%;
+  top: 0;
+  right: 0;
   z-index: 1001;
 
   width: max-content;
-  height: 95%;
-  padding: 36px 32px 128px;
-  border-radius: 16px;
-
-  top: 0;
-  right: 0;
   height: 100%;
-  border-radius: 0;
+  padding: 36px 32px 128px;
 
   background-color: var(--transparent-light-green);
   box-shadow: var(--box-shadow);
@@ -68,7 +62,7 @@
 .nav {
   margin-top: 196px;
 
-  text-align: center;
+  color: var(--white);
 }
 
 .btnLang {

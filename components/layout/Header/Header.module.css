@@ -40,12 +40,7 @@
 
   &:hover,
   &:focus {
-    transform: translateY(-20%);
-    box-shadow: none;
-  }
-
-  @media screen and (min-width: 768px) {
-    padding-right: 68px;
+    transform: translateY(-10%);
   }
 }
 
@@ -59,14 +54,12 @@
   }
 }
 
-.btnLang {
-  position: absolute;
-  right: 100;
-  top: 50%;
-  transform: translateY(-50%);
+.nav {
+  width: 100%;
 
-  &:hover,
-  &:focus {
-    transform: translateY(-50%) scale(1.1);
+  & > ul {
+    @media only screen and (min-width: 768px) {
+      justify-content: space-between;
+    }
   }
 }

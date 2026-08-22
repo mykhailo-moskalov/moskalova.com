@@ -20,7 +20,7 @@ const Header = () => {
   const t = useTranslations("header");
   const ta = useTranslations("aria");
 
-  const isLegal = pathname === "/legal";
+  const isLegal = pathname === "/impressum";
 
   const [scrolled, setScrolled] = useState(isLegal);
 
@@ -60,14 +60,17 @@ const Header = () => {
     >
       <Container className={css.headerContainer}>
         {isLegal ? (
-          <button
-            aria-label={ta("goBack")}
-            onClick={router.back}
-            className={css.backBtn}
-          >
-            <IoArrowBack />
-            {t("goBack")}
-          </button>
+          <>
+            <Logo height={isMobile ? 48 : 64} />
+            <button
+              aria-label={ta("goBack")}
+              onClick={router.back}
+              className={css.backBtn}
+            >
+              <IoArrowBack />
+              {t("goBack")}
+            </button>
+          </>
         ) : isMobile ? (
           <>
             <Logo height={48} />

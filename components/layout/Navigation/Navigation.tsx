@@ -1,25 +1,47 @@
 "use client";
 
-import { Link } from "@/lib/navigation";
+import { Link, usePathname } from "@/lib/navigation";
 import css from "./Navigation.module.css";
 
 import { useTranslations } from "next-intl";
 import Logo from "@/components/ui/Logo/Logo";
 import LangSwitcher from "@/components/ui/LangSwitcher/LangSwitcher";
+import { HREFS, LEFT_LINKS, RIGHT_LINKS } from "@/lib/constants/navLinks";
 
 interface NavigationProps {
   className?: string;
   isLogo?: boolean;
+  isLang?: boolean;
   onLinkClick?: () => void;
 }
 
 const Navigation = ({
   className,
   isLogo = false,
+  isLang = true,
   onLinkClick,
 }: NavigationProps) => {
   const t = useTranslations("nav");
   const ta = useTranslations("aria");
+  const pathname = usePathname();
+
+  const renderLink = (key: keyof typeof HREFS) => {
+    const href = HREFS[key];
+    const isActive =
+      href === "/" ? pathname === "/" : pathname.startsWith(href);
+    return (
+      <li key={key} className={css.navItem}>
+        <Link
+          className={css.navigationLink}
+          href={href}
+          aria-current={isActive ? "page" : undefined}
+          onClick={onLinkClick}
+        >
+          {t(key)}
+        </Link>
+      </li>
+    );
+  };
 
   return (
     <nav
@@ -28,52 +50,7 @@ const Navigation = ({
     >
       <ul className={css.navigation}>
         <li className={css.navigationItem}>
-          <ul className={css.navLeft}>
-            <li className={css.navLeftItem}>
-              <Link
-                className={css.navigationLink}
-                href="#"
-                onClick={() => {
-                  onLinkClick?.();
-                }}
-              >
-                {t("home")}
-              </Link>
-            </li>
-            <li className={css.navLeftItem}>
-              <Link
-                className={css.navigationLink}
-                href="#"
-                onClick={() => {
-                  onLinkClick?.();
-                }}
-              >
-                {t("brand")}
-              </Link>
-            </li>
-            <li className={css.navLeftItem}>
-              <Link
-                className={css.navigationLink}
-                href="#"
-                onClick={() => {
-                  onLinkClick?.();
-                }}
-              >
-                {t("personal")}
-              </Link>
-            </li>
-            <li className={css.navLeftItem}>
-              <Link
-                className={css.navigationLink}
-                href="#"
-                onClick={() => {
-                  onLinkClick?.();
-                }}
-              >
-                {t("creatives")}
-              </Link>
-            </li>
-          </ul>
+          <ul className={css.navLeft}>{LEFT_LINKS.map(renderLink)}</ul>
         </li>
 
         {isLogo && (
@@ -84,40 +61,8 @@ const Navigation = ({
 
         <li className={css.navigationItem}>
           <ul className={css.navRight}>
-            <li className={css.navRightItem}>
-              <Link
-                className={css.navigationLink}
-                href="#"
-                onClick={() => {
-                  onLinkClick?.();
-                }}
-              >
-                {t("services")}
-              </Link>
-            </li>
-            <li className={css.navRightItem}>
-              <Link
-                className={css.navigationLink}
-                href="#"
-                onClick={() => {
-                  onLinkClick?.();
-                }}
-              >
-                {t("about")}
-              </Link>
-            </li>
-            <li className={css.navRightItem}>
-              <Link
-                className={css.navigationLink}
-                href="#"
-                onClick={() => {
-                  onLinkClick?.();
-                }}
-              >
-                {t("contact")}
-              </Link>
-            </li>
-            <LangSwitcher className={css.navRightItem} />
+            {RIGHT_LINKS.map(renderLink)}
+            {isLang && <LangSwitcher className={css.navItem} />}
           </ul>
         </li>
       </ul>

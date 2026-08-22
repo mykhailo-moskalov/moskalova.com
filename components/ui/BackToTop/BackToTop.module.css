@@ -26,10 +26,7 @@
     transform: scale(1.15);
 
     @media screen and (min-width: 768px) {
-      &:hover,
-      &:focus {
-        transform: scale(1.1);
-      }
+      transform: scale(1.1);
     }
   }
   & svg path {
@@ -38,6 +35,9 @@
   }
   & svg:last-child {
     margin-top: -16px;
+  }
+  @media screen and (min-width: 768px) {
+    right: 48px;
   }
 }
 .visible {
