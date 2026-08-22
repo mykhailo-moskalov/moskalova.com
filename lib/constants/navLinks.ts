@@ -5,9 +5,9 @@ export const HREFS: Record<
   string
 > = {
   home: "/",
-  brand: "/brand",
-  personal: "/personal",
-  creatives: "/creatives",
+  brand: "/brand-stories",
+  personal: "/personal-stories",
+  creatives: "/artists-and-performers",
   services: "/services",
   about: "/about",
   contact: "/contact",

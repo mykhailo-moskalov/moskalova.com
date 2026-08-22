@@ -1,10 +1,10 @@
-import css from "./Impressum.module.css";
+import css from "./About.module.css";
 import BackToTop from "@/components/ui/BackToTop/BackToTop";
 import Section from "@/components/ui/Section/Section";
 import { useTranslations } from "next-intl";
 
 export default function Legal() {
-  const t = useTranslations("impressum");
+  const t = useTranslations("about");
   return (
     <main className={css.main}>
       <Section className={css.section}>

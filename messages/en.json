@@ -11,22 +11,7 @@
     "about": "About",
     "contact": "Contact"
   },
-  "contact": {
-    "heading1": "Get in",
-    "heading2": "Touch",
-    "name": "Name",
-    "namePlaceholder": "Your name",
-    "email": "Email",
-    "emailPlaceholder": "you@example.com",
-    "message": "Message",
-    "messagePlaceholder": "Tell me about your shoot",
-    "submit": "Send message",
-    "sending": "Sending",
-    "success": "Thank you! Your message has been sent.",
-    "invalid": "Please check the form and try again.",
-    "tooMany": "Too many messages sent. Please try again later.",
-    "error": "Something went wrong. Please try again later."
-  },
+
   "aria": {
     "mainNavigation": "Main navigation",
     "navigation": "Navigation menu",
@@ -35,5 +20,29 @@
     "switchLanguage": "Switch language",
     "backToTop": "Back to top",
     "goBack": "Back to Home"
-  }
+  },
+  "brand": { "heading": "brand" },
+  "personal": { "heading": "personal" },
+  "creatives": { "heading": "creatives" },
+  "services": { "heading": "services" },
+  "about": { "heading": "about" },
+  "contact": {
+    "heading": "contact",
+    "form": {
+      "heading": "Get in touch",
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "you@example.com",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your shoot",
+      "submit": "Send message",
+      "sending": "Sending",
+      "success": "Thank you! Your message has been sent.",
+      "invalid": "Please check the form and try again.",
+      "tooMany": "Too many messages sent. Please try again later.",
+      "error": "Something went wrong. Please try again later."
+    }
+  },
+  "impressum": { "heading": "impressum" }
 }
