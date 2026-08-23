@@ -1,5 +1,0 @@
-.section {
-  &:nth-child(1) {
-    padding-top: calc(var(--header-height) + 32px);
-  }
-}

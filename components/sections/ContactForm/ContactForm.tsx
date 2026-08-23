@@ -6,10 +6,10 @@ import toast, { Toaster } from "react-hot-toast";
 import { ClipLoader } from "react-spinners";
 import Section from "@/components/ui/Section/Section";
 import Container from "@/components/ui/Container/Container";
-import css from "./Contact.module.css";
+import css from "./ContactForm.module.css";
 
-const Contact = () => {
-  const t = useTranslations("contact");
+const ContactForm = () => {
+  const t = useTranslations("contact.form");
   const [isSending, setIsSending] = useState(false);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -52,15 +52,11 @@ const Contact = () => {
   return (
     <Section id="contact" className={css.contact}>
       <Container className={css.container}>
-        <h2 className={css.heading}>
-          {t("heading1")}
-          <br />
-          <span className="pad">{t("heading2")}</span>
-        </h2>
+        <h2 className={css.heading}>{t("heading")}</h2>
 
         <form className={css.form} onSubmit={handleSubmit} noValidate>
           <label className={css.field}>
-            <span className={css.label}>{t("name")}</span>
+            <span className={css.label}>{t("name")}&#42;</span>
             <input
               className={css.input}
               type="text"
@@ -74,7 +70,7 @@ const Contact = () => {
           </label>
 
           <label className={css.field}>
-            <span className={css.label}>{t("email")}</span>
+            <span className={css.label}>{t("email")}&#42;</span>
             <input
               className={css.input}
               type="email"
@@ -87,7 +83,7 @@ const Contact = () => {
           </label>
 
           <label className={css.field}>
-            <span className={css.label}>{t("message")}</span>
+            <span className={css.label}>{t("message")}&#42;</span>
             <textarea
               className={`${css.input} ${css.textarea}`}
               name="message"
@@ -112,10 +108,7 @@ const Contact = () => {
 
           <button className={css.button} type="submit" disabled={isSending}>
             {isSending ? (
-              <>
-                <ClipLoader size={16} color="currentColor" />
-                {t("sending")}
-              </>
+              <ClipLoader size={16} color="currentColor" title={t("sending")} />
             ) : (
               t("submit")
             )}
@@ -123,9 +116,9 @@ const Contact = () => {
         </form>
       </Container>
 
-      <Toaster position="bottom-center" />
+      <Toaster position="top-center" />
     </Section>
   );
 };
 
-export default Contact;
+export default ContactForm;

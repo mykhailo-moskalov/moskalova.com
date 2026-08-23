@@ -1,0 +1,43 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    gap: 48px;
+  }
+}
+
+.cell {
+  min-width: 0;
+}
+
+.landscape {
+  @media only screen and (min-width: 768px) {
+    grid-column: 1 / -1;
+  }
+}
+
+.button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  cursor: zoom-in;
+  background-color: var(--green);
+
+  &:focus-visible {
+    outline: 2px solid var(--light-green);
+    outline-offset: 4px;
+  }
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

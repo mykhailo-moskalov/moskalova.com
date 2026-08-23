@@ -9,40 +9,40 @@ h3 {
 }
 
 h1 {
-  /* font-size: 40px;
   line-height: 120%;
-  @media only screen and (min-width: 768px) {
-    font-size: 56px;
-  }
-  @media only screen and (min-width: 1440px) { */
   font-size: 80px;
-  /* } */
 }
 
 h2 {
-  /* font-size: 36px;
   line-height: 120%;
-  margin-bottom: 32px;
-  @media only screen and (min-width: 768px) { */
   font-size: 48px;
-  /* } */
+  text-align: center;
+  &.galleryHeading {
+    margin-bottom: 56px;
+  }
 }
 
 h3 {
-  /* font-size: 24px;
   line-height: 140%;
-  @media only screen and (min-width: 768px) { */
   font-size: 32px;
-  /* } */
 }
-
-/* span.pad {
-  padding-left: 0.25lh;
-} */
 
 button {
   border: 0;
-  background-color: transparent;
+  background-color: var(--green);
+  &:hover,
+  &:focus {
+    background-color: var(--dark-grey);
+    box-shadow: var(--box-shadow);
+  }
+  &.transp {
+    background-color: transparent;
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
 }
 
 button,
@@ -54,7 +54,7 @@ a {
 
 a:hover,
 a:focus {
-  transform: translateY(-20%);
+  transform: translateY(-10%);
   box-shadow: none;
 }
 

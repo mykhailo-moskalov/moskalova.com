@@ -65,7 +65,7 @@ const LangSwitcher = ({ className }: LangSwitcherProps) => {
         <Accordion.Item value="teams" className={css.accordionItem}>
           <Accordion.Trigger
             ref={triggerRef}
-            className={`${css.btn} ${css.accordionTrigger}`}
+            className={`${css.btn} ${css.accordionTrigger} transp`}
           >
             <CiGlobe />
           </Accordion.Trigger>

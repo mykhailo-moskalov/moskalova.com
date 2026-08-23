@@ -1,3 +1,7 @@
 .section {
   padding: 28px 0;
+
+  &:first-child {
+    padding-top: calc(var(--header-height) + 32px);
+  }
 }

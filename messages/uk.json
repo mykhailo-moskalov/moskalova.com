@@ -11,22 +11,6 @@
     "about": "Про мене",
     "contact": "Зв'язок"
   },
-  "contact": {
-    "heading1": "Звʼяжіться",
-    "heading2": "зі мною",
-    "name": "Імʼя",
-    "namePlaceholder": "Ваше імʼя",
-    "email": "Email",
-    "emailPlaceholder": "you@example.com",
-    "message": "Повідомлення",
-    "messagePlaceholder": "Розкажіть про вашу зйомку",
-    "submit": "Надіслати",
-    "sending": "Надсилаємо",
-    "success": "Дякуємо! Ваше повідомлення надіслано.",
-    "invalid": "Будь ласка, перевірте форму та спробуйте ще раз.",
-    "tooMany": "Забагато повідомлень. Будь ласка, спробуйте пізніше.",
-    "error": "Щось пішло не так. Будь ласка, спробуйте пізніше."
-  },
   "aria": {
     "mainNavigation": "Головна навігація",
     "navigation": "Меню навігації",
@@ -35,5 +19,57 @@
     "switchLanguage": "Змінити мову",
     "backToTop": "Нагору",
     "goBack": "На головну"
+  },
+  "home": {
+    "heading": "Головна"
+  },
+  "brand": {
+    "heading": "Бренди",
+    "gallery": {
+      "heading": "Історії брендів"
+    }
+  },
+  "personal": {
+    "heading": "Особисте",
+    "gallery": {
+      "heading1": "Особисті історії",
+      "heading2": "Пари & сім`ї"
+    }
+  },
+  "creatives": {
+    "heading": "Креатив",
+    "gallery": {
+      "heading": "Художники & виконавці"
+    }
+  },
+  "services": {
+    "heading": "Послуги"
+  },
+  "about": {
+    "heading": "Про мене"
+  },
+  "contact": {
+    "heading": "Зв'язок",
+    "form": {
+      "heading": "Звʼяжіться зі мною",
+      "name": "Імʼя",
+      "namePlaceholder": "Ваше імʼя",
+      "email": "Email",
+      "emailPlaceholder": "you@example.com",
+      "message": "Повідомлення",
+      "messagePlaceholder": "Розкажіть про вашу зйомку",
+      "submit": "Надіслати",
+      "sending": "Надсилаємо",
+      "success": "Дякуємо! Ваше повідомлення надіслано.",
+      "invalid": "Будь ласка, перевірте форму та спробуйте ще раз.",
+      "tooMany": "Забагато повідомлень. Будь ласка, спробуйте пізніше.",
+      "error": "Щось пішло не так. Будь ласка, спробуйте пізніше."
+    }
+  },
+  "impressum": {
+    "heading": "impressum"
+  },
+  "gallery": {
+    "back": "Назад до галереї"
   }
 }

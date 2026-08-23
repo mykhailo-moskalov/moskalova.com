@@ -11,7 +11,6 @@
     "about": "About",
     "contact": "Contact"
   },
-
   "aria": {
     "mainNavigation": "Main navigation",
     "navigation": "Navigation menu",
@@ -21,11 +20,34 @@
     "backToTop": "Back to top",
     "goBack": "Back to Home"
   },
-  "brand": { "heading": "brand" },
-  "personal": { "heading": "personal" },
-  "creatives": { "heading": "creatives" },
-  "services": { "heading": "services" },
-  "about": { "heading": "about" },
+  "home": {
+    "heading": "home"
+  },
+  "brand": {
+    "heading": "brand",
+    "gallery": {
+      "heading": "Brand Stories"
+    }
+  },
+  "personal": {
+    "heading": "personal",
+    "gallery": {
+      "heading1": "Personal Stories",
+      "heading2": "Couples & Families"
+    }
+  },
+  "creatives": {
+    "heading": "creatives",
+    "gallery": {
+      "heading": "Artists & Performers"
+    }
+  },
+  "services": {
+    "heading": "services"
+  },
+  "about": {
+    "heading": "about"
+  },
   "contact": {
     "heading": "contact",
     "form": {
@@ -44,5 +66,10 @@
       "error": "Something went wrong. Please try again later."
     }
   },
-  "impressum": { "heading": "impressum" }
+  "impressum": {
+    "heading": "impressum"
+  },
+  "gallery": {
+    "back": "Back to gallery"
+  }
 }

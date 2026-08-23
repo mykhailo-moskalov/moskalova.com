@@ -1,0 +1,15 @@
+/* Design: 2 columns × 560px, 64px gutter, 3:4 thumbs, caption below */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 64px 48px;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    gap: 80px 64px;
+  }
+}

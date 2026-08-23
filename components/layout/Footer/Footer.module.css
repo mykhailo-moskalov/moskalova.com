@@ -32,8 +32,11 @@
     width: 24px;
     height: 24px;
   }
+  &:hover,
+  &:focus {
+    color: var(--light-green);
+  }
 }
-
 .legalLink {
   text-decoration: underline;
   text-decoration-skip-ink: none;

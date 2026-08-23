@@ -4,8 +4,6 @@ const MAX_TRACKED_IPS = 5000;
 
 const hits = new Map<string, number[]>();
 
-// Works because the site runs as one long-lived Node process.
-// On serverless this would reset on every cold start.
 export function rateLimit(ip: string) {
   const now = Date.now();
 

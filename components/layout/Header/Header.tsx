@@ -65,10 +65,9 @@ const Header = () => {
             <button
               aria-label={ta("goBack")}
               onClick={router.back}
-              className={css.backBtn}
+              className={`${css.backBtn} transp`}
             >
-              <IoArrowBack />
-              {t("goBack")}
+              ← {t("goBack")}
             </button>
           </>
         ) : isMobile ? (
@@ -76,7 +75,7 @@ const Header = () => {
             <Logo height={48} />
             <button
               aria-label={ta("openMenu")}
-              className={css.burger}
+              className={`${css.burger} transp`}
               onClick={() => setIsOpen(true)}
             >
               <IoMenu />
