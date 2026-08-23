@@ -70,9 +70,10 @@
   color: var(--white);
   cursor: pointer;
 
-  &:disabled {
+  &:disabled,
+  &[data-sending] {
     background-color: var(--grey);
-    cursor: not-allowed;
+    cursor: progress;
     box-shadow: none;
   }
 }

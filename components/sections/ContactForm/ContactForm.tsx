@@ -1,19 +1,25 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import { useTranslations } from "next-intl";
-import toast, { Toaster } from "react-hot-toast";
+import { useLocale, useTranslations } from "next-intl";
+import toast from "react-hot-toast";
 import { ClipLoader } from "react-spinners";
 import Section from "@/components/ui/Section/Section";
 import Container from "@/components/ui/Container/Container";
 import css from "./ContactForm.module.css";
 
+/** Must match HONEYPOT_FIELD in app/api/contact/route.ts. Meaningless on
+ *  purpose: browser address-autofill must never recognise and fill it. */
+const HONEYPOT_FIELD = "nm_extra";
+
 const ContactForm = () => {
   const t = useTranslations("contact.form");
+  const locale = useLocale();
   const [isSending, setIsSending] = useState(false);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (isSending) return;
     // captured now: currentTarget is null once we await
     const form = e.currentTarget;
     const formData = new FormData(form);
@@ -28,12 +34,13 @@ const ContactForm = () => {
           name: formData.get("name"),
           email: formData.get("email"),
           message: formData.get("message"),
-          company: formData.get("company"),
+          [HONEYPOT_FIELD]: formData.get(HONEYPOT_FIELD),
+          locale,
         }),
       });
 
       if (response.ok) {
-        toast.success(t("success"));
+        toast.success(t("success"), { duration: 6000 });
         form.reset();
       } else if (response.status === 429) {
         toast.error(t("tooMany"));
@@ -54,7 +61,9 @@ const ContactForm = () => {
       <Container className={css.container}>
         <h2 className={css.heading}>{t("heading")}</h2>
 
-        <form className={css.form} onSubmit={handleSubmit} noValidate>
+        {/* No `noValidate`: the browser shows localized field-level errors
+            before anything is sent, so typos never reach the server. */}
+        <form className={css.form} onSubmit={handleSubmit} aria-busy={isSending}>
           <label className={css.field}>
             <span className={css.label}>{t("name")}&#42;</span>
             <input
@@ -95,28 +104,35 @@ const ContactForm = () => {
             />
           </label>
 
+          {/* Honeypot: off-screen, not focusable, invisible to assistive tech. */}
           <div className={css.honeypot} aria-hidden="true">
-            <label htmlFor="company">Company</label>
+            <label htmlFor={HONEYPOT_FIELD}>Leave this field empty</label>
             <input
-              id="company"
-              name="company"
+              id={HONEYPOT_FIELD}
+              name={HONEYPOT_FIELD}
               type="text"
               tabIndex={-1}
               autoComplete="off"
             />
           </div>
 
-          <button className={css.button} type="submit" disabled={isSending}>
+          <button
+            className={css.button}
+            type="submit"
+            aria-disabled={isSending}
+            data-sending={isSending || undefined}
+          >
             {isSending ? (
-              <ClipLoader size={16} color="currentColor" title={t("sending")} />
+              <>
+                <ClipLoader size={16} color="currentColor" aria-hidden="true" />
+                <span className="visuallyHidden">{t("sending")}</span>
+              </>
             ) : (
               t("submit")
             )}
           </button>
         </form>
       </Container>
-
-      <Toaster position="top-center" />
     </Section>
   );
 };

@@ -60,10 +60,24 @@
       "messagePlaceholder": "Tell me about your shoot",
       "submit": "Send message",
       "sending": "Sending",
-      "success": "Thank you! Your message has been sent.",
+      "success": "Thank you! Your message has been sent — a confirmation email is on its way (check spam if it does not show up).",
       "invalid": "Please check the form and try again.",
       "tooMany": "Too many messages sent. Please try again later.",
       "error": "Something went wrong. Please try again later."
+    },
+    "email": {
+      "ownerSubject": "moskalova.com — new message: {name}",
+      "ownerIntro": "New message from the website contact form.",
+      "labelName": "Name",
+      "labelEmail": "Email",
+      "labelLanguage": "Language",
+      "subject": "Thank you for your message",
+      "greeting": "Hi {name},",
+      "body": "Thank you for reaching out! I have received your message and will get back to you as soon as I can.",
+      "copyHeading": "Here is a copy of what you sent:",
+      "signoff": "Warm regards,",
+      "signature": "Natalia Moskalova",
+      "footer": "This is an automated confirmation from moskalova.com. If you would like to add anything, simply reply to this email."
     }
   },
   "impressum": {

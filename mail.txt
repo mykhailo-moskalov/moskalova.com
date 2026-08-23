@@ -1,0 +1,34 @@
+Your 4 steps to go live
+1. Create the sender in Google Workspace (admin.google.com). Either a real user noreply@moskalova.com, or — cheaper — add noreply@ as an alias on her existing mailbox and add it under Gmail → Settings → Accounts → Send mail as. If From isn't the account or a verified alias, Google silently rewrites it.
+
+2. Make an App Password for that mailbox: turn on 2-Step Verification, then myaccount.google.com → Security → App passwords → name it "moskalova.com website" → copy the 16-character code. Don't enter it anywhere for me — it goes straight into .env.local on your machine/server.
+
+3. Fill .env.local (mirror of .env.example):
+
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=<the mailbox from step 1>
+SMTP_PASSWORD=<the app password>
+SMTP_FROM="Natalia Moskalova Photography <noreply@moskalova.com>"
+CONTACT_TO=<her inbox>
+CONTACT_OWNER_LOCALE=uk
+SITE_URL=https://moskalova.com
+Restart the dev server and submit the form once — you'll get the real emails. (Until SMTP_HOST is set, dev keeps using the Ethereal inbox and the API response includes preview links.)
+
+4. On the server, make nginx pass the real client IP, or every visitor shares one rate-limit bucket:
+
+location / {
+    proxy_pass http://127.0.0.1:3000;
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+}
+location = /api/contact {
+    client_max_body_size 16k;
+    proxy_pass http://127.0.0.1:3000;
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+}
