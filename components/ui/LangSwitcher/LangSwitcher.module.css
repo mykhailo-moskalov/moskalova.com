@@ -39,7 +39,7 @@
 .subNavigation {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 12px !important;
   margin-top: 12px;
 
   & li {

@@ -17,6 +17,7 @@ ul.navLeft,
 ul.navRight {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 40px;
   @media only screen and (min-width: 768px) {
     flex-direction: row;
