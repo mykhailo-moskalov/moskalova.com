@@ -2,7 +2,7 @@
 
 import { Link } from "@/lib/navigation";
 import css from "./Footer.module.css";
-import { IoLogoInstagram } from "react-icons/io5";
+import { IoLogoInstagram, IoLogoWhatsapp } from "react-icons/io5";
 import { useEffect, useRef } from "react";
 import { FiFacebook } from "react-icons/fi";
 import { SlSocialLinkedin } from "react-icons/sl";
@@ -38,6 +38,8 @@ const Footer = () => {
             href="https://www.instagram.com/natali.moskalova"
             target="_blank"
             className={css.socialsLink}
+            rel="noopener noreferrer"
+            aria-label="Instagram"
           >
             <IoLogoInstagram />
           </Link>
@@ -47,6 +49,8 @@ const Footer = () => {
             href="https://www.facebook.com/nataly.moskalyova"
             target="_blank"
             className={css.socialsLink}
+            rel="noopener noreferrer"
+            aria-label="Facebook"
           >
             <FiFacebook />
           </Link>
@@ -56,8 +60,21 @@ const Footer = () => {
             href="https://www.linkedin.com/in/natalia-moskalova/"
             target="_blank"
             className={css.socialsLink}
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
           >
             <SlSocialLinkedin />
+          </Link>
+        </li>
+        <li className={css.socialsItem}>
+          <Link
+            href="https://wa.me/4368110652997"
+            target="_blank"
+            className={css.socialsLink}
+            rel="noopener noreferrer"
+            aria-label="WhatsApp"
+          >
+            <IoLogoWhatsapp />
           </Link>
         </li>
       </ul>
