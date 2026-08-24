@@ -20,23 +20,21 @@ export default function GalleryItem({
   const subtitle = localize(set.subtitle, locale);
 
   return (
-    <li className={css.item}>
-      <Link href={`/${category}/${set.slug}`} className={css.link}>
-        <span className={css.thumb}>
-          <Image
-            src={set.cover.src}
-            alt={localize(set.cover.alt, locale) || title}
-            fill
-            sizes="(min-width: 1440px) 560px, (min-width: 768px) 50vw, 100vw"
-            priority={priority}
-            className={css.img}
-          />
-        </span>
-        <span className={css.caption}>
-          <span className={css.title}>{title}</span>
-          {subtitle && <span className={css.subtitle}>{subtitle}</span>}
-        </span>
-      </Link>
-    </li>
+    <Link href={`/${category}/${set.slug}`} className={css.link}>
+      <span className={css.thumb}>
+        <Image
+          src={set.cover.src}
+          alt={localize(set.cover.alt, locale) || title}
+          fill
+          sizes="(min-width: 1440px) 560px, (min-width: 768px) 50vw, 100vw"
+          priority={priority}
+          className={css.img}
+        />
+      </span>
+      <span className={css.caption}>
+        <span className={css.title}>{title}</span>
+        {subtitle && <span className={css.subtitle}>{subtitle}</span>}
+      </span>
+    </Link>
   );
 }

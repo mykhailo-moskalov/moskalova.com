@@ -1,11 +1,10 @@
 import { getGroup } from "@/lib/data/galleries";
 import GalleryItem from "../GalleryItem/GalleryItem";
+import Reveal from "@/components/ui/Reveal/Reveal";
 import css from "./Gallery.module.css";
 
 type GalleryProps = {
-  /** URL segment of the category page, e.g. "brand-stories" */
   category: string;
-  /** Group id inside that category — see lib/data/galleries.ts */
   group: string;
 };
 
@@ -16,12 +15,9 @@ export default function Gallery({ category, group }: GalleryProps) {
   return (
     <ul className={css.gallery}>
       {sets.map((set, index) => (
-        <GalleryItem
-          key={set.slug}
-          category={category}
-          set={set}
-          priority={index < 2}
-        />
+        <Reveal key={set.slug} as="li" index={index % 2} className={css.item}>
+          <GalleryItem category={category} set={set} priority={index < 2} />
+        </Reveal>
       ))}
     </ul>
   );

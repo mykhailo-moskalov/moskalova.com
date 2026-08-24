@@ -7,6 +7,7 @@ import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/styles.css";
 import type { Photo } from "@/lib/types/gallery";
 import css from "./PhotoGrid.module.css";
+import Reveal from "@/components/ui/Reveal/Reveal";
 
 type PhotoGridProps = {
   photos: Photo[];
@@ -20,8 +21,10 @@ export default function PhotoGrid({ photos, label }: PhotoGridProps) {
     <>
       <ul className={css.grid}>
         {photos.map((photo, i) => (
-          <li
+          <Reveal
             key={photo.src}
+            as="li"
+            index={i % 2}
             className={`${css.cell} ${
               photo.width > photo.height ? css.landscape : ""
             }`}
@@ -41,7 +44,7 @@ export default function PhotoGrid({ photos, label }: PhotoGridProps) {
                 className={css.img}
               />
             </button>
-          </li>
+          </Reveal>
         ))}
       </ul>
 
