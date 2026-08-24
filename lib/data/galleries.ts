@@ -1,22 +1,37 @@
 import type { GalleryCategory, GallerySet, Photo } from "@/lib/types/gallery";
+import manifest from "./galleries.generated.json";
 
-// ──────────────────────────────────────────────────────────────────────────
-// Replace the placeholder photos with real files under /public/galleries/…
-// Each photo needs its real pixel size so next/image can reserve space.
-// ──────────────────────────────────────────────────────────────────────────
-
-const P = "/galleries/_placeholders";
+const P = "/galleries/_placeholders/";
 
 const ph = (n: 1 | 2 | 3 | 4): Photo => ({
-  src: `${P}/portrait-${n}.jpg`,
+  src: `${P}portrait-${n}.jpg`,
   width: 1200,
   height: 1600,
 });
 const pl = (n: 1 | 2): Photo => ({
-  src: `${P}/landscape-${n}.jpg`,
+  src: `${P}landscape-${n}.jpg`,
   width: 1600,
   height: 1067,
 });
+
+const photosOf = (folder: string): Photo[] => {
+  const entries = (
+    manifest as Record<
+      string,
+      { file: string; width: number; height: number }[]
+    >
+  )[folder];
+  if (!entries) {
+    throw new Error(`No scanned photos for "${folder}" — run npm run scan`);
+  }
+  return entries.map((e) => ({
+    src: `/galleries/${folder}/${e.file}`,
+    width: e.width,
+    height: e.height,
+  }));
+};
+
+const SOPHIIA = photosOf("personal/sophiia");
 
 const set = (
   slug: string,
@@ -39,20 +54,20 @@ export const GALLERIES: GalleryCategory[] = [
             ph(1),
             [ph(1), pl(1), ph(2), ph(3)],
             {
-              title: { en: "Studio Lumen", uk: "Родина Ковалів" },
+              title: { en: "Studio Lumen", uk: "Студія Lumen" },
               subtitle: { en: "Brand campaign", uk: "Брендова кампанія" },
             },
           ),
           set("atelier-vera", "Atelier Vera", ph(2), [ph(2), ph(4), pl(2)], {
-            title: { en: "Atelier Vera", uk: "Родина Ковалів" },
+            title: { en: "Atelier Vera", uk: "Майстерня «Вера»" },
             subtitle: { en: "Lookbook", uk: "Лукбук" },
           }),
           set("cafe-nord", "Café Nord", ph(3), [pl(1), ph(3), ph(1)], {
-            title: { en: "Café Nord", uk: "Родина Ковалів" },
+            title: { en: "Café Nord", uk: "Кафе «Норд»" },
             subtitle: { en: "Interior & team", uk: "Інтерʼєр і команда" },
           }),
           set("oak-and-ash", "Oak & Ash", ph(4), [ph(4), pl(2), ph(2)], {
-            title: { en: "Oak & Ash", uk: "Родина Ковалів" },
+            title: { en: "Oak & Ash", uk: "Дуб & ясен" },
             subtitle: { en: "Product story", uk: "Історія продукту" },
           }),
         ],
@@ -67,6 +82,10 @@ export const GALLERIES: GalleryCategory[] = [
         sets: [
           set("marta", "Marta", ph(2), [ph(2), ph(1), pl(1)], {
             title: { en: "Marta", uk: "Марта" },
+            subtitle: { en: "Portrait session", uk: "Портретна зйомка" },
+          }),
+          set("sophiia", "Sophiia", SOPHIIA[1], SOPHIIA, {
+            title: { en: "Sophiia", uk: "Софія" },
             subtitle: { en: "Portrait session", uk: "Портретна зйомка" },
           }),
           set("daniel", "Daniel", ph(4), [ph(4), pl(2), ph(3)], {

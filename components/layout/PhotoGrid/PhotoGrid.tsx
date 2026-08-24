@@ -40,7 +40,11 @@ export default function PhotoGrid({ photos, label }: PhotoGridProps) {
                 alt={photo.alt?.en ?? `${label} ${i + 1}`}
                 width={photo.width}
                 height={photo.height}
-                sizes="(min-width: 1440px) 600px, (min-width: 768px) 50vw, 100vw"
+                sizes={
+                  photo.width > photo.height
+                    ? "(min-width: 1440px) 1240px, (min-width: 768px) calc(100vw - 128px), 100vw"
+                    : "(min-width: 1440px) 600px, (min-width: 768px) 50vw, 100vw"
+                }
                 className={css.img}
               />
             </button>

@@ -55,7 +55,11 @@ const Navigation = ({
 
         {isLogo && (
           <li className={css.navigationItem}>
-            <Logo height={64} />
+            <Logo
+              height={
+                window.innerWidth >= 768 && window.innerWidth <= 860 ? 36 : 64
+              }
+            />
           </li>
         )}
 

@@ -7,16 +7,15 @@
   gap: 40px;
   align-items: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1440px) {
     padding: 24px 384px;
   }
 }
 
 .nav ul {
-  @media screen and (max-width: 767px) {
-    gap: 12px;
-  }
-  @media screen and (min-width: 768px) {
+  gap: 12px;
+  gap: 12px;
+  @media only screen and (min-width: 800px) {
     gap: 40px;
   }
 }
