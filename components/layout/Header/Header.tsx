@@ -13,7 +13,7 @@ import { useTranslations } from "next-intl";
 
 const Header = () => {
   const setIsOpen = useSidebarStore((state) => state.setIsOpen);
-  const isMobile = useWidthStore((state) => state.isMobile);
+  const isDesktop = useWidthStore((state) => state.isDesktop);
   const headerRef = useRef<HTMLElement>(null);
   const router = useRouter();
   const pathname = usePathname();
@@ -61,21 +61,21 @@ const Header = () => {
       <Container className={css.headerContainer}>
         {isLegal ? (
           <>
-            <Logo height={isMobile ? 48 : 64} />
+            <Logo height={!isDesktop ? 48 : 64} />
             <button
               aria-label={ta("goBack")}
               onClick={router.back}
-              className={`${css.backBtn} transp`}
+              className={css.backBtn}
             >
               ← {t("goBack")}
             </button>
           </>
-        ) : isMobile ? (
+        ) : !isDesktop ? (
           <>
             <Logo height={48} />
             <button
               aria-label={ta("openMenu")}
-              className={`${css.burger} transp`}
+              className={css.burger}
               onClick={() => setIsOpen(true)}
             >
               <IoMenu />

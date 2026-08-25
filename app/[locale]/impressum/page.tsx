@@ -10,7 +10,7 @@ export default function Impressum() {
     <main className={css.main}>
       <Section className={css.section}>
         <Container>
-          <h2>{t("heading")}</h2>
+          <h1>{t("heading")}</h1>
         </Container>
       </Section>
       <BackToTop />

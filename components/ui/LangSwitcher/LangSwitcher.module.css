@@ -18,7 +18,7 @@
   overflow: hidden;
   will-change: height;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1440px) {
     position: fixed;
     top: var(--header-height);
     left: auto;
@@ -46,7 +46,7 @@
     cursor: pointer;
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1440px) {
     margin: 0;
     padding: 0;
   }

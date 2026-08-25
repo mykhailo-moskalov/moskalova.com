@@ -1,0 +1,25 @@
+section.hero {
+  position: relative;
+  padding-bottom: 0;
+}
+
+.slider {
+  height: 75svh;
+  --swiper-navigation-color: var(--white);
+  --swiper-navigation-size: 28px;
+  --swiper-navigation-sides-offset: 24px;
+}
+
+.slide {
+  position: relative;
+}
+
+.img {
+  object-fit: cover;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slider :global(.swiper-slide) {
+    transition-duration: 0ms !important;
+  }
+}

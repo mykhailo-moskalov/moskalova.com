@@ -21,7 +21,14 @@
     "goBack": "Back to Home"
   },
   "home": {
-    "heading": "home"
+    "motto": {
+      "heading": "Everyone has a story.",
+      "subHeading": "I photograph people — their personality, emotions, character and stories.",
+      "text1": "Whether it's a portrait, personal brand, family or a business, I'm interested in what makes you — ",
+      "text1Italic": "you",
+      "text2": "I create natural, cinematic images that feel personal, authentic and timeless.",
+      "btn": "More about me"
+    }
   },
   "brand": {
     "heading": "brand",

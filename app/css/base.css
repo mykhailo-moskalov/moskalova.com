@@ -10,7 +10,7 @@ h3 {
 
 h1 {
   line-height: 120%;
-  font-size: 80px;
+  font-size: 48px;
 }
 
 h2 {
@@ -29,20 +29,7 @@ h3 {
 
 button {
   border: 0;
-  background-color: var(--green);
-  &:hover,
-  &:focus {
-    background-color: var(--dark-grey);
-    box-shadow: var(--box-shadow);
-  }
-  &.transp {
-    background-color: transparent;
-    &:hover,
-    &:focus {
-      background-color: transparent;
-      box-shadow: none;
-    }
-  }
+  background-color: transparent;
 }
 
 button,

@@ -7,9 +7,8 @@ import { ClipLoader } from "react-spinners";
 import Section from "@/components/ui/Section/Section";
 import Container from "@/components/ui/Container/Container";
 import css from "./ContactForm.module.css";
+import Btn from "@/components/ui/Btn/Btn";
 
-/** Must match HONEYPOT_FIELD in app/api/contact/route.ts. Meaningless on
- *  purpose: browser address-autofill must never recognise and fill it. */
 const HONEYPOT_FIELD = "nm_extra";
 
 const ContactForm = () => {
@@ -20,7 +19,6 @@ const ContactForm = () => {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (isSending) return;
-    // captured now: currentTarget is null once we await
     const form = e.currentTarget;
     const formData = new FormData(form);
 
@@ -61,9 +59,11 @@ const ContactForm = () => {
       <Container className={css.container}>
         <h2 className={css.heading}>{t("heading")}</h2>
 
-        {/* No `noValidate`: the browser shows localized field-level errors
-            before anything is sent, so typos never reach the server. */}
-        <form className={css.form} onSubmit={handleSubmit} aria-busy={isSending}>
+        <form
+          className={css.form}
+          onSubmit={handleSubmit}
+          aria-busy={isSending}
+        >
           <label className={css.field}>
             <span className={css.label}>{t("name")}&#42;</span>
             <input
@@ -104,7 +104,6 @@ const ContactForm = () => {
             />
           </label>
 
-          {/* Honeypot: off-screen, not focusable, invisible to assistive tech. */}
           <div className={css.honeypot} aria-hidden="true">
             <label htmlFor={HONEYPOT_FIELD}>Leave this field empty</label>
             <input
@@ -116,8 +115,8 @@ const ContactForm = () => {
             />
           </div>
 
-          <button
-            className={css.button}
+          <Btn
+            className={css.btn}
             type="submit"
             aria-disabled={isSending}
             data-sending={isSending || undefined}
@@ -130,7 +129,7 @@ const ContactForm = () => {
             ) : (
               t("submit")
             )}
-          </button>
+          </Btn>
         </form>
       </Container>
     </Section>

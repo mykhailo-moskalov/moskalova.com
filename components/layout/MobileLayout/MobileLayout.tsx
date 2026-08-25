@@ -11,7 +11,7 @@ import { Toaster } from "react-hot-toast";
 
 export default function MobileLayout({ children }: { children: ReactNode }) {
   const setIsOpen = useSidebarStore((state) => state.setIsOpen);
-  const isMobile = useWidthStore((state) => state.isMobile);
+  const isDesktop = useWidthStore((state) => state.isDesktop);
 
   useEffect(() => {
     let startX = 0;
@@ -36,7 +36,7 @@ export default function MobileLayout({ children }: { children: ReactNode }) {
 
     const handleTouchEnd = (e: TouchEvent) => {
       if (!shouldBlock) return;
-      if (!isMobile) return;
+      if (isDesktop) return;
       const diff = startX - e.changedTouches[0].clientX;
       if (diff > 100) setIsOpen(true);
       if (diff < -100) setIsOpen(false);
@@ -51,7 +51,7 @@ export default function MobileLayout({ children }: { children: ReactNode }) {
       window.removeEventListener("touchmove", handleTouchMove);
       window.removeEventListener("touchend", handleTouchEnd);
     };
-  }, [isMobile, setIsOpen]);
+  }, [isDesktop, setIsOpen]);
 
   return (
     <>

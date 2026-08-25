@@ -47,7 +47,7 @@ export default function Sidebar() {
         <Container className={css.sidebarContainer}>
           <button
             aria-label={t("closeMenu")}
-            className={`${css.btnClose} transp`}
+            className={css.btnClose}
             onClick={() => setIsOpen(false)}
           >
             <IoCloseSharp />

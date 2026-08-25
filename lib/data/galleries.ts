@@ -14,7 +14,7 @@ const pl = (n: 1 | 2): Photo => ({
   height: 1067,
 });
 
-const photosOf = (folder: string): Photo[] => {
+export const photosOf = (folder: string): Photo[] => {
   const entries = (
     manifest as Record<
       string,
@@ -84,8 +84,8 @@ export const GALLERIES: GalleryCategory[] = [
             title: { en: "Marta", uk: "Марта" },
             subtitle: { en: "Portrait session", uk: "Портретна зйомка" },
           }),
-          set("sophiia", "Sophiia", SOPHIIA[1], SOPHIIA, {
-            title: { en: "Sophiia", uk: "Софія" },
+          set("sofiia", "Sofiia", SOPHIIA[1], SOPHIIA, {
+            title: { en: "Sofiia", uk: "Софія" },
             subtitle: { en: "Portrait session", uk: "Портретна зйомка" },
           }),
           set("daniel", "Daniel", ph(4), [ph(4), pl(2), ph(3)], {

@@ -7,7 +7,7 @@
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1440px) {
     flex-direction: row;
     gap: unset;
   }
@@ -19,7 +19,7 @@ ul.navRight {
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1440px) {
     flex-direction: row;
   }
 }

@@ -1,0 +1,29 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  min-width: 200px;
+  border-radius: 4px;
+  padding: 14px 32px;
+
+  font: inherit;
+  color: var(--white);
+  background-color: var(--green);
+  cursor: pointer;
+
+  &:disabled,
+  &[data-sending] {
+    background-color: var(--grey);
+    cursor: progress;
+    box-shadow: none;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--dark-grey);
+    box-shadow: var(--box-shadow);
+    transform: none;
+  }
+}

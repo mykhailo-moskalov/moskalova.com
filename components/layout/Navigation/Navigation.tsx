@@ -15,12 +15,12 @@ interface NavigationProps {
   onLinkClick?: () => void;
 }
 
-const Navigation = ({
+export default function Navigation({
   className,
   isLogo = false,
   isLang = true,
   onLinkClick,
-}: NavigationProps) => {
+}: NavigationProps) {
   const t = useTranslations("nav");
   const ta = useTranslations("aria");
   const pathname = usePathname();
@@ -55,11 +55,7 @@ const Navigation = ({
 
         {isLogo && (
           <li className={css.navigationItem}>
-            <Logo
-              height={
-                window.innerWidth >= 768 && window.innerWidth <= 860 ? 36 : 64
-              }
-            />
+            <Logo height={64} />
           </li>
         )}
 
@@ -72,6 +68,4 @@ const Navigation = ({
       </ul>
     </nav>
   );
-};
-
-export default Navigation;
+}
