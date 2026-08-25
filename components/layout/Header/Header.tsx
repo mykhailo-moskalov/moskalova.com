@@ -42,7 +42,7 @@ const Header = () => {
     if (isLegal)
       return () => window.removeEventListener("resize", updateHeight);
 
-    const handleScroll = () => setScrolled(window.scrollY >= 300);
+    const handleScroll = () => setScrolled(window.scrollY > 0);
 
     window.addEventListener("scroll", handleScroll);
 
