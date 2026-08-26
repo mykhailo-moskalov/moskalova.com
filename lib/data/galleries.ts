@@ -1,5 +1,6 @@
 import type { GalleryCategory, GallerySet, Photo } from "@/lib/types/gallery";
 import manifest from "./galleries.generated.json";
+import { SOPHIIA } from "./personal";
 
 const P = "/galleries/_placeholders/";
 
@@ -14,7 +15,7 @@ const pl = (n: 1 | 2): Photo => ({
   height: 1067,
 });
 
-export const photosOf = (folder: string): Photo[] => {
+export function photosOf(folder: string): Photo[] {
   const entries = (
     manifest as Record<
       string,
@@ -29,9 +30,7 @@ export const photosOf = (folder: string): Photo[] => {
     width: e.width,
     height: e.height,
   }));
-};
-
-const SOPHIIA = photosOf("personal/sophiia");
+}
 
 const set = (
   slug: string,

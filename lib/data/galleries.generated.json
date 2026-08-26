@@ -1,153 +1,128 @@
 {
   "hero": [
     {
-      "file": "087A0104.jpg",
+      "file": "hero_01.jpg",
       "width": 2560,
-      "height": 1729
+      "height": 1707
     },
     {
-      "file": "087A7984.jpg",
+      "file": "hero_02.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "hero_03.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "hero_04.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "hero_05.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "hero_06.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "hero_07.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "hero_08.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "hero_09.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "hero_10.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "hero_11.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "hero_12.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "hero_13.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "hero_14.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "hero_15.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "hero_16.jpg",
       "width": 1706,
       "height": 2560
     },
     {
-      "file": "087A8867.jpg",
-      "width": 2560,
-      "height": 1706
-    },
-    {
-      "file": "087A8907.jpg",
-      "width": 1685,
-      "height": 2560
-    },
-    {
-      "file": "1 (2).jpg",
-      "width": 2428,
-      "height": 1619
-    },
-    {
-      "file": "1.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "6R4A0071.jpg",
+      "file": "hero_17.jpg",
       "width": 1707,
       "height": 2560
     },
     {
-      "file": "6R4A0741.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "6R4A2546.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "6R4A3561.jpg",
-      "width": 1740,
-      "height": 2560
-    },
-    {
-      "file": "6R4A4252.jpg",
+      "file": "hero_18.jpg",
       "width": 2560,
       "height": 1707
     },
     {
-      "file": "6R4A5524-1.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "6R4A6158.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "IM8A0228-HDR.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "IM8A0554-HDR.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "IM8A1083.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "IM8A3193.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "IM8A3269.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "IM8A3708.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "IM8A3733.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "IM8A3941.jpg",
+      "file": "hero_19.jpg",
       "width": 1706,
       "height": 2560
     },
     {
-      "file": "IM8A4069.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "IM8A4240.jpg",
+      "file": "hero_20.jpg",
       "width": 1707,
       "height": 2560
     },
     {
-      "file": "IM8A4253.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "IM8A4893.jpg",
+      "file": "hero_21.jpg",
       "width": 1707,
       "height": 2560
     },
     {
-      "file": "IM8A5219.jpg",
+      "file": "hero_22.jpg",
       "width": 2560,
       "height": 1707
     },
     {
-      "file": "IM8A5908.jpg",
+      "file": "hero_23.jpg",
       "width": 1707,
       "height": 2560
     },
     {
-      "file": "IM8A8782-HDR.jpg",
+      "file": "hero_24.jpg",
       "width": 1707,
       "height": 2560
     },
     {
-      "file": "IM8A8803-HDR.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "IM8A9705.jpg",
-      "width": 1707,
+      "file": "hero_25.jpg",
+      "width": 1706,
       "height": 2560
     }
   ],

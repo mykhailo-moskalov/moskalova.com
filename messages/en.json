@@ -4,8 +4,8 @@
   },
   "nav": {
     "home": "Home",
-    "brand": "Brand",
     "personal": "Personal",
+    "brand": "Brand",
     "creatives": "Creatives",
     "services": "Services",
     "about": "About",
@@ -30,17 +30,17 @@
       "btn": "More about me"
     }
   },
-  "brand": {
-    "heading": "brand",
-    "gallery": {
-      "heading": "Brand Stories"
-    }
-  },
   "personal": {
     "heading": "personal",
     "gallery": {
       "heading1": "Personal Stories",
       "heading2": "Couples & Families"
+    }
+  },
+  "brand": {
+    "heading": "brand",
+    "gallery": {
+      "heading": "Brand Stories"
     }
   },
   "creatives": {

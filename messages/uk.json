@@ -4,12 +4,12 @@
   },
   "nav": {
     "home": "Головна",
-    "brand": "Бренди",
-    "personal": "Особисте",
-    "creatives": "Креатив",
+    "personal": "Персональні",
+    "brand": "Бренд",
+    "creatives": "Творчі",
     "services": "Послуги",
     "about": "Про мене",
-    "contact": "Звʼязок"
+    "contact": "Контакти"
   },
   "aria": {
     "mainNavigation": "Головна навігація",
@@ -30,17 +30,17 @@
       "btn": "Більше про мене"
     }
   },
-  "brand": {
-    "heading": "Бренди",
-    "gallery": {
-      "heading": "Історії брендів"
-    }
-  },
   "personal": {
     "heading": "Особисте",
     "gallery": {
       "heading1": "Особисті історії",
       "heading2": "Пари & сімʼї"
+    }
+  },
+  "brand": {
+    "heading": "Бренди",
+    "gallery": {
+      "heading": "Історії брендів"
     }
   },
   "creatives": {

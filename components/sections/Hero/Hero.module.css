@@ -4,10 +4,23 @@ section.hero {
 }
 
 .slider {
-  height: 75svh;
+  height: 30svh;
+
+  @media screen and (min-width: 768px) {
+    height: 60svh;
+  }
+  @media screen and (min-width: 1440px) {
+    height: 75svh;
+  }
   --swiper-navigation-color: var(--white);
   --swiper-navigation-size: 28px;
   --swiper-navigation-sides-offset: 24px;
+
+  & :global(.swiper-slide) {
+    @media (prefers-reduced-motion: reduce) {
+      transition-duration: 0ms !important;
+    }
+  }
 }
 
 .slide {
@@ -18,8 +31,13 @@ section.hero {
   object-fit: cover;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .slider :global(.swiper-slide) {
-    transition-duration: 0ms !important;
-  }
+.group {
+  display: grid;
+  grid-template-columns: repeat(var(--n), 1fr);
+  height: 100%;
+  gap: 0;
+}
+
+.cell {
+  position: relative;
 }
