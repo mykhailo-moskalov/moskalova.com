@@ -4,25 +4,38 @@ import css from "./Motto.module.css";
 import { useTranslations } from "next-intl";
 import Btn from "@/components/ui/Btn/Btn";
 
-export default function Motto() {
-  const t = useTranslations("home.motto");
+type MottoProps = {
+  namespace: string;
+  as?: "h1" | "h2";
+  href: string;
+};
+
+export default function Motto({
+  namespace,
+  as: Heading = "h2",
+  href,
+}: MottoProps) {
+  const t = useTranslations(namespace);
   return (
     <Section className={css.section}>
       <Container className={css.container}>
         <div className={css.textBox}>
-          <h1 className={css.heading}>{t("heading")}</h1>
-          <span className={css.subHeading}>
-            <strong>{t("subHeading")}</strong>
-          </span>
+          <Heading className={css.heading}>{t("heading")}</Heading>
+          {t.has("subHeading") && (
+            <span className={css.subHeading}>
+              <strong>{t("subHeading")}</strong>
+            </span>
+          )}
           <p className={css.subText}>
-            {t("text1")}
-            <em>{t("text1Italic")}.</em>
+            {t.rich("text1", { em: (chunks) => <em>{chunks}</em> })}
           </p>
           <p className={css.subText}>{t("text2")}</p>
 
-          <Btn href="/about" className={css.btn}>
-            {t("btn")}
-          </Btn>
+          {t.has("btn") && (
+            <Btn href={href} className={css.btn}>
+              {t("btn")}
+            </Btn>
+          )}
         </div>
       </Container>
     </Section>

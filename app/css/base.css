@@ -15,7 +15,7 @@ h1 {
 
 h2 {
   line-height: 120%;
-  font-size: 48px;
+  font-size: 36px;
   text-align: center;
   &.galleryHeading {
     margin-bottom: 56px;

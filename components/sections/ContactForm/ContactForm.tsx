@@ -8,6 +8,7 @@ import Section from "@/components/ui/Section/Section";
 import Container from "@/components/ui/Container/Container";
 import css from "./ContactForm.module.css";
 import Btn from "@/components/ui/Btn/Btn";
+import Heading from "@/components/ui/Heading/Heading";
 
 const HONEYPOT_FIELD = "nm_extra";
 
@@ -57,7 +58,7 @@ const ContactForm = () => {
   return (
     <Section id="contact" className={css.contact}>
       <Container className={css.container}>
-        <h2 className={css.heading}>{t("heading")}</h2>
+        <Heading text={t("heading")} parent={false} />
 
         <form
           className={css.form}

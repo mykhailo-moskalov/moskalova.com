@@ -1,32 +1,24 @@
-import Gallery from "@/components/layout/Gallery/Gallery";
-import css from "./PersonalStories.module.css";
-import BackToTop from "@/components/ui/BackToTop/BackToTop";
-import Container from "@/components/ui/Container/Container";
-import Section from "@/components/ui/Section/Section";
 import { useTranslations } from "next-intl";
+import Heading from "@/components/ui/Heading/Heading";
+import Motto from "@/components/sections/Motto/Motto";
+import GallerySection from "@/components/sections/GallerySection/GallerySection";
 
 export default function PersonalStories() {
   const t = useTranslations("personal");
   return (
-    <main className={css.main}>
-      <Section className={css.section}>
-        <Container>
-          <h1>{t("heading")}</h1>
-        </Container>
-      </Section>
-      <Section>
-        <Container>
-          <h2 className="galleryHeading">{t("gallery.heading1")}</h2>
-          <Gallery category="personal-stories" group="personal" />
-        </Container>
-      </Section>
-      <Section>
-        <Container>
-          <h2 className="galleryHeading">{t("gallery.heading2")}</h2>
-          <Gallery category="personal-stories" group="couples" />
-        </Container>
-      </Section>
-      <BackToTop />
+    <main>
+      <Heading text={t("heading")} as="h1" />
+      <Motto namespace="personal.motto" href="/services" />
+      <GallerySection
+        text={t("gallery.heading1")}
+        category="personal-stories"
+        group="personal"
+      />
+      <GallerySection
+        text={t("gallery.heading2")}
+        category="personal-stories"
+        group="couples"
+      />
     </main>
   );
 }

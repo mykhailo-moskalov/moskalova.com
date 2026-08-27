@@ -24,39 +24,44 @@
     "motto": {
       "heading": "Everyone has a story.",
       "subHeading": "I photograph people — their personality, emotions, character and stories.",
-      "text1": "Whether it's a portrait, personal brand, family or a business, I'm interested in what makes you — ",
-      "text1Italic": "you",
+      "text1": "Whether it's a portrait, personal brand, family or a business, I'm interested in what makes you — <em>you</em>.",
       "text2": "I create natural, cinematic images that feel personal, authentic and timeless.",
       "btn": "More about me"
     }
   },
   "personal": {
-    "heading": "personal",
+    "heading": "Personal Stories",
+    "motto": {
+      "heading": "Everyone has a story worth seeing.",
+      "text1": "Personal Stories are about more than portraits. They capture your character, mood, presence and the little moments that make your story yours.",
+      "text2": "From intimate portraits to relaxed, cinematic stories — I create images that feel personal, natural and true to you.",
+      "btn": "To services"
+    },
     "gallery": {
       "heading1": "Personal Stories",
       "heading2": "Couples & Families"
     }
   },
   "brand": {
-    "heading": "brand",
+    "heading": "Brand Stories",
     "gallery": {
       "heading": "Brand Stories"
     }
   },
   "creatives": {
-    "heading": "creatives",
+    "heading": "Artists & Performers",
     "gallery": {
       "heading": "Artists & Performers"
     }
   },
   "services": {
-    "heading": "services"
+    "heading": "Services"
   },
   "about": {
-    "heading": "about"
+    "heading": "About"
   },
   "contact": {
-    "heading": "contact",
+    "heading": "Contact",
     "form": {
       "heading": "Get in touch",
       "name": "Name",

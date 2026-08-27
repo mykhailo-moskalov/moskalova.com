@@ -5,11 +5,11 @@ import { routing } from "@/i18n/routing";
 import { Link } from "@/lib/navigation";
 import { allSetParams, getSet } from "@/lib/data/galleries";
 import { localize } from "@/lib/types/gallery";
-import BackToTop from "@/components/ui/BackToTop/BackToTop";
 import Container from "@/components/ui/Container/Container";
 import Section from "@/components/ui/Section/Section";
 import PhotoGrid from "@/components/layout/PhotoGrid/PhotoGrid";
 import css from "./SetPage.module.css";
+import Heading from "@/components/ui/Heading/Heading";
 
 type Props = {
   params: Promise<{ locale: string; category: string; set: string }>;
@@ -57,7 +57,7 @@ export default async function SetPage({ params }: Props) {
           <Link href={`/${category}`} className={css.back}>
             ← {t("back")}
           </Link>
-          <h1 className={css.title}>{title}</h1>
+          <Heading className={css.title} text={title} as="h1" parent={false} />
           {subtitle && <p className={css.subtitle}>{subtitle}</p>}
         </Container>
       </Section>
@@ -66,7 +66,6 @@ export default async function SetPage({ params }: Props) {
           <PhotoGrid photos={set.photos} label={title} />
         </Container>
       </Section>
-      <BackToTop />
     </main>
   );
 }

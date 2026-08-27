@@ -11,7 +11,7 @@
     margin-bottom: 12px;
   }
   @media screen and (min-width: 768px) {
-    padding: 64px;
+    padding: 64px 64px 32px;
   }
 }
 
@@ -28,4 +28,8 @@
 .subText {
   max-width: 612px;
   font-size: 20px;
+  margin: 0 auto;
+  &:last-of-type {
+    margin-bottom: 24px;
+  }
 }
