@@ -14,6 +14,8 @@ interface GallerySectionProps {
 export default function GallerySection({
   text,
   className,
+  category,
+  group,
 }: GallerySectionProps) {
   return (
     <Section>
@@ -23,7 +25,7 @@ export default function GallerySection({
           className={`${css.heading} ${className ?? ""}`}
           parent={false}
         />
-        <Gallery category="personal-stories" group="personal" />
+        <Gallery category={category} group={group} />
       </Container>
     </Section>
   );

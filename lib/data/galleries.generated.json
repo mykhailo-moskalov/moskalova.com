@@ -126,7 +126,7 @@
       "height": 2560
     }
   ],
-  "personal/10": [
+  "personal/anastasiia": [
     {
       "file": "10_01.jpg",
       "width": 1707,
@@ -223,7 +223,422 @@
       "height": 1707
     }
   ],
-  "personal/11": [
+  "personal/anna": [
+    {
+      "file": "6_01.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "6_02.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "6_03.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "6_04.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "6_05.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "6_06.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "6_07.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "6_08.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "6_09.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "6_10.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "6_11.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "6_12.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "6_13.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "6_14.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "6_15.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "6_16.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "6_17.jpg",
+      "width": 1707,
+      "height": 2560
+    }
+  ],
+  "personal/elmira": [
+    {
+      "file": "2_01.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "2_02.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "2_03.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "2_04.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "2_05.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "2_06.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "2_07.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "2_08.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "2_09.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "2_10.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "2_11.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "2_12.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "2_13.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "2_14.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "2_15.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "2_16.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "2_17.jpg",
+      "width": 2560,
+      "height": 1707
+    }
+  ],
+  "personal/eva": [
+    {
+      "file": "12_01.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "12_02.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "12_03.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "12_04.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "12_05.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "12_06.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "12_07.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "12_08.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "12_09.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "12_10.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "12_11.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "12_12.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "12_13.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "12_14.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "12_15.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "12_16.jpg",
+      "width": 1707,
+      "height": 2560
+    }
+  ],
+  "personal/inna": [
+    {
+      "file": "14_01.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "14_02.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "14_03.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "14_04.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "14_05.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "14_06.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "14_07.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "14_08.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "14_09.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "14_10.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "14_11.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "14_12.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "14_13.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "14_14.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "14_15.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "14_16.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "14_17.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "14_18.jpg",
+      "width": 1707,
+      "height": 2560
+    }
+  ],
+  "personal/marina": [
+    {
+      "file": "3_01.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "3_02.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "3_03.jpg",
+      "width": 2560,
+      "height": 1706
+    },
+    {
+      "file": "3_04.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "3_05.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "3_06.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "3_07.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "3_08.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "3_09.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "3_10.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "3_11.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "3_12.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "3_13.jpg",
+      "width": 2560,
+      "height": 1707
+    }
+  ],
+  "personal/natali": [
     {
       "file": "11_01.jpg",
       "width": 1706,
@@ -335,89 +750,7 @@
       "height": 2560
     }
   ],
-  "personal/12": [
-    {
-      "file": "12_01.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "12_02.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "12_03.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "12_04.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "12_05.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "12_06.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "12_07.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "12_08.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "12_09.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "12_10.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "12_11.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "12_12.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "12_13.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "12_14.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "12_15.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "12_16.jpg",
-      "width": 1707,
-      "height": 2560
-    }
-  ],
-  "personal/13": [
+  "personal/natalia": [
     {
       "file": "13_01.jpg",
       "width": 1707,
@@ -499,330 +832,7 @@
       "height": 2560
     }
   ],
-  "personal/14": [
-    {
-      "file": "14_01.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "14_02.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "14_03.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "14_04.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "14_05.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "14_06.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "14_07.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "14_08.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "14_09.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "14_10.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "14_11.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "14_12.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "14_13.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "14_14.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "14_15.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "14_16.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "14_17.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "14_18.jpg",
-      "width": 1707,
-      "height": 2560
-    }
-  ],
-  "personal/2": [
-    {
-      "file": "2_01.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "2_02.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "2_03.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "2_04.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "2_05.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "2_06.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "2_07.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "2_08.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "2_09.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "2_10.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "2_11.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "2_12.jpg",
-      "width": 1706,
-      "height": 2560
-    },
-    {
-      "file": "2_13.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "2_14.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "2_15.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "2_16.jpg",
-      "width": 1706,
-      "height": 2560
-    },
-    {
-      "file": "2_17.jpg",
-      "width": 2560,
-      "height": 1707
-    }
-  ],
-  "personal/3": [
-    {
-      "file": "3_01.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "3_02.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "3_03.jpg",
-      "width": 2560,
-      "height": 1706
-    },
-    {
-      "file": "3_04.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "3_05.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "3_06.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "3_07.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "3_08.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "3_09.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "3_10.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "3_11.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "3_12.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "3_13.jpg",
-      "width": 2560,
-      "height": 1707
-    }
-  ],
-  "personal/4": [
-    {
-      "file": "4_01.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "4_02.jpg",
-      "width": 1706,
-      "height": 2560
-    },
-    {
-      "file": "4_03.jpg",
-      "width": 1706,
-      "height": 2560
-    },
-    {
-      "file": "4_04.jpg",
-      "width": 1706,
-      "height": 2560
-    },
-    {
-      "file": "4_05.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "4_06.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "4_07.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "4_08.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "4_09.jpg",
-      "width": 1706,
-      "height": 2560
-    },
-    {
-      "file": "4_10.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "4_11.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "4_12.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "4_13.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "4_14.jpg",
-      "width": 1706,
-      "height": 2560
-    },
-    {
-      "file": "4_15.jpg",
-      "width": 1706,
-      "height": 2560
-    }
-  ],
-  "personal/5": [
+  "personal/olexandra": [
     {
       "file": "5_01.jpg",
       "width": 1706,
@@ -884,228 +894,7 @@
       "height": 2560
     }
   ],
-  "personal/6": [
-    {
-      "file": "6_01.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "6_02.jpg",
-      "width": 1706,
-      "height": 2560
-    },
-    {
-      "file": "6_03.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "6_04.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "6_05.jpg",
-      "width": 1706,
-      "height": 2560
-    },
-    {
-      "file": "6_06.jpg",
-      "width": 1706,
-      "height": 2560
-    },
-    {
-      "file": "6_07.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "6_08.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "6_09.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "6_10.jpg",
-      "width": 1706,
-      "height": 2560
-    },
-    {
-      "file": "6_11.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "6_12.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "6_13.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "6_14.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "6_15.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "6_16.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "6_17.jpg",
-      "width": 1707,
-      "height": 2560
-    }
-  ],
-  "personal/7": [
-    {
-      "file": "7_01.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "7_02.jpg",
-      "width": 1706,
-      "height": 2560
-    },
-    {
-      "file": "7_03.jpg",
-      "width": 2560,
-      "height": 1741
-    },
-    {
-      "file": "7_04.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "7_05.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "7_06.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "7_07.jpg",
-      "width": 1740,
-      "height": 2560
-    },
-    {
-      "file": "7_08.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "7_09.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "7_10.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "7_11.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "7_12.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "7_13.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "7_14.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "7_15.jpg",
-      "width": 2560,
-      "height": 1706
-    }
-  ],
-  "personal/8": [
-    {
-      "file": "8_01.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "8_02.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "8_03.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "8_04.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "8_05.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "8_06.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "8_07.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "8_08.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "8_09.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "8_10.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
-      "file": "8_11.jpg",
-      "width": 1707,
-      "height": 2560
-    }
-  ],
-  "personal/9": [
+  "personal/olexandra-sea": [
     {
       "file": "9_01.jpg",
       "width": 1707,
@@ -1267,6 +1056,217 @@
       "file": "sophiia_15.jpg",
       "width": 2560,
       "height": 1707
+    }
+  ],
+  "personal/taya": [
+    {
+      "file": "8_01.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "8_02.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "8_03.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "8_04.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "8_05.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "8_06.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "8_07.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "8_08.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "8_09.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "8_10.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "8_11.jpg",
+      "width": 1707,
+      "height": 2560
+    }
+  ],
+  "personal/viktoriia": [
+    {
+      "file": "7_01.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "7_02.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "7_03.jpg",
+      "width": 2560,
+      "height": 1741
+    },
+    {
+      "file": "7_04.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "7_05.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "7_06.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "7_07.jpg",
+      "width": 1740,
+      "height": 2560
+    },
+    {
+      "file": "7_08.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "7_09.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "7_10.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "7_11.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "7_12.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "7_13.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "7_14.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "7_15.jpg",
+      "width": 2560,
+      "height": 1706
+    }
+  ],
+  "personal/yuliia": [
+    {
+      "file": "4_01.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "4_02.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "4_03.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "4_04.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "4_05.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "4_06.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "4_07.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "4_08.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "4_09.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "4_10.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "4_11.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "4_12.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "4_13.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "4_14.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "4_15.jpg",
+      "width": 1706,
+      "height": 2560
     }
   ]
 }

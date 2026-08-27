@@ -6,23 +6,7 @@ const P = "personal/";
 const SOPHIIA = photosOf(`${P}sophiia`);
 
 export const CREATIVES_SETS = [
-  set("sofiia", "Sofiia", SOPHIIA[1], SOPHIIA, {
-    title: { en: "Sofiia", uk: "Софія" },
-    subtitle: { en: "Portrait session", uk: "Портретна зйомка" },
-  }),
-  set("sofiia", "Sofiia", SOPHIIA[1], SOPHIIA, {
-    title: { en: "Sofiia", uk: "Софія" },
-    subtitle: { en: "Portrait session", uk: "Портретна зйомка" },
-  }),
-  set("sofiia", "Sofiia", SOPHIIA[1], SOPHIIA, {
-    title: { en: "Sofiia", uk: "Софія" },
-    subtitle: { en: "Portrait session", uk: "Портретна зйомка" },
-  }),
-  set("sofiia", "Sofiia", SOPHIIA[1], SOPHIIA, {
-    title: { en: "Sofiia", uk: "Софія" },
-    subtitle: { en: "Portrait session", uk: "Портретна зйомка" },
-  }),
-  set("sofiia", "Sofiia", SOPHIIA[1], SOPHIIA, {
+  set("sofiia", "Sofiia", SOPHIIA[2], SOPHIIA, {
     title: { en: "Sofiia", uk: "Софія" },
     subtitle: { en: "Portrait session", uk: "Портретна зйомка" },
   }),
