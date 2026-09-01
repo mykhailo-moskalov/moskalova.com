@@ -1157,11 +1157,6 @@
   ],
   "personal/sisterhood": [
     {
-      "file": "10.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
       "file": "sisterhood_01.jpg",
       "width": 2560,
       "height": 1707
@@ -1205,6 +1200,11 @@
       "file": "sisterhood_09.jpg",
       "width": 2560,
       "height": 1707
+    },
+    {
+      "file": "sisterhood_10.jpg",
+      "width": 1707,
+      "height": 2560
     },
     {
       "file": "sisterhood_11.jpg",
