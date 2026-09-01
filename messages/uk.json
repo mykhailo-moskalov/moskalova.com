@@ -30,7 +30,6 @@
     }
   },
   "personal": {
-    "heading": "Персональні історії",
     "motto": {
       "heading": "У кожного є історія, яку варто побачити.",
       "text1": "Персональні історії — це більше, ніж просто портрети. Це про ваш характер, настрій, присутність і маленькі моменти, з яких складається саме ваша історія.",
@@ -38,30 +37,91 @@
       "btn": "До послуг"
     },
     "gallery": {
-      "heading1": "Особисті історії",
-      "heading2": "Пари & сімʼї"
+      "heading1": "особисті історії",
+      "heading2": "пари & сімʼї"
     }
   },
   "brand": {
-    "heading": "Бренд",
+    "motto": {
+      "btn": "До послуг"
+    },
     "gallery": {
-      "heading": "Історії брендів"
+      "heading": "історії брендів"
     }
   },
   "creatives": {
-    "heading": "Творчі",
+    "motto": {
+      "btn": "До послуг"
+    },
     "gallery": {
-      "heading": "Художники & виконавці"
+      "heading": "художники & виконавці"
     }
   },
   "services": {
-    "heading": "Послуги"
+    "heading": "services",
+    "approach": {
+      "heading": "my approach",
+      "text1": "Personal consultation before the session",
+      "text2": "Outfit and styling guidance",
+      "text3": "location selection tailored to your vision",
+      "text4": "Natural posing direction throughout the shoot",
+      "text5": "Relaxed, enjoyable experience",
+      "text6": "Carefully curated and edited online gallery delivered within 10 days"
+    },
+    "services": {
+      "service1": {
+        "heading": "quick story",
+        "subHeading": "A full story, made simple",
+        "benefits": {
+          "text1": "<strong>35+ carefully selected & edited images</strong>",
+          "text2": "up to 1 hour",
+          "text3": "one location",
+          "text4": "outfit & styling guidance",
+          "text5": "location selection",
+          "text6": "posing guidance",
+          "text7": "online gallery delivered within 10 days"
+        },
+        "price": "€300"
+      },
+      "service2": {
+        "heading": "portrait story",
+        "subHeading": "More time for your story",
+        "benefits": {
+          "text1": "<strong>55+ carefully selected & edited images</strong>",
+          "text2": "up to 2 hours",
+          "text3": "up to 3 locations",
+          "text4": "outfit & styling guidance",
+          "text5": "location selection",
+          "text6": "posing guidance",
+          "text7": "online gallery delivered within 10 days"
+        },
+        "price": "€425"
+      },
+      "service3": {
+        "heading": "personal brand story",
+        "subHeading": "Visual storytelling for your brand and business",
+        "benefits": {
+          "text1": "<strong>35+ carefully selected & edited images</strong>",
+          "text2": "1+ hour session",
+          "text3": "personal consultation",
+          "text4": "moodboard creation",
+          "text5": "outfit & styling guidance",
+          "text6": "location selection",
+          "text7": "posing direction",
+          "text8": "online gallery delivered within 10 days"
+        },
+        "price": "from €300"
+      },
+      "service4": {
+        "heading": "commercial & brand photography",
+        "subHeading": "Visual storytelling for interiors, hospitality and lifestyle brands",
+        "price": "Custom quote"
+      }
+    },
+    "btn": "Book a shoot"
   },
-  "about": {
-    "heading": "Про мене"
-  },
+  "about": {},
   "contact": {
-    "heading": "Контакти",
     "form": {
       "heading": "Звʼяжіться зі мною",
       "name": "Імʼя",

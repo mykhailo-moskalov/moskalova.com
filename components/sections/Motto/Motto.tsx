@@ -12,7 +12,7 @@ type MottoProps = {
 
 export default function Motto({
   namespace,
-  as: Heading = "h2",
+  as: Heading = "h1",
   href,
 }: MottoProps) {
   const t = useTranslations(namespace);

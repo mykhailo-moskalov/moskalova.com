@@ -1,3 +1,4 @@
+import css from "./Heading.module.css";
 import Section from "@/components/ui/Section/Section";
 import Container from "@/components/ui/Container/Container";
 
@@ -14,7 +15,7 @@ export default function Heading({
   className,
   parent = true,
 }: HeadingProps) {
-  const heading = <Tag className={className}>{text}</Tag>;
+  const heading = <Tag className={`${className} ${css.title}`}>{text}</Tag>;
 
   if (!parent) return heading;
 

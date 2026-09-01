@@ -30,7 +30,6 @@
     }
   },
   "personal": {
-    "heading": "Personal Stories",
     "motto": {
       "heading": "Everyone has a story worth seeing.",
       "text1": "Personal Stories are about more than portraits. They capture your character, mood, presence and the little moments that make your story yours.",
@@ -38,30 +37,91 @@
       "btn": "To services"
     },
     "gallery": {
-      "heading1": "Personal Stories",
-      "heading2": "Couples & Families"
+      "heading1": "personal stories",
+      "heading2": "couples & families"
     }
   },
   "brand": {
-    "heading": "Brand Stories",
+    "motto": {
+      "btn": "To services"
+    },
     "gallery": {
-      "heading": "Brand Stories"
+      "heading": "brand stories"
     }
   },
   "creatives": {
-    "heading": "Artists & Performers",
+    "motto": {
+      "btn": "To services"
+    },
     "gallery": {
-      "heading": "Artists & Performers"
+      "heading": "artists & performers"
     }
   },
   "services": {
-    "heading": "Services"
+    "heading": "services",
+    "approach": {
+      "heading": "my approach",
+      "text1": "Personal consultation before the session",
+      "text2": "Outfit and styling guidance",
+      "text3": "location selection tailored to your vision",
+      "text4": "Natural posing direction throughout the shoot",
+      "text5": "Relaxed, enjoyable experience",
+      "text6": "Carefully curated and edited online gallery delivered within 10 days"
+    },
+    "services": {
+      "service1": {
+        "heading": "quick story",
+        "subHeading": "A full story, made simple",
+        "benefits": {
+          "text1": "<strong>35+ carefully selected & edited images</strong>",
+          "text2": "up to 1 hour",
+          "text3": "one location",
+          "text4": "outfit & styling guidance",
+          "text5": "location selection",
+          "text6": "posing guidance",
+          "text7": "online gallery delivered within 10 days"
+        },
+        "price": "€300"
+      },
+      "service2": {
+        "heading": "portrait story",
+        "subHeading": "More time for your story",
+        "benefits": {
+          "text1": "<strong>55+ carefully selected & edited images</strong>",
+          "text2": "up to 2 hours",
+          "text3": "up to 3 locations",
+          "text4": "outfit & styling guidance",
+          "text5": "location selection",
+          "text6": "posing guidance",
+          "text7": "online gallery delivered within 10 days"
+        },
+        "price": "€425"
+      },
+      "service3": {
+        "heading": "personal brand story",
+        "subHeading": "Visual storytelling for your brand and business",
+        "benefits": {
+          "text1": "<strong>35+ carefully selected & edited images</strong>",
+          "text2": "1+ hour session",
+          "text3": "personal consultation",
+          "text4": "moodboard creation",
+          "text5": "outfit & styling guidance",
+          "text6": "location selection",
+          "text7": "posing direction",
+          "text8": "online gallery delivered within 10 days"
+        },
+        "price": "from €300"
+      },
+      "service4": {
+        "heading": "commercial & brand photography",
+        "subHeading": "Visual storytelling for interiors, hospitality and lifestyle brands",
+        "price": "Custom quote"
+      }
+    },
+    "btn": "Book a shoot"
   },
-  "about": {
-    "heading": "About"
-  },
+  "about": {},
   "contact": {
-    "heading": "Contact",
     "form": {
       "heading": "Get in touch",
       "name": "Name",
