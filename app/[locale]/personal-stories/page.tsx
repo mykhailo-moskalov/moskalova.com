@@ -1,22 +1,24 @@
-import { useTranslations } from "next-intl";
 import Motto from "@/components/sections/Motto/Motto";
 import GallerySection from "@/components/sections/GallerySection/GallerySection";
+import GalleryTitle from "@/components/sections/GalleryTitle/GalleryTitle";
 
 export default function PersonalStories() {
-  const t = useTranslations("personal");
   return (
     <main>
-      <Motto namespace="personal.motto" href="/services" />
-      <GallerySection
-        text={t("gallery.heading1")}
-        category="personal-stories"
-        group="personal"
+      <GalleryTitle namespace="personal.personal" backg="personal" />
+      <Motto namespace="personal.personal.motto" href="/services" />
+      <GallerySection category="personal-stories" group="personal" />
+      <Motto namespace="personal.personal.mottoEnd" href="/contact" backg />
+      <GalleryTitle
+        id="couples"
+        namespace="personal.couples"
+        backg="couples"
+        tar
+        as="h2"
       />
-      <GallerySection
-        text={t("gallery.heading2")}
-        category="personal-stories"
-        group="couples"
-      />
+      <Motto namespace="personal.couples.motto" href="/services" />
+      <GallerySection category="personal-stories" group="couples" />
+      <Motto namespace="personal.couples.mottoEnd" href="/contact" backg />
     </main>
   );
 }

@@ -7,12 +7,7 @@ export default function Services() {
   const t = useTranslations("services");
   return (
     <main>
-      <Heading
-        text={t("heading")}
-        as="h1"
-        parent={true}
-        sectClassName={css.section}
-      />
+      <Heading text={t("heading")} as="h1" parent sectClassName={css.section} />
       <Pricing />
     </main>
   );

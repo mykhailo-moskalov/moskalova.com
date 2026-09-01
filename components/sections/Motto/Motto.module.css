@@ -1,3 +1,7 @@
+.section {
+  background-color: var(--transparenter-light-green);
+}
+
 .textBox {
   margin: 0 auto;
   padding: 24px;
@@ -10,6 +14,9 @@
   & > *:not(:last-child) {
     margin-bottom: 12px;
   }
+  &.noBorder {
+    border: none;
+  }
   @media screen and (min-width: 768px) {
     padding: 64px 64px 32px;
   }
@@ -17,6 +24,14 @@
 
 .heading {
   text-transform: capitalize;
+}
+.caps.heading,
+.caps.subHeading {
+  text-transform: uppercase;
+}
+.caps.subHeading {
+  font-size: 48px;
+  line-height: 120%;
 }
 
 .subHeading {

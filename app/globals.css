@@ -11,6 +11,7 @@
   --light-green: #5b604c;
   --dark-green: #2e331f;
   --transparent-light-green: rgba(91, 96, 76, 0.9);
+  --transparenter-light-green: rgba(91, 96, 76, 0.1);
   --box-shadow: 4px 4px 8px 0 rgba(46, 51, 31, 0.3);
 }
 

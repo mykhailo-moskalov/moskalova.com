@@ -4,7 +4,11 @@
   },
   "nav": {
     "home": "Home",
-    "personal": "Personal",
+    "personal": {
+      "main": "Personal",
+      "personal": "Personal Stories",
+      "couples": "Couples & Families"
+    },
     "brand": "Brand",
     "creatives": "Creatives",
     "services": "Services",
@@ -22,39 +26,55 @@
   },
   "home": {
     "motto": {
-      "heading": "Everyone has a story.",
-      "subHeading": "I photograph people — their personality, emotions, character and stories.",
-      "text1": "Whether it's a portrait, personal brand, family or a business, I'm interested in what makes you — <em>you</em>.",
-      "text2": "I create natural, cinematic images that feel personal, authentic and timeless.",
+      "heading": "editorial eye.",
+      "subHeading": "lifestyle feel.",
+      "text1": "My style sits somewhere between editorial and lifestyle — carefully composed, but never overly posed.",
+      "text2": "I love natural movement, beautiful light, thoughtful styling and real human connection.",
+      "text3": "The result? Images that feel effortless, personal and distinctly yours.",
       "btn": "More about me"
     }
   },
   "personal": {
-    "motto": {
-      "heading": "Everyone has a story worth seeing.",
-      "text1": "Personal Stories are about more than portraits. They capture your character, mood, presence and the little moments that make your story yours.",
-      "text2": "From intimate portraits to relaxed, cinematic stories — I create images that feel personal, natural and true to you.",
-      "btn": "To services"
+    "personal": {
+      "heading": "personal stories",
+      "motto": {
+        "heading": "Everyone has a story worth seeing.",
+        "text1": "Personal Stories are about more than portraits. They capture your character, mood, presence and the little moments that make your story yours.",
+        "text2": "From intimate portraits to relaxed, cinematic stories — I create images that feel personal, natural and true to you.",
+        "btn": "To services"
+      },
+      "mottoEnd": {
+        "heading": "text",
+        "text1": "text",
+        "text2": "text",
+        "btn": "text"
+      }
     },
-    "gallery": {
-      "heading1": "personal stories",
-      "heading2": "couples & families"
+    "couples": {
+      "heading": "couples & families",
+      "motto": {
+        "heading": "The people we love shape our story.",
+        "text1": "Couples and family stories are about connection — the way you look at each other, move together, laugh, hold on, and simply share a moment.",
+        "text2": "From quiet, intimate portraits to playful, cinematic moments, I create images that preserve not just how you looked, but how it felt to be together.",
+        "btn": "To services"
+      },
+      "mottoEnd": {
+        "heading": "The best photographs are the ones that bring you back to a feeling.",
+        "text1": "Let's create something you'll want to return to.",
+        "btn": "Get in touch"
+      }
     }
   },
   "brand": {
+    "heading": "brand stories",
     "motto": {
       "btn": "To services"
-    },
-    "gallery": {
-      "heading": "brand stories"
     }
   },
   "creatives": {
+    "heading": "artists & performers",
     "motto": {
       "btn": "To services"
-    },
-    "gallery": {
-      "heading": "artists & performers"
     }
   },
   "services": {

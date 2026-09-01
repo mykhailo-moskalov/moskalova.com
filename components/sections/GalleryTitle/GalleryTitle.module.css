@@ -1,0 +1,33 @@
+.section {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  align-content: center;
+  min-height: clamp(240px, 40vh, 520px);
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: rgba(0, 0, 1, 0.3);
+  }
+}
+
+.img {
+  object-fit: cover;
+  z-index: -1;
+}
+
+.container {
+  width: 100%;
+}
+.tar > * {
+  text-align: right;
+}
+
+.heading {
+  color: var(--white);
+  font-size: 48px;
+  text-transform: capitalize;
+}

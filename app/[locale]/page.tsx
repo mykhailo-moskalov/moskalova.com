@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Motto namespace="home.motto" href="/about" />
+      <Motto namespace="home.motto" href="/about" caps />
     </main>
   );
 }

@@ -6,7 +6,7 @@ export default function Contact() {
   const t = useTranslations("contact");
   return (
     <main>
-      <Heading text={t("heading")} as="h1" parent={true} />
+      <Heading text={t("heading")} as="h1" parent />
       <ContactForm />
     </main>
   );

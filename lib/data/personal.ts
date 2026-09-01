@@ -2,7 +2,7 @@ import { photosOf, set } from "./galleries";
 
 const P = "personal/";
 
-const SOPHIIA = photosOf(`${P}sophiia`);
+export const SOPHIIA = photosOf(`${P}sophiia`);
 const ELMIRA = photosOf(`${P}elmira`);
 const MARINA = photosOf(`${P}marina`);
 const YULIIA = photosOf(`${P}yuliia`);
@@ -21,7 +21,7 @@ const SUMMER_STORY = photosOf(`${P}summer-story`);
 const THE_THREE_OF_US = photosOf(`${P}the-three-of-us`);
 const A_VIENNA_ROMANCE = photosOf(`${P}a-vienna-romance`);
 const THE_FAMILY_EDIT = photosOf(`${P}the-family-edit`);
-const OUR_TOGETHER = photosOf(`${P}our-together`);
+export const OUR_TOGETHER = photosOf(`${P}our-together`);
 const THEE_TWO_OF_US = photosOf(`${P}the-two-of-us`);
 
 export const PERSONAL_SETS = [

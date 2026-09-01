@@ -31,7 +31,7 @@ const Footer = () => {
 
   return (
     <footer id="footer" className={css.footer} ref={footerRef}>
-      <Navigation className={css.nav} isLang={false} />
+      <Navigation className={css.nav} isLang={false} withSubmenu={false} />
       <ul className={css.socialsList}>
         <li className={css.socialsItem}>
           <Link

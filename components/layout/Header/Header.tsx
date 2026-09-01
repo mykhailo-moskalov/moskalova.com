@@ -82,7 +82,7 @@ const Header = () => {
             </button>
           </>
         ) : (
-          <Navigation className={css.nav} isLogo={true} />
+          <Navigation className={css.nav} isLogo />
         )}
       </Container>
     </header>

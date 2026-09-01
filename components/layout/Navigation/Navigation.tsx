@@ -12,6 +12,7 @@ interface NavigationProps {
   className?: string;
   isLogo?: boolean;
   isLang?: boolean;
+  withSubmenu?: boolean;
   onLinkClick?: () => void;
 }
 
@@ -19,13 +20,49 @@ export default function Navigation({
   className,
   isLogo = false,
   isLang = true,
+  withSubmenu = true,
   onLinkClick,
 }: NavigationProps) {
   const t = useTranslations("nav");
   const ta = useTranslations("aria");
   const pathname = usePathname();
 
+  // "Personal" carries a hover submenu (CSS-only: see .hasSub / .subMenu)
+  const renderPersonal = () => {
+    const href = HREFS.personal;
+    const isActive = pathname.startsWith(href);
+    return (
+      <li key="personal" className={`${css.navItem} ${css.hasSub}`}>
+        <Link
+          className={css.navigationLink}
+          href={href}
+          aria-current={isActive ? "page" : undefined}
+          onClick={onLinkClick}
+        >
+          {t("personal.main")}
+        </Link>
+        <ul className={css.subMenu}>
+          <li>
+            <Link className={css.subLink} href={href} onClick={onLinkClick}>
+              {t("personal.personal")}
+            </Link>
+          </li>
+          <li>
+            <Link
+              className={css.subLink}
+              href={`${href}#couples`}
+              onClick={onLinkClick}
+            >
+              {t("personal.couples")}
+            </Link>
+          </li>
+        </ul>
+      </li>
+    );
+  };
+
   const renderLink = (key: keyof typeof HREFS) => {
+    if (key === "personal" && withSubmenu) return renderPersonal();
     const href = HREFS[key];
     const isActive =
       href === "/" ? pathname === "/" : pathname.startsWith(href);
@@ -37,7 +74,7 @@ export default function Navigation({
           aria-current={isActive ? "page" : undefined}
           onClick={onLinkClick}
         >
-          {t(key)}
+          {key === "personal" ? t("personal.main") : t(key)}
         </Link>
       </li>
     );
