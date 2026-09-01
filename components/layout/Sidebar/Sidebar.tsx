@@ -38,6 +38,7 @@ export default function Sidebar() {
   return (
     <div
       className={`${css.backdrop} ${isOpen ? css.show : css.hide}`}
+      inert={!isOpen || undefined}
       role="dialog"
       aria-modal="true"
       aria-label={t("navigation")}

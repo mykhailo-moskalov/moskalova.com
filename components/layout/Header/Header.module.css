@@ -41,7 +41,7 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     transform: translateY(-10%);
   }
 }
@@ -51,7 +51,7 @@
   width: 32px;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     transform: scale(1.1);
   }
 }

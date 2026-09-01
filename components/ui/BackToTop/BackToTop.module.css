@@ -21,7 +21,7 @@
   pointer-events: none;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     background-color: var(--green);
     transform: scale(1.05);
   }

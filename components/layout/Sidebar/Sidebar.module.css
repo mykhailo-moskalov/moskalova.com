@@ -5,10 +5,16 @@
   opacity: 0;
   pointer-events: none;
   z-index: 1000;
-}
-.backdrop.show {
-  opacity: 1;
-  pointer-events: auto;
+  &.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  &.hide {
+    visibility: hidden;
+    transition:
+      visibility 0s 0.3s,
+      opacity 0.3s;
+  }
 }
 
 .sidebar {
@@ -47,7 +53,7 @@
 .sidebar button {
   color: var(--white);
   &:hover,
-  &:focus {
+  &:focus-visible {
     transform: scale(1.1);
   }
 }
@@ -63,14 +69,4 @@
   margin-top: 196px;
 
   color: var(--white);
-}
-
-.btnLang {
-  margin-top: auto;
-
-  &:hover,
-  &:focus {
-    background-color: none;
-    transform: scale(1.15);
-  }
 }

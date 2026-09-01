@@ -33,7 +33,7 @@
     height: 24px;
   }
   &:hover,
-  &:focus {
+  &:focus-visible {
     color: var(--light-green);
   }
 }

@@ -21,7 +21,7 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     background-color: var(--dark-grey);
     box-shadow: var(--box-shadow);
     transform: none;

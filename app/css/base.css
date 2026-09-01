@@ -35,12 +35,13 @@ button {
 button,
 a {
   &:focus-visible {
-    outline: none !important;
+    outline: 1px solid var(--light-green);
+    outline-offset: 8px;
   }
 }
 
 a:hover,
-a:focus {
+a:focus-visible {
   transform: translateY(-10%);
   box-shadow: none;
 }
