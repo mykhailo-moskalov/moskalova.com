@@ -34,7 +34,7 @@ export default function NotFound() {
   return (
     <Section>
       <Container>
-        <Heading text="404 - Page not found" as="h1" parent={false} />
+        <Heading text="404 - Page not found" as="h1" />
         <p>Sorry, the page you are looking for does not exist.</p>
         <p>You will be redirected to the homepage in a while.</p>
         <ClientRedirect />

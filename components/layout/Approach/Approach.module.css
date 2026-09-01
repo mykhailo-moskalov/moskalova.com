@@ -1,0 +1,17 @@
+.container {
+  border-left: 1px solid var(--dark-green);
+  padding: 0 32px;
+  max-width: max-content;
+
+  margin: 0 auto 128px 0;
+  @media screen and (min-width: 768px) {
+    padding: 0 64px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding: 0 128px;
+  }
+}
+
+.heading {
+  margin-bottom: 16px;
+}

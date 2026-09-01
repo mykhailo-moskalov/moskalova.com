@@ -58,7 +58,7 @@ const ContactForm = () => {
   return (
     <Section id="contact" className={css.contact}>
       <Container className={css.container}>
-        <Heading text={t("heading")} parent={false} />
+        <Heading text={t("heading")} />
 
         <form
           className={css.form}

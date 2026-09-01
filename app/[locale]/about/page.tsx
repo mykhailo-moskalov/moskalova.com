@@ -5,7 +5,7 @@ export default function ArtistsAndPerformers() {
   const t = useTranslations("about");
   return (
     <main>
-      <Heading text={t("heading")} as="h1" />
+      <Heading text={t("heading")} as="h1" parent={true} />
     </main>
   );
 }

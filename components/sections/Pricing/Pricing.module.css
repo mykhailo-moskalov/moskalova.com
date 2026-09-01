@@ -1,0 +1,14 @@
+.container {
+  padding: 0 128px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  margin-bottom: 64px;
+}
+
+.custom {
+  max-width: 549px !important;
+}

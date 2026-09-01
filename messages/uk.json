@@ -61,12 +61,14 @@
     "heading": "services",
     "approach": {
       "heading": "my approach",
-      "text1": "Personal consultation before the session",
-      "text2": "Outfit and styling guidance",
-      "text3": "location selection tailored to your vision",
-      "text4": "Natural posing direction throughout the shoot",
-      "text5": "Relaxed, enjoyable experience",
-      "text6": "Carefully curated and edited online gallery delivered within 10 days"
+      "benefits": {
+        "text1": "Personal consultation before the session",
+        "text2": "Outfit and styling guidance",
+        "text3": "location selection tailored to your vision",
+        "text4": "Natural posing direction throughout the shoot",
+        "text5": "Relaxed, enjoyable experience",
+        "text6": "Carefully curated and edited online gallery delivered within 10 days"
+      }
     },
     "services": {
       "service1": {

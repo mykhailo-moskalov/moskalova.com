@@ -57,7 +57,7 @@ export default async function SetPage({ params }: Props) {
           <Link href={`/${category}`} className={css.back}>
             ← {t("back")}
           </Link>
-          <Heading className={css.title} text={title} as="h1" parent={false} />
+          <Heading className={css.title} text={title} as="h1" />
           {subtitle && <p className={css.subtitle}>{subtitle}</p>}
         </Container>
       </Section>

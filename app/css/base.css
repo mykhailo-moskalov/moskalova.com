@@ -23,6 +23,7 @@ h2 {
 }
 
 h3 {
+  text-transform: capitalize;
   line-height: 140%;
   font-size: 32px;
 }
