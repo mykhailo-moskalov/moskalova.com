@@ -54,6 +54,7 @@ export default function Sidebar() {
             <IoCloseSharp />
           </button>
           <Navigation
+            subAsAccordion
             className={css.nav}
             onLinkClick={() => setIsOpen(false)}
           />

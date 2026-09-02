@@ -5,10 +5,15 @@ import GalleryTitle from "@/components/sections/GalleryTitle/GalleryTitle";
 export default function PersonalStories() {
   return (
     <main>
-      <GalleryTitle namespace="personal.personal" backg="personal" />
-      <Motto namespace="personal.personal.motto" href="/services" />
+      <GalleryTitle namespace="personal.personal" backg="personal" tar />
+      <Motto namespace="personal.personal.motto" href="/services" as="h2" />
       <GallerySection category="personal-stories" group="personal" />
-      <Motto namespace="personal.personal.mottoEnd" href="/contact" backg />
+      <Motto
+        namespace="personal.personal.mottoEnd"
+        href="/contact"
+        backg
+        as="h2"
+      />
       <GalleryTitle
         id="couples"
         namespace="personal.couples"
@@ -16,9 +21,14 @@ export default function PersonalStories() {
         tar
         as="h2"
       />
-      <Motto namespace="personal.couples.motto" href="/services" />
+      <Motto namespace="personal.couples.motto" href="/services" as="h2" />
       <GallerySection category="personal-stories" group="couples" />
-      <Motto namespace="personal.couples.mottoEnd" href="/contact" backg />
+      <Motto
+        namespace="personal.couples.mottoEnd"
+        href="/contact"
+        backg
+        as="h2"
+      />
     </main>
   );
 }

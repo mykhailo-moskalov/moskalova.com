@@ -6,6 +6,8 @@ import css from "./Navigation.module.css";
 import { useTranslations } from "next-intl";
 import Logo from "@/components/ui/Logo/Logo";
 import LangSwitcher from "@/components/ui/LangSwitcher/LangSwitcher";
+import * as Accordion from "@radix-ui/react-accordion";
+import { IoChevronDown } from "react-icons/io5";
 import { HREFS, LEFT_LINKS, RIGHT_LINKS } from "@/lib/constants/navLinks";
 
 interface NavigationProps {
@@ -13,6 +15,7 @@ interface NavigationProps {
   isLogo?: boolean;
   isLang?: boolean;
   withSubmenu?: boolean;
+  subAsAccordion?: boolean;
   onLinkClick?: () => void;
 }
 
@@ -21,16 +24,58 @@ export default function Navigation({
   isLogo = false,
   isLang = true,
   withSubmenu = true,
+  subAsAccordion = false,
   onLinkClick,
 }: NavigationProps) {
   const t = useTranslations("nav");
   const ta = useTranslations("aria");
   const pathname = usePathname();
 
-  // "Personal" carries a hover submenu (CSS-only: see .hasSub / .subMenu)
   const renderPersonal = () => {
     const href = HREFS.personal;
     const isActive = pathname.startsWith(href);
+
+    const subLinks = (
+      <ul
+        className={`${css.subMenu} ${subAsAccordion ? css.subMenuStatic : ""}`}
+      >
+        <li>
+          <Link className={css.subLink} href={href} onClick={onLinkClick}>
+            {t("personal.personal")}
+          </Link>
+        </li>
+        <li>
+          <Link
+            className={css.subLink}
+            href={`${href}#couples`}
+            onClick={onLinkClick}
+          >
+            {t("personal.couples")}
+          </Link>
+        </li>
+      </ul>
+    );
+
+    if (subAsAccordion) {
+      return (
+        <li key="personal" className={css.navItem}>
+          <Accordion.Root type="single" collapsible>
+            <Accordion.Item value="personal">
+              <Accordion.Trigger
+                className={`${css.accordionTrigger} ${isActive ? css.activeTrigger : ""}`}
+              >
+                {t("personal.main")}
+                <IoChevronDown aria-hidden="true" />
+              </Accordion.Trigger>
+              <Accordion.Content className={css.accordionContent}>
+                {subLinks}
+              </Accordion.Content>
+            </Accordion.Item>
+          </Accordion.Root>
+        </li>
+      );
+    }
+
     return (
       <li key="personal" className={`${css.navItem} ${css.hasSub}`}>
         <Link
@@ -41,22 +86,7 @@ export default function Navigation({
         >
           {t("personal.main")}
         </Link>
-        <ul className={css.subMenu}>
-          <li>
-            <Link className={css.subLink} href={href} onClick={onLinkClick}>
-              {t("personal.personal")}
-            </Link>
-          </li>
-          <li>
-            <Link
-              className={css.subLink}
-              href={`${href}#couples`}
-              onClick={onLinkClick}
-            >
-              {t("personal.couples")}
-            </Link>
-          </li>
-        </ul>
+        <div className={css.subPanel}>{subLinks}</div>
       </li>
     );
   };
