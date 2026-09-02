@@ -32,6 +32,23 @@
       "text2": "I love natural movement, beautiful light, thoughtful styling and real human connection.",
       "text3": "The result? Images that feel effortless, personal and distinctly yours.",
       "btn": "More about me"
+    },
+    "feedback": {
+      "heading": "kind words",
+      "feedbacks": {
+        "feedback1": {
+          "text": "text text text text text text text text text text text text text text text text text text text text text text text text text text text text ",
+          "author": "text text text"
+        },
+        "feedback2": {
+          "text": "text text text text text text text text text text text text text text text text text text text text text text text text text text text text ",
+          "author": "text text text"
+        },
+        "feedback3": {
+          "text": "text text text text text text text text text text text text text text text text text text text text text text text text text text text text ",
+          "author": "text text text"
+        }
+      }
     }
   },
   "personal": {
@@ -44,10 +61,9 @@
         "btn": "To services"
       },
       "mottoEnd": {
-        "heading": "text",
-        "text1": "text",
-        "text2": "text",
-        "btn": "text"
+        "heading": "You don't have to know how to pose.",
+        "text1": "I'll guide you when needed and leave space for the natural moments in between — the movement, the connection, the little things that make the image feel like you.",
+        "btn": "Get in touch"
       }
     },
     "couples": {

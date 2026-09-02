@@ -32,6 +32,23 @@
       "text2": "Я створюю природні, кінематографічні зображення, які відчуваються особистими, автентичними та позачасовими.",
       "btn": "Більше про мене",
       "text3": "The result? Images that feel effortless, personal and distinctly yours."
+    },
+    "feedback": {
+      "heading": "kind words",
+      "feedbacks": {
+        "feedback1": {
+          "text": "text text text text text text text text text text text text text text text text text text text text text text text text text text text text ",
+          "author": "text text text"
+        },
+        "feedback2": {
+          "text": "text text text text text text text text text text text text text text text text text text text text text text text text text text text text ",
+          "author": "text text text"
+        },
+        "feedback3": {
+          "text": "text text text text text text text text text text text text text text text text text text text text text text text text text text text text ",
+          "author": "text text text"
+        }
+      }
     }
   },
   "personal": {
@@ -44,10 +61,9 @@
         "btn": "До послуг"
       },
       "mottoEnd": {
-        "heading": "text",
-        "text1": "text",
-        "text2": "text",
-        "btn": "text"
+        "heading": "Вам не потрібно вміти позувати.",
+        "text1": "Я підкажу, коли це потрібно, і залишу простір для природних моментів між ними — руху, зв'язку, маленьких деталей, які роблять фотографію саме вашою.",
+        "btn": "Зв'язатися"
       }
     },
     "couples": {
@@ -61,7 +77,7 @@
       "mottoEnd": {
         "heading": "The best photographs are the ones that bring you back to a feeling.",
         "text1": "Let's create something you'll want to return to.",
-        "btn": "Get in touch"
+        "btn": "Зв'язатися"
       }
     }
   },

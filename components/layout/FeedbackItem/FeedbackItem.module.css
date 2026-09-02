@@ -1,0 +1,44 @@
+.item {
+  text-align: center;
+  max-width: 300px;
+  position: relative;
+  &:not(:last-child)::after {
+    content: "";
+    width: 1px;
+    height: 64px;
+    position: absolute;
+    left: calc(100% + 32px);
+    top: 50%;
+
+    transform: translateY(-50%);
+    background-color: var(--light-green);
+    display: inline-block;
+  }
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  fill: var(--light-green);
+}
+
+.text {
+  position: relative;
+  margin-bottom: 32px;
+  &::after {
+    content: "";
+    width: 64px;
+    height: 1px;
+    position: absolute;
+    top: calc(100% + 16px);
+    left: 50%;
+
+    transform: translateX(-50%);
+    background-color: var(--light-green);
+    display: inline-block;
+  }
+}
+
+.author {
+  font-family: var(--font-alice);
+}

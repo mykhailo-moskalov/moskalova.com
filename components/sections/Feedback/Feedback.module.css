@@ -1,0 +1,25 @@
+.section {
+  background-color: var(--transparenter-light-green);
+}
+
+.container {
+  max-width: max-content;
+}
+
+.heading {
+  position: relative;
+  color: var(--light-green);
+  margin-bottom: 64px;
+  &::after {
+    content: "";
+    width: 128px;
+    height: 1px;
+    position: absolute;
+    top: calc(100% + 32px);
+    left: 50%;
+
+    transform: translateX(-50%);
+    background-color: var(--light-green);
+    display: inline-block;
+  }
+}
