@@ -8,7 +8,7 @@ import FeedbackList from "@/components/layout/FeedbackList/FeedbackList";
 export default function Feedback() {
   const t = useTranslations("home.feedback");
   return (
-    <Section className={css.section}>
+    <Section>
       <Container className={css.container}>
         <Heading text={t("heading")} className={css.heading} />
         <FeedbackList />

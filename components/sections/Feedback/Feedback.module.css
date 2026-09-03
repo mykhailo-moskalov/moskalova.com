@@ -1,7 +1,3 @@
-.section {
-  background-color: var(--transparenter-light-green);
-}
-
 .container {
   max-width: max-content;
 }

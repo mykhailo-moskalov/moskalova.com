@@ -9,10 +9,12 @@ import { useSidebarStore } from "@/lib/store/sidebarStore";
 import { IoCloseSharp } from "react-icons/io5";
 import Container from "../../ui/Container/Container";
 import { useTranslations } from "next-intl";
+import { useWidthStore } from "@/lib/store/widthStore";
 
 export default function Sidebar() {
   const isOpen = useSidebarStore((state) => state.isOpen);
   const setIsOpen = useSidebarStore((state) => state.setIsOpen);
+  const isDesktop = useWidthStore((state) => state.isDesktop);
   const t = useTranslations("aria");
 
   const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -34,6 +36,8 @@ export default function Sidebar() {
       document.documentElement.style.overflow = "";
     };
   }, [isOpen, setIsOpen]);
+
+  if (isDesktop) return null;
 
   return (
     <div

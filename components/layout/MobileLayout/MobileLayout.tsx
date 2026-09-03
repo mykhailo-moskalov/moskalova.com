@@ -15,6 +15,7 @@ export default function MobileLayout({ children }: { children: ReactNode }) {
   const isDesktop = useWidthStore((state) => state.isDesktop);
 
   useEffect(() => {
+    if (isDesktop) return;
     let startX = 0;
     let shouldBlock = false;
 
@@ -37,7 +38,6 @@ export default function MobileLayout({ children }: { children: ReactNode }) {
 
     const handleTouchEnd = (e: TouchEvent) => {
       if (!shouldBlock) return;
-      if (isDesktop) return;
       const diff = startX - e.changedTouches[0].clientX;
       if (diff > 100) setIsOpen(true);
       if (diff < -100) setIsOpen(false);
@@ -59,7 +59,7 @@ export default function MobileLayout({ children }: { children: ReactNode }) {
       <div style={{ position: "relative" }}>
         <ScreenWidthWatcher />
         <Header />
-        <Sidebar />
+        {!isDesktop && <Sidebar />}
         {children}
         <Footer />
       </div>

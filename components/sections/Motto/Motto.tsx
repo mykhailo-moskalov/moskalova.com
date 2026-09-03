@@ -14,7 +14,7 @@ type MottoProps = {
 
 export default function Motto({
   namespace,
-  as: Heading = "h1",
+  as: Heading = "h2",
   href,
   backg = false,
   caps = false,

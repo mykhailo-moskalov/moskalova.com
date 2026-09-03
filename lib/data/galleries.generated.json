@@ -1,4 +1,758 @@
 {
+  "about": [
+    {
+      "file": "about_01.jpg",
+      "width": 1707,
+      "height": 2560
+    }
+  ],
+  "creatives/city-as-stage": [
+    {
+      "file": "city-as-stage_01.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "city-as-stage_02.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "city-as-stage_03.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "city-as-stage_04.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "city-as-stage_05.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "city-as-stage_06.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "city-as-stage_07.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "city-as-stage_08.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "city-as-stage_09.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "city-as-stage_10.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "city-as-stage_11.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "city-as-stage_12.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "city-as-stage_13.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "city-as-stage_14.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "city-as-stage_15.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "city-as-stage_16.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "city-as-stage_17.jpg",
+      "width": 2560,
+      "height": 1707
+    }
+  ],
+  "creatives/dance-in-light": [
+    {
+      "file": "dance-in-light_01.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "dance-in-light_02.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "dance-in-light_03.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "dance-in-light_04.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "dance-in-light_05.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "dance-in-light_06.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "dance-in-light_07.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "dance-in-light_08.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "dance-in-light_09.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "dance-in-light_10.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "dance-in-light_11.jpg",
+      "width": 1707,
+      "height": 2560
+    }
+  ],
+  "creatives/his-own-stage": [
+    {
+      "file": "his-own-stage_01.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "his-own-stage_02.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "his-own-stage_03.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "his-own-stage_04.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "his-own-stage_05.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "his-own-stage_06.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "his-own-stage_07.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "his-own-stage_08.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "his-own-stage_09.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "his-own-stage_10.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "his-own-stage_11.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "his-own-stage_12.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "his-own-stage_13.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "his-own-stage_14.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "his-own-stage_15.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "his-own-stage_16.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "his-own-stage_17.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "his-own-stage_18.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "his-own-stage_19.jpg",
+      "width": 2560,
+      "height": 1707
+    }
+  ],
+  "creatives/in-form": [
+    {
+      "file": "in-form_01.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "in-form_02.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "in-form_03.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "in-form_04.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "in-form_05.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "in-form_06.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "in-form_07.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "in-form_08.jpg",
+      "width": 2560,
+      "height": 1706
+    }
+  ],
+  "creatives/in-the-shadows": [
+    {
+      "file": "in-the-shadows_01.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "in-the-shadows_02.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "in-the-shadows_03.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "in-the-shadows_04.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "in-the-shadows_05.jpg",
+      "width": 2560,
+      "height": 1706
+    },
+    {
+      "file": "in-the-shadows_06.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "in-the-shadows_07.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "in-the-shadows_08.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "in-the-shadows_09.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "in-the-shadows_10.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "in-the-shadows_11.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "in-the-shadows_12.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "in-the-shadows_13.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "in-the-shadows_14.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "in-the-shadows_15.jpg",
+      "width": 1707,
+      "height": 2560
+    }
+  ],
+  "creatives/in-transit": [
+    {
+      "file": "in-transit_01.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "in-transit_02.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "in-transit_03.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "in-transit_04.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "in-transit_05.jpg",
+      "width": 2560,
+      "height": 1706
+    },
+    {
+      "file": "in-transit_06.jpg",
+      "width": 2560,
+      "height": 1706
+    },
+    {
+      "file": "in-transit_07.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "in-transit_08.jpg",
+      "width": 2560,
+      "height": 1731
+    }
+  ],
+  "creatives/poetry-in-motion": [
+    {
+      "file": "poetry-in-motion_01.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "poetry-in-motion_02.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "poetry-in-motion_03.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "poetry-in-motion_04.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "poetry-in-motion_05.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "poetry-in-motion_06.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "poetry-in-motion_07.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "poetry-in-motion_08.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "poetry-in-motion_09.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "poetry-in-motion_10.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "poetry-in-motion_11.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "poetry-in-motion_12.jpg",
+      "width": 2560,
+      "height": 1706
+    },
+    {
+      "file": "poetry-in-motion_13.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "poetry-in-motion_14.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "poetry-in-motion_15.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "poetry-in-motion_16.jpg",
+      "width": 1707,
+      "height": 2560
+    }
+  ],
+  "creatives/the-body-speaks": [
+    {
+      "file": "the-body-speaks_01.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "the-body-speaks_02.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "the-body-speaks_03.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "the-body-speaks_04.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "the-body-speaks_05.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "the-body-speaks_06.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "the-body-speaks_07.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "the-body-speaks_08.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "the-body-speaks_09.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "the-body-speaks_10.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "the-body-speaks_11.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "the-body-speaks_12.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "the-body-speaks_13.jpg",
+      "width": 2560,
+      "height": 1706
+    }
+  ],
+  "creatives/the-muse": [
+    {
+      "file": "the-muse_01.jpg",
+      "width": 2428,
+      "height": 1619
+    },
+    {
+      "file": "the-muse_02.jpg",
+      "width": 1482,
+      "height": 2223
+    },
+    {
+      "file": "the-muse_03.jpg",
+      "width": 1606,
+      "height": 2409
+    },
+    {
+      "file": "the-muse_04.jpg",
+      "width": 1587,
+      "height": 2349
+    },
+    {
+      "file": "the-muse_05.jpg",
+      "width": 1643,
+      "height": 2464
+    },
+    {
+      "file": "the-muse_06.jpg",
+      "width": 1629,
+      "height": 2444
+    },
+    {
+      "file": "the-muse_07.jpg",
+      "width": 1688,
+      "height": 2532
+    },
+    {
+      "file": "the-muse_08.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "the-muse_09.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "the-muse_10.jpg",
+      "width": 1670,
+      "height": 2505
+    },
+    {
+      "file": "the-muse_11.jpg",
+      "width": 1459,
+      "height": 2189
+    }
+  ],
+  "creatives/theatre-story": [
+    {
+      "file": "theatre-story_01.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "theatre-story_02.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "theatre-story_03.jpg",
+      "width": 2560,
+      "height": 1706
+    },
+    {
+      "file": "theatre-story_04.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "theatre-story_05.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "theatre-story_06.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "theatre-story_07.jpg",
+      "width": 2560,
+      "height": 1706
+    },
+    {
+      "file": "theatre-story_08.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "theatre-story_09.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "theatre-story_10.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "theatre-story_11.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "theatre-story_12.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "theatre-story_13.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "theatre-story_14.jpg",
+      "width": 2560,
+      "height": 1706
+    }
+  ],
+  "creatives/urban-motion": [
+    {
+      "file": "urban-motion_01.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "urban-motion_02.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "urban-motion_03.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "urban-motion_04.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "urban-motion_05.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "urban-motion_06.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "urban-motion_07.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "urban-motion_08.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "urban-motion_09.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "urban-motion_10.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "urban-motion_11.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "urban-motion_12.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "urban-motion_13.jpg",
+      "width": 2560,
+      "height": 1707
+    }
+  ],
   "hero": [
     {
       "file": "hero_01.jpg",

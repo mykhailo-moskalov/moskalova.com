@@ -30,25 +30,30 @@
       "subHeading": "Я фотографую людей — їхню особистість, емоції, характер та історії.",
       "text1": "Будь то портрет, персональний бренд, сімейна чи бізнес-зйомка, мені цікаво показати те, що робить вас саме <em>вами</em>",
       "text2": "Я створюю природні, кінематографічні зображення, які відчуваються особистими, автентичними та позачасовими.",
-      "btn": "Більше про мене",
-      "text3": "The result? Images that feel effortless, personal and distinctly yours."
+      "text3": "The result? Images that feel effortless, personal and distinctly yours.",
+      "btn": "Більше про мене"
     },
     "feedback": {
-      "heading": "kind words",
+      "heading": "теплі слова",
       "feedbacks": {
         "feedback1": {
-          "text": "text text text text text text text text text text text text text text text text text text text text text text text text text text text text ",
-          "author": "text text text"
+          "text": "Я вже втретє переглядаю фотографії й можу знову сказати тільки одне — вони мені дуже подобаються. Ви чудово попрацювали, і я навіть подобаюся собі на цих фото! Дуже дякую за вашу чудову роботу та підтримку.",
+          "author": "Карстен"
         },
         "feedback2": {
-          "text": "text text text text text text text text text text text text text text text text text text text text text text text text text text text text ",
-          "author": "text text text"
+          "text": "Наталочко, мені так приємно і я така рада, що Ви мене фотографували в цей день! Я отримала купу позитиву й гарних емоцій. Ви неймовірна — це на 100% Ваша професія! Бо це була не просто зйомка, а ціла пригода з чудовим настроєм для мене. Це був прекрасний ранок! Фото шикарні, просто шедевр — я в захваті!",
+          "author": "Наталя"
         },
         "feedback3": {
-          "text": "text text text text text text text text text text text text text text text text text text text text text text text text text text text text ",
-          "author": "text text text"
+          "text": "Я постійно повертаюся до цих фотографій — просто не можу від них відірватися. Вони такі атмосферні, з настроєм, і водночас так сильно про мене — про мій дім, мою особистість, про все. Я так подобаюся собі на цих фото — як, як тобі це вдалося?? З тобою легко і розслаблено. Взагалі нуль напруги, бо весь час приємне, легке спілкування — навіть не помічаєш, коли встигаєш робити кадри. Це реально дуже круто! Особливо для тих, хто не любить стояти перед камерою)) Ти в цьому молодець!",
+          "author": "Наталі"
         }
       }
+    },
+    "mottoEnd": {
+      "heading": "Створімо вашу історію разом.",
+      "text1": "Let's create something you'll want to return to.",
+      "btn": "Get in touch"
     }
   },
   "personal": {
@@ -84,13 +89,29 @@
   "brand": {
     "heading": "історії брендів",
     "motto": {
+      "heading": "",
+      "text1": "",
+      "text2": "",
       "btn": "До послуг"
+    },
+    "mottoEnd": {
+      "heading": "",
+      "text1": "",
+      "btn": "Зв'язатися"
     }
   },
   "creatives": {
-    "heading": "художники & виконавці",
+    "heading": "артисти & виконавці",
     "motto": {
+      "heading": "Where expression takes the lead.",
+      "text1": "I photograph artists and performers through character, movement, atmosphere and emotion — creating images that feel as expressive as the work itself.",
+      "text2": "From theatre and dance to music and performance, I create expressive portraits and visual stories with an editorial eye.",
       "btn": "До послуг"
+    },
+    "mottoEnd": {
+      "heading": "",
+      "text1": "",
+      "btn": "Зв'язатися"
     }
   },
   "services": {
@@ -158,7 +179,17 @@
     },
     "btn": "Book a shoot"
   },
-  "about": {},
+  "about": {
+    "preHeading1": "про наталю",
+    "heading": "я фотографую людей, а не пози",
+    "text1": "Мене завжди цікавили люди — те, як вони рухаються, взаємодіють, проявляють себе й просто перебувають у моменті.",
+    "text2": "Для мене фотографія — це вміння помічати саме такі речі: жест, погляд, рух, тиху мить між ними. Я хочу, щоб мої знімки були продуманими й красивими, але ніколи не виглядали вимушеними.",
+    "text3": "Мій стиль — десь між editorial та lifestyle. Я приділяю особливу увагу світлу, композиції, стилізації та простору, але водночас прагну, щоб сама зйомка залишалася легкою й природною.",
+    "text4": "Я допомагаю протягом усієї зйомки — з концепцією, стилізацією та вибором локації, коли це потрібно. Вам не потрібно вміти позувати чи переживати, що робити перед камерою.",
+    "preHeading2": "трохи більше про мене",
+    "text5": "Мій досвід у дизайні досі впливають на те, як я бачу. Я помічаю простір, світло, пропорції та деталі — і це відчуття композиції природно стало частиною моєї фотографії.",
+    "text6": "Я базуюся у Відні та працюю по всій Європі, фотографуючи людей, бренди, творчі проєкти та історії, які для них важливі."
+  },
   "contact": {
     "form": {
       "heading": "Звʼяжіться зі мною",

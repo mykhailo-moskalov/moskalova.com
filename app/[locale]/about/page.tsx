@@ -1,11 +1,13 @@
-import Heading from "@/components/ui/Heading/Heading";
-import { useTranslations } from "next-intl";
+import AboutMe from "@/components/sections/AboutMe/AboutMe";
+import MoreAbout from "@/components/sections/MoreAbout/MoreAbout";
+import Motto from "@/components/sections/Motto/Motto";
 
 export default function ArtistsAndPerformers() {
-  const t = useTranslations("about");
   return (
     <main>
-      <Heading text={t("heading")} as="h1" parent />
+      <AboutMe />
+      <MoreAbout />
+      <Motto namespace="home.mottoEnd" href="/contact" backg />
     </main>
   );
 }

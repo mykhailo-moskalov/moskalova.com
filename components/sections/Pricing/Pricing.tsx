@@ -22,12 +22,7 @@ export default function Pricing({ sectClassName }: PricingProps) {
         <Btn href="/contact" className={css.btn}>
           {t("btn")}
         </Btn>
-        <ServicesItem
-          as="div"
-          id="service4"
-          hasBenefits={false}
-          className={css.custom}
-        />
+        <ServicesItem as="div" id="service4" hasBenefits={false} />
       </Container>
     </Section>
   );

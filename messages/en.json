@@ -37,18 +37,23 @@
       "heading": "kind words",
       "feedbacks": {
         "feedback1": {
-          "text": "text text text text text text text text text text text text text text text text text text text text text text text text text text text text ",
-          "author": "text text text"
+          "text": "I've looked through the pictures three times now, and I can only say again how much I like them. You did a great job, and I even like myself in these photos! Thank you so much for your great work and support.",
+          "author": "Carsten"
         },
         "feedback2": {
-          "text": "text text text text text text text text text text text text text text text text text text text text text text text text text text text text ",
-          "author": "text text text"
+          "text": "I keep going back to the photos — I simply can't stop looking at them. They are so atmospheric, full of mood, and so completely me — my home, my personality, everything. I like myself in these photos so much — how, how did you do that?? And the whole experience was amazing. With you, everything felt so relaxed and natural, with no pressure at all. We were just talking and enjoying the moment, and somehow you were taking photos the whole time. I think that's what makes your work so special — especially for anyone who doesn't like being in front of the camera.",
+          "author": "Natali"
         },
         "feedback3": {
-          "text": "text text text text text text text text text text text text text text text text text text text text text text text text text text text text ",
-          "author": "text text text"
+          "text": "I'm so happy and grateful that you photographed me that day. It was so much more than a photoshoot — it was a whole adventure, full of positive energy and wonderful emotions. You are incredible, and the photos are absolutely stunning. I'm so happy with them!",
+          "author": "Natalia"
         }
       }
+    },
+    "mottoEnd": {
+      "heading": "Let's create your story together.",
+      "text1": "Tell me what you're planning, and we'll taker it from there.",
+      "btn": "Get in touch"
     }
   },
   "personal": {
@@ -84,13 +89,29 @@
   "brand": {
     "heading": "brand stories",
     "motto": {
+      "heading": "",
+      "text1": "",
+      "text2": "",
       "btn": "To services"
+    },
+    "mottoEnd": {
+      "heading": "",
+      "text1": "",
+      "btn": "Get in touch"
     }
   },
   "creatives": {
     "heading": "artists & performers",
     "motto": {
+      "heading": "Where expression takes the lead.",
+      "text1": "I photograph artists and performers through character, movement, atmosphere and emotion — creating images that feel as expressive as the work itself.",
+      "text2": "From theatre and dance to music and performance, I create expressive portraits and visual stories with an editorial eye.",
       "btn": "To services"
+    },
+    "mottoEnd": {
+      "heading": "",
+      "text1": "",
+      "btn": "Get in touch"
     }
   },
   "services": {
@@ -158,7 +179,17 @@
     },
     "btn": "Book a shoot"
   },
-  "about": {},
+  "about": {
+    "preHeading1": "about natalia",
+    "heading": "i photograph people, not poses",
+    "text1": "I've always been drawn to people — to the way they move, connect, express themselves and simply be present in a moment.",
+    "text2": "For me, photography is about noticing those things: a gesture, a look, a movement, a quiet moment in between. I want my images to feel intentional and beautiful, but never forced.",
+    "text3": "My approach is somewhere between editorial and lifestyle. I bring an editorial eye to the way I work with light, composition, styling and space, while keeping the experience relaxed and natural.",
+    "text4": "I'll guide you throughout the shoot, help with the concept, styling and location when needed — so you don't have to know how to pose or worry about what to do in front of the camera.",
+    "preHeading2": "a little more about me",
+    "text5": "My background is in design, and it continues to shape the way I see. I notice spaces, light, proportions and details everywhere — and that way of seeing naturally became part of my photography.",
+    "text6": "I'm based in Vienna and work across Europe, photographing people, brands, creatives and the stories that matter to them."
+  },
   "contact": {
     "form": {
       "heading": "Get in touch",

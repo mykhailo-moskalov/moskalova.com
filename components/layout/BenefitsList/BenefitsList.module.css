@@ -1,11 +1,11 @@
 .benefits {
-  padding-left: 28px;
+  padding-left: 16px;
   & li:not(:last-child) {
     margin-bottom: 8px;
   }
   & li {
     display: flex;
-    gap: 16px;
+    gap: 8px;
     text-align: left !important;
     &::before {
       content: "";
@@ -15,6 +15,12 @@
       border-radius: 50%;
       background-color: currentColor;
       margin-top: calc((1lh - 2px) / 2);
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    padding-left: 28px;
+    & li {
+      gap: 16px;
     }
   }
 }

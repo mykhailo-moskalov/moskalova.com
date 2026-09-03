@@ -2,17 +2,38 @@
   text-align: center;
   max-width: 300px;
   position: relative;
-  &:not(:last-child)::after {
-    content: "";
-    width: 1px;
-    height: 64px;
-    position: absolute;
-    left: calc(100% + 32px);
-    top: 50%;
 
-    transform: translateY(-50%);
-    background-color: var(--light-green);
-    display: inline-block;
+  @media screen and (min-width: 768px) {
+    &:first-child::after {
+      content: "";
+      width: 1px;
+      height: 64px;
+      position: absolute;
+      left: calc(100% + 32px);
+      top: 50%;
+
+      transform: translateY(-50%);
+      background-color: var(--light-green);
+      display: inline-block;
+    }
+    &:nth-child(2) {
+      order: 3;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    &:not(:last-child)::after {
+      content: "";
+      width: 1px;
+      height: 64px;
+      position: absolute;
+      left: calc(100% + 32px);
+      top: 50%;
+
+      transform: translateY(-50%);
+      background-color: var(--light-green);
+      display: inline-block;
+    }
   }
 }
 

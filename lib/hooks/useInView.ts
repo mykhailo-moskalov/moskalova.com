@@ -16,7 +16,7 @@ export default function useInView<T extends HTMLElement>() {
           io.disconnect();
         }
       },
-      { threshold: 0.15, rootMargin: "0px 0px -5% 0px" },
+      { threshold: 0.1, rootMargin: "0px 0px -5% 0px" },
     );
     io.observe(el);
     return () => io.disconnect();
