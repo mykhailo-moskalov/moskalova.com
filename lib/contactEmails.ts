@@ -15,7 +15,6 @@ export type ContactPayload = {
   name: string;
   email: string;
   message: string;
-  /** Locale the visitor used on the site — drives the visitor email. */
   locale: string;
 };
 
@@ -23,7 +22,6 @@ export type SiteInfo = {
   replyTo: string;
   siteName: string;
   siteUrl: string;
-  /** Language the photographer wants her notifications in (CONTACT_OWNER_LOCALE). */
   ownerLocale: string;
 };
 
@@ -43,7 +41,6 @@ const quoteText = (message: string) =>
     .map((line) => `> ${line}`)
     .join("\n");
 
-/** Email delivered to the photographer — always in HER language. */
 export async function buildOwnerEmail(p: ContactPayload, site: SiteInfo) {
   const t = await getTranslations({
     locale: site.ownerLocale,

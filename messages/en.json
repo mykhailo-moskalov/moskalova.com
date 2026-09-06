@@ -240,7 +240,51 @@
     }
   },
   "impressum": {
-    "heading": "impressum"
+    "heading": "Impressum",
+    "intro": "Informationspflicht laut § 5 E-Commerce-Gesetz, § 14 Unternehmensgesetzbuch, § 63 Gewerbeordnung und Offenlegungspflicht laut § 25 Mediengesetz.",
+    "operator": [
+      "Natalia Moskalova",
+      "Berufsfotografin",
+      "Gallgasse 68, 1130 Wien, Österreich",
+      "E-Mail: qa@moskalova.com"
+    ],
+    "details": [
+      "GISA-Zahl: 35979043",
+      "Unternehmensgegenstand: Berufsfotografie",
+      "Mitglied der Wirtschaftskammer Wien, Fachgruppe Berufsfotografie",
+      "Berufsrecht: Gewerbeordnung, abrufbar unter www.ris.bka.gv.at",
+      "Aufsichtsbehörde/Gewerbebehörde: Magistratisches Bezirksamt für den 13./14. Bezirk, Wien",
+      "Berufsbezeichnung: Berufsfotografin (verliehen in Österreich)"
+    ],
+    "sections": {
+      "disputes": {
+        "heading": "Verbraucherstreitbeilegung",
+        "text": [
+          "Es besteht weder eine Verpflichtung noch die Bereitschaft, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen. Allfällige Beschwerden richten Sie bitte an die oben angegebene E-Mail-Adresse."
+        ]
+      },
+      "copyright": {
+        "heading": "Urheberrecht und Bildnachweis",
+        "text": [
+          "Sämtliche Inhalte dieser Website — insbesondere alle Fotografien, Texte und Grafiken — sind urheberrechtlich geschützt. Alle Fotos: © Natalia Moskalova.",
+          "Jede Verwendung, Vervielfältigung oder Verbreitung von Inhalten dieser Website, auch auszugsweise, bedarf der vorherigen schriftlichen Zustimmung."
+        ]
+      },
+      "liability": {
+        "heading": "Haftung für Inhalte dieser Website",
+        "text": [
+          "Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden.",
+          "Sollten Ihnen rechtswidrige Inhalte auffallen, bitten wir um einen Hinweis an die oben angegebene E-Mail-Adresse. Entsprechende Inhalte werden nach Kenntnisnahme umgehend entfernt."
+        ]
+      },
+      "links": {
+        "heading": "Haftung für Links",
+        "text": [
+          "Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte kein Einfluss besteht. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich.",
+          "Zum Zeitpunkt der Verlinkung waren keine Rechtsverstöße erkennbar. Bei Bekanntwerden von Rechtsverletzungen werden derartige Links umgehend entfernt."
+        ]
+      }
+    }
   },
   "gallery": {
     "back": "Back to gallery"

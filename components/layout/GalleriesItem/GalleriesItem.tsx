@@ -5,6 +5,7 @@ import Image from "next/image";
 import { YULIIA } from "@/lib/data/personal";
 import { THE_BODY_SPEAKS } from "@/lib/data/creatives";
 import { Link } from "@/lib/navigation";
+import { HREFS } from "@/lib/constants/navLinks";
 
 type GalleriesItemProps = {
   className?: string;
@@ -15,10 +16,10 @@ export default function GalleriesItem({ className, id }: GalleriesItemProps) {
   const t = useTranslations(`home.galleries.${id}`);
   const href =
     id === "gallery1"
-      ? "/personal-stories"
+      ? HREFS.personal
       : id === "gallery2"
-        ? "brand-stories"
-        : "/artists-and-performers";
+        ? HREFS.brand
+        : HREFS.creatives;
   const src =
     id === "gallery1"
       ? YULIIA[3]
