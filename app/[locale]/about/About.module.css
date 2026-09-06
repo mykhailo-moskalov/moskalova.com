@@ -9,20 +9,38 @@
 
 .container {
   display: flex;
-  gap: 64px;
+  flex-direction: column;
+  gap: 32px;
   max-width: 1240px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 64px;
+  }
 }
+.container {
+  display: flex;
+}
+
 .moreContainer {
   max-width: 1240px;
 }
 
+.thumb {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+}
 .img {
   flex: 0 0 auto;
-  width: clamp(280px, 60%, 600px);
+  object-fit: cover;
 }
 
 .textDiv {
-  padding-top: 64px;
+  @media screen and (min-width: 768px) {
+    padding-top: 64px;
+  }
 }
 
 .preHeading {
@@ -50,7 +68,7 @@
 }
 
 .text {
-  width: 396px;
+  max-width: 396px;
   &:not(:last-child) {
     margin-bottom: 8px;
   }

@@ -1,4 +1,4 @@
-import { photosOf, set } from "./galleries";
+import { photosOf, set } from "./photos";
 
 // const B = "brand/";
 const P = "personal/";

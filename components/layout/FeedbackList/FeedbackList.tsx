@@ -6,7 +6,7 @@ export default function FeedbackList() {
   const t = useTranslations("home.feedback");
   const feedbacks = t.raw("feedbacks") as Record<
     string,
-    { benefits?: Record<string, string> }
+    { author: string; text: string }
   >;
 
   return (

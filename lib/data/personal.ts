@@ -1,11 +1,11 @@
-import { photosOf, set } from "./galleries";
+import { photosOf, set } from "./photos";
 
 const P = "personal/";
 
 export const SOPHIIA = photosOf(`${P}sophiia`);
 const ELMIRA = photosOf(`${P}elmira`);
 const MARINA = photosOf(`${P}marina`);
-export const YULIIA = photosOf(`${P}yuliia`); //YULIIA[3]
+export const YULIIA = photosOf(`${P}yuliia`);
 const OLEXANDRA = photosOf(`${P}olexandra`);
 const ANNA = photosOf(`${P}anna`);
 const VIKTORIIA = photosOf(`${P}viktoriia`);

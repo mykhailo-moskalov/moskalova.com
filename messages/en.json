@@ -33,6 +33,23 @@
       "text3": "The result? Images that feel effortless, personal and distinctly yours.",
       "btn": "More about me"
     },
+    "galleries": {
+      "gallery1": {
+        "title": "personal",
+        "subtitle": "People, portraits & personal stories",
+        "btn": "Explore →"
+      },
+      "gallery2": {
+        "title": "brand",
+        "subtitle": "Visuals on brands & interiors",
+        "btn": "Explore →"
+      },
+      "gallery3": {
+        "title": "creatives",
+        "subtitle": "Artists, brandds & creative people",
+        "btn": "Explore →"
+      }
+    },
     "feedback": {
       "heading": "kind words",
       "feedbacks": {
@@ -89,9 +106,10 @@
   "brand": {
     "heading": "brand stories",
     "motto": {
-      "heading": "",
-      "text1": "",
-      "text2": "",
+      "heading": "Your brand has a story to tell.",
+      "text1": "Your business is more than a logo, a product or a service. It's the people behind it, the way you work, the spaces you create, the details, the atmosphere — everything that makes it yours.",
+      "text2": "I create natural, thoughtful imagery for personal brands, small businesses and creative projects — from portraits and everyday content to campaigns, interiors and visual stories.",
+      "text3": "Whether you need images for your website, social media, a new launch or simply a stronger visual presence, we'll create photographs that feel authentic to your brand.",
       "btn": "To services"
     },
     "mottoEnd": {

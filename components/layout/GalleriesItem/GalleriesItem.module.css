@@ -1,0 +1,47 @@
+.item {
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    max-width: calc((100% - 64px) / 2);
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: calc((100% - 128px) / 3);
+  }
+}
+
+.link {
+  display: block;
+  &:hover,
+  &:focus-visible {
+    transform: none;
+  }
+}
+
+.thumb {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background-color: var(--green);
+}
+
+.img {
+  object-fit: cover;
+}
+
+.link:hover .img,
+.link:focus-visible .img {
+  transform: scale(1.05);
+}
+
+.title {
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  font-family: var(--font-forum);
+}
+
+.subtitle {
+  font-family: var(--font-alice);
+  margin-bottom: 16px;
+}

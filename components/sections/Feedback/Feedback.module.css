@@ -1,7 +1,3 @@
-.container {
-  max-width: max-content;
-}
-
 .heading {
   position: relative;
   color: var(--light-green);

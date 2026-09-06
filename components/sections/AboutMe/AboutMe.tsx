@@ -13,12 +13,14 @@ export default function AboutMe() {
   return (
     <Section className={css.section}>
       <Container className={css.container}>
-        <Image
-          src={ABOUT[0]}
-          alt=""
-          sizes="(min-width: 1440px) 600px, 60vw"
-          className={css.img}
-        />
+        <span className={css.thumb}>
+          <Image
+            src={ABOUT[0]}
+            alt=""
+            sizes="100vw (min-width: 1440px) 600px, 60vw"
+            className={css.img}
+          />
+        </span>
         <div className={css.textDiv}>
           <p className={css.preHeading}>{t("preHeading1")}</p>
           <Heading text={t("heading")} className={css.heading} />

@@ -1,4 +1,4 @@
-import { photosOf, set } from "./galleries";
+import { photosOf, set } from "./photos";
 
 const C = "creatives/";
 
@@ -6,7 +6,7 @@ const THEATRE_STORY = photosOf(`${C}theatre-story`);
 const DANCE_IN_LIGHT = photosOf(`${C}dance-in-light`);
 const HIS_OWN_STAGE = photosOf(`${C}his-own-stage`);
 const URBAN_MOTION = photosOf(`${C}urban-motion`);
-export const THE_BODY_SPEAKS = photosOf(`${C}the-body-speaks`); //THE_BODY_SPEAKS[11]
+export const THE_BODY_SPEAKS = photosOf(`${C}the-body-speaks`);
 const THE_MUSE = photosOf(`${C}the-muse`);
 const IN_TRANSIT = photosOf(`${C}in-transit`);
 export const IN_FORM = photosOf(`${C}in-form`);
