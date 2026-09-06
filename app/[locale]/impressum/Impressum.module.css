@@ -1,0 +1,29 @@
+.container {
+  max-width: 720px;
+  text-align: left;
+}
+
+.intro {
+  margin: 32px 0;
+  color: var(--dark-grey);
+  font-size: 14px;
+}
+
+.block {
+  margin-bottom: 32px;
+}
+
+.line {
+  margin-bottom: 4px;
+}
+
+.subHeading {
+  margin: 32px 0 12px;
+  font-family: var(--font-forum);
+  font-size: 24px;
+  text-align: left;
+}
+
+.text {
+  margin-bottom: 12px;
+}
