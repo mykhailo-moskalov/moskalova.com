@@ -1,8 +1,10 @@
-import type { GalleryCategory } from "@/lib/types/gallery";
-export { photosOf, set } from "./photos";
-import { COUPLES_SETS, PERSONAL_SETS } from "./personal";
 import { BRAND_SETS } from "./brand";
+import { COUPLES_SETS, PERSONAL_SETS } from "./personal";
 import { CREATIVES_SETS } from "./creatives";
+import type { GalleryCategory } from "@/lib/types/gallery";
+
+// re-exported so components keep importing from here; data files import "./photos"
+export { photosOf, set } from "./photos";
 
 export const GALLERIES: GalleryCategory[] = [
   {

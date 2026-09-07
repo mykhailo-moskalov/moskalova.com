@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
+import ImpressumSection from "@/components/sections/ImpressumSection/ImpressumSection";
 import type { Metadata } from "next";
 import { alternatesFor } from "@/lib/seo/alternates";
-import ImpressumSection from "@/components/sections/ImpressumSection/ImpressumSection";
 
 type Props = {
   params: Promise<{ locale: string }>;

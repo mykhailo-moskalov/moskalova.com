@@ -7,7 +7,7 @@
     "personal": {
       "main": "Персональні",
       "personal": "Особисті історії",
-      "couples": "Пари & сімʼї"
+      "couples": "Пари & сім'ї"
     },
     "brand": "Бренд",
     "creatives": "Творчі",
@@ -26,11 +26,11 @@
   },
   "home": {
     "motto": {
-      "heading": "У кожного є своя історія.",
-      "subHeading": "Я фотографую людей — їхню особистість, емоції, характер та історії.",
-      "text1": "Будь то портрет, персональний бренд, сімейна чи бізнес-зйомка, мені цікаво показати те, що робить вас саме <em>вами</em>",
-      "text2": "Я створюю природні, кінематографічні зображення, які відчуваються особистими, автентичними та позачасовими.",
-      "text3": "The result? Images that feel effortless, personal and distinctly yours.",
+      "heading": "",
+      "subHeading": "",
+      "text1": "",
+      "text2": "",
+      "text3": "",
       "btn": "Більше про мене"
     },
     "galleries": {
@@ -69,11 +69,11 @@
     },
     "mottoEnd": {
       "heading": "Створімо вашу історію разом.",
-      "text1": "Let's create something you'll want to return to.",
-      "btn": "Get in touch"
+      "text1": "",
+      "btn": "Зв'язатися"
     },
     "meta": {
-      "description": "Наталя Москальова — фотографка у Відні: портрети, пари та сімʼї, персональний бренд, митці та артисти. Природні, кінематографічні знімки для вашої історії.",
+      "description": "Наталя Москальова — фотографка у Відні: портрети, пари та сім'ї, персональний бренд, митці та артисти. Природні, кінематографічні знімки для вашої історії.",
       "title": "Фотограф у Відні"
     }
   },
@@ -89,25 +89,25 @@
       "mottoEnd": {
         "heading": "Вам не потрібно вміти позувати.",
         "text1": "Я підкажу, коли це потрібно, і залишу простір для природних моментів між ними — руху, зв'язку, маленьких деталей, які роблять фотографію саме вашою.",
-        "btn": "Звʼязатися"
+        "btn": "Зв'язатися"
       }
     },
     "couples": {
-      "heading": "пари & сімʼї",
+      "heading": "пари & сім'ї",
       "motto": {
-        "heading": "The people we love shape our story.",
-        "text1": "Couples and family stories are about connection — the way you look at each other, move together, laugh, hold on, and simply share a moment.",
-        "text2": "From quiet, intimate portraits to playful, cinematic moments, I create images that preserve not just how you looked, but how it felt to be together.",
-        "btn": "To services"
+        "heading": "",
+        "text1": "",
+        "text2": "",
+        "btn": "До послуг"
       },
       "mottoEnd": {
-        "heading": "The best photographs are the ones that bring you back to a feeling.",
-        "text1": "Let's create something you'll want to return to.",
-        "btn": "Звʼязатися"
+        "heading": "",
+        "text1": "",
+        "btn": "Зв'язатися"
       }
     },
     "meta": {
-      "title": "Портрети, пари та сімʼї",
+      "title": "Портрети, пари та сім'ї",
       "description": "Індивідуальні, парні та сімейні фотосесії у Відні — природні, кінематографічні фото людей, які залишаються собою."
     }
   },
@@ -123,7 +123,7 @@
     "mottoEnd": {
       "heading": "",
       "text1": "",
-      "btn": "Звʼязатися"
+      "btn": "Зв'язатися"
     },
     "meta": {
       "title": "Історії брендів",
@@ -133,85 +133,85 @@
   "creatives": {
     "heading": "артисти & виконавці",
     "motto": {
-      "heading": "Where expression takes the lead.",
-      "text1": "I photograph artists and performers through character, movement, atmosphere and emotion — creating images that feel as expressive as the work itself.",
-      "text2": "From theatre and dance to music and performance, I create expressive portraits and visual stories with an editorial eye.",
+      "heading": "Там, де оживає образ.",
+      "text1": "Я фотографую артистів і виконавців — їхній характер, рух, атмосферу та емоції.",
+      "text2": "Від театру й танцю до музики та перформансу — створюю портрети та історії про людей, які стоять за творчістю.",
       "btn": "До послуг"
     },
     "mottoEnd": {
       "heading": "",
       "text1": "",
-      "btn": "Звʼязатися"
+      "btn": "Зв'язатися"
     },
     "meta": {
       "title": "Артисти та виконавці",
       "description": "Портрети музикантів, танцівників, акторів і творчих людей у Відні — виразні знімки в стилі editorial для митців і артистів."
     }
   },
-  "services": {
-    "heading": "services",
+  " ": {
+    "heading": "послуги",
     "approach": {
-      "heading": "my approach",
+      "heading": "",
       "benefits": {
-        "text1": "Personal consultation before the session",
-        "text2": "Outfit and styling guidance",
-        "text3": "location selection tailored to your vision",
-        "text4": "Natural posing direction throughout the shoot",
-        "text5": "Relaxed, enjoyable experience",
-        "text6": "Carefully curated and edited online gallery delivered within 10 days"
+        "text1": "",
+        "text2": "",
+        "text3": "",
+        "text4": "",
+        "text5": "",
+        "text6": ""
       }
     },
     "services": {
       "service1": {
-        "heading": "quick story",
-        "subHeading": "A full story, made simple",
+        "heading": "",
+        "subHeading": "",
         "benefits": {
-          "text1": "<strong>35+ carefully selected & edited images</strong>",
-          "text2": "up to 1 hour",
-          "text3": "one location",
-          "text4": "outfit & styling guidance",
-          "text5": "location selection",
-          "text6": "posing guidance",
-          "text7": "online gallery delivered within 10 days"
+          "text1": "<strong></strong>",
+          "text2": "",
+          "text3": "",
+          "text4": "",
+          "text5": "",
+          "text6": "",
+          "text7": ""
         },
         "price": "€300"
       },
       "service2": {
-        "heading": "portrait story",
-        "subHeading": "More time for your story",
+        "heading": "",
+        "subHeading": "",
         "benefits": {
-          "text1": "<strong>55+ carefully selected & edited images</strong>",
-          "text2": "up to 2 hours",
-          "text3": "up to 3 locations",
-          "text4": "outfit & styling guidance",
-          "text5": "location selection",
-          "text6": "posing guidance",
-          "text7": "online gallery delivered within 10 days"
+          "text1": "<strong></strong>",
+          "text2": "",
+          "text3": "",
+          "text4": "",
+          "text5": "",
+          "text6": "",
+          "text7": ""
         },
         "price": "€425"
       },
       "service3": {
-        "heading": "personal brand story",
-        "subHeading": "Visual storytelling for your brand and business",
+        "heading": "",
+        "subHeading": "",
         "benefits": {
-          "text1": "<strong>35+ carefully selected & edited images</strong>",
-          "text2": "1+ hour session",
-          "text3": "personal consultation",
-          "text4": "moodboard creation",
-          "text5": "outfit & styling guidance",
-          "text6": "location selection",
-          "text7": "posing direction",
-          "text8": "online gallery delivered within 10 days"
+          "text1": "<strong></strong>",
+          "text2": "",
+          "text3": "",
+          "text4": "",
+          "text5": "",
+          "text6": "",
+          "text7": "",
+          "text8": ""
         },
-        "price": "from €300"
+        "price": "від €300"
       },
       "service4": {
-        "heading": "commercial & brand photography",
-        "subHeading": "Visual storytelling for interiors, hospitality and lifestyle brands",
-        "price": "Custom quote"
+        "heading": "",
+        "subHeading": "",
+        "price": ""
       }
     },
-    "btn": "Book a shoot",
+    "btn": "Замовити фотосесію",
     "meta": {
       "title": "Фотосесія у Відні · Ціни",
       "description": "Фотосесії у Відні: Quick Story, Portrait Story, Personal Brand Story та комерційна бренд-зйомка — що входить у кожен пакет і скільки це коштує."
@@ -234,9 +234,9 @@
   },
   "contact": {
     "form": {
-      "heading": "Звʼяжіться зі мною",
-      "name": "Імʼя",
-      "namePlaceholder": "Ваше імʼя",
+      "heading": "Зв'яжіться зі мною",
+      "name": "Ім'я",
+      "namePlaceholder": "Ваше ім'я",
       "email": "Email",
       "emailPlaceholder": "you@example.com",
       "message": "Повідомлення",
@@ -251,7 +251,7 @@
     "email": {
       "ownerSubject": "moskalova.com — нове повідомлення: {name}",
       "ownerIntro": "Нове повідомлення з контактної форми сайту.",
-      "labelName": "Імʼя",
+      "labelName": "Ім'я",
       "labelEmail": "Email",
       "labelLanguage": "Мова",
       "subject": "Дякую за ваше повідомлення",
@@ -323,7 +323,7 @@
   },
   "meta": {
     "siteName": "Natalia Moskalova Photography",
-    "description": "Наталя Москальова — фотографка у Відні: портрети, пари та сімʼї, персональний бренд, митці та артисти. Природні, кінематографічні знімки для вашої історії.",
+    "description": "Наталя Москальова — фотографка у Відні: портрети, пари та сім'ї, персональний бренд, митці та артисти. Природні, кінематографічні знімки для вашої історії.",
     "keywords": [
       "фотограф Відень",
       "фотограф у Відні",
