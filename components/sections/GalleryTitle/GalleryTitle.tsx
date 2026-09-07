@@ -5,6 +5,7 @@ import Container from "@/components/ui/Container/Container";
 import Image from "next/image";
 import { OUR_TOGETHER, SOPHIIA } from "@/lib/data/personal";
 import { IN_FORM } from "@/lib/data/creatives";
+import { COASTAL_STORY } from "@/lib/data/brand";
 
 type GalleryTitleProps = {
   namespace: string;
@@ -26,7 +27,7 @@ export default function GalleryTitle({
       : backg === "couples"
         ? OUR_TOGETHER[4]
         : backg === "brands"
-          ? SOPHIIA[14]
+          ? COASTAL_STORY[12]
           : IN_FORM[0];
   return (
     <Section id={id} className={css.section}>

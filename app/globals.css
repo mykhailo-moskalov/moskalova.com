@@ -3,6 +3,7 @@
 @import "./css/base.css";
 
 :root {
+  --header-height: 96px;
   --black: #000001;
   --white: #fff;
   --dark-grey: #202020;

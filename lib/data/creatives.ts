@@ -16,16 +16,16 @@ const CITY_AS_STAGE = photosOf(`${C}city-as-stage`);
 
 export const CREATIVES_SETS = [
   set("theatre-story", "Theatre Story", THEATRE_STORY[1], THEATRE_STORY, {
-    title: { en: "Theatre Story", uk: "Title" },
+    title: { en: "Theatre Story", uk: "Театральна історія" },
   }),
   set("dance-in-light", "Dance in Light", DANCE_IN_LIGHT[7], DANCE_IN_LIGHT, {
-    title: { en: "Dance in Light", uk: "Title" },
+    title: { en: "Dance in Light", uk: "Танець у світлі" },
   }),
   set("his-own-stage", "His Own Stage", HIS_OWN_STAGE[12], HIS_OWN_STAGE, {
-    title: { en: "His Own Stage", uk: "Title" },
+    title: { en: "His Own Stage", uk: "Його власна сцена" },
   }),
   set("urban-motion", "Urban Motion", URBAN_MOTION[6], URBAN_MOTION, {
-    title: { en: "Urban Motion", uk: "Title" },
+    title: { en: "Urban Motion", uk: "Рух міста" },
   }),
   set(
     "the-body-speaks",
@@ -33,17 +33,17 @@ export const CREATIVES_SETS = [
     THE_BODY_SPEAKS[0],
     THE_BODY_SPEAKS,
     {
-      title: { en: "The Body Speaks", uk: "Title" },
+      title: { en: "The Body Speaks", uk: "Тіло говорить" },
     },
   ),
   set("the-muse", "The Muse", THE_MUSE[2], THE_MUSE, {
-    title: { en: "The Muse", uk: "Title" },
+    title: { en: "The Muse", uk: "Муза" },
   }),
   set("in-transit", "In Transit", IN_TRANSIT[0], IN_TRANSIT, {
-    title: { en: "In Transit", uk: "Title" },
+    title: { en: "In Transit", uk: "У дорозі" },
   }),
   set("in-form", "In Form", IN_FORM[1], IN_FORM, {
-    title: { en: "In Form", uk: "Title" },
+    title: { en: "In Form", uk: "У формі" },
   }),
   set(
     "poetry-in-motion",
@@ -51,13 +51,13 @@ export const CREATIVES_SETS = [
     POETRY_IN_MOTION[4],
     POETRY_IN_MOTION,
     {
-      title: { en: "Poetry in Motion", uk: "Title" },
+      title: { en: "Poetry in Motion", uk: "Поезія в русі" },
     },
   ),
   set("in-the-shadows", "In the Shadows", IN_THE_SHADOWS[0], IN_THE_SHADOWS, {
-    title: { en: "In the Shadows", uk: "Title" },
+    title: { en: "In the Shadows", uk: "У тіні" },
   }),
-  set("city-as-stage", "Ciy as Stage", CITY_AS_STAGE[0], CITY_AS_STAGE, {
-    title: { en: "Ciy as Stage", uk: "Title" },
+  set("city-as-stage", "City as Stage", CITY_AS_STAGE[0], CITY_AS_STAGE, {
+    title: { en: "City as Stage", uk: "Місто як сцена" },
   }),
 ];

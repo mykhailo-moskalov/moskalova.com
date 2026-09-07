@@ -46,7 +46,7 @@
       },
       "gallery3": {
         "title": "creatives",
-        "subtitle": "Artists, brandds & creative people",
+        "subtitle": "Artists, brands & creative people",
         "btn": "Explore →"
       }
     },
@@ -59,7 +59,7 @@
         },
         "feedback2": {
           "text": "I keep going back to the photos — I simply can't stop looking at them. They are so atmospheric, full of mood, and so completely me — my home, my personality, everything. I like myself in these photos so much — how, how did you do that?? And the whole experience was amazing. With you, everything felt so relaxed and natural, with no pressure at all. We were just talking and enjoying the moment, and somehow you were taking photos the whole time. I think that's what makes your work so special — especially for anyone who doesn't like being in front of the camera.",
-          "author": "Natali"
+          "author": "Natalie"
         },
         "feedback3": {
           "text": "I'm so happy and grateful that you photographed me that day. It was so much more than a photoshoot — it was a whole adventure, full of positive energy and wonderful emotions. You are incredible, and the photos are absolutely stunning. I'm so happy with them!",
@@ -69,7 +69,7 @@
     },
     "mottoEnd": {
       "heading": "Let's create your story together.",
-      "text1": "Tell me what you're planning, and we'll taker it from there.",
+      "text1": "Tell me what you're planning, and we'll take it from there.",
       "btn": "Get in touch"
     },
     "meta": {
@@ -121,8 +121,8 @@
       "btn": "To services"
     },
     "mottoEnd": {
-      "heading": "",
-      "text1": "",
+      "heading": "Your brand, in focus.",
+      "text1": "Tell me about your business, and we'll plan a shoot that looks unmistakably like you.",
       "btn": "Get in touch"
     },
     "meta": {
@@ -139,8 +139,8 @@
       "btn": "To services"
     },
     "mottoEnd": {
-      "heading": "",
-      "text1": "",
+      "heading": "Your work deserves to be seen.",
+      "text1": "Tell me about your art or performance, and we'll create images that carry its energy.",
       "btn": "Get in touch"
     },
     "meta": {

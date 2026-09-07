@@ -12,7 +12,7 @@ const VIKTORIIA = photosOf(`${P}viktoriia`);
 const TAYA = photosOf(`${P}taya`);
 const OLEXANDRA_SEA = photosOf(`${P}olexandra-sea`);
 const ANASTATSIIA = photosOf(`${P}anastasiia`);
-const NATALI = photosOf(`${P}natali`);
+const NATALIE = photosOf(`${P}natalie`);
 const EVA = photosOf(`${P}eva`);
 const NATALIA = photosOf(`${P}natalia`);
 const INNA = photosOf(`${P}inna`);
@@ -65,8 +65,8 @@ export const PERSONAL_SETS = [
     title: { en: "Anastasiia", uk: "Анастасія" },
     subtitle: { en: "Winter Story", uk: "Зимова історія" },
   }),
-  set("natali", "Natali", NATALI[0], NATALI, {
-    title: { en: "Natali", uk: "Наталі" },
+  set("natalie", "Natalie", NATALIE[0], NATALIE, {
+    title: { en: "Natalie", uk: "Наталі" },
     subtitle: { en: "Home Story", uk: "Домашня історія" },
   }),
   set("eva", "Eva", EVA[2], EVA, {
