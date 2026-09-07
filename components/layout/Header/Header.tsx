@@ -1,15 +1,15 @@
 "use client";
 
-import { IoMenu } from "react-icons/io5";
-import Logo from "../../ui/Logo/Logo";
-import Container from "../../ui/Container/Container";
-import Navigation from "../Navigation/Navigation";
 import css from "./Header.module.css";
+import { useTranslations } from "next-intl";
+import Container from "../../ui/Container/Container";
+import Logo from "../../ui/Logo/Logo";
+import Navigation from "../Navigation/Navigation";
+import { useEffect, useRef, useState } from "react";
+import { IoMenu } from "react-icons/io5";
 import { useSidebarStore } from "@/lib/store/sidebarStore";
 import { useWidthStore } from "@/lib/store/widthStore";
-import { useEffect, useRef, useState } from "react";
 import { usePathname, useRouter } from "@/lib/navigation";
-import { useTranslations } from "next-intl";
 
 export default function Header() {
   const setIsOpen = useSidebarStore((state) => state.setIsOpen);

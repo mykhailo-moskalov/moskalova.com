@@ -1,5 +1,5 @@
-import { useTranslations } from "next-intl";
 import css from "./Btn.module.css";
+import { useTranslations } from "next-intl";
 import { Link } from "@/lib/navigation";
 
 type CommonProps = {

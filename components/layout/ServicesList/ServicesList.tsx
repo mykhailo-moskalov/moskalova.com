@@ -1,6 +1,6 @@
+import css from "./ServicesList.module.css";
 import { useTranslations } from "next-intl";
 import ServicesItem from "../ServicesItem/ServicesItem";
-import css from "./ServicesList.module.css";
 
 type ServicesListProps = {
   exclude?: string[];

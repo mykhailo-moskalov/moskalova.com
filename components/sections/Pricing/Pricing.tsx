@@ -1,11 +1,11 @@
 import css from "./Pricing.module.css";
+import { useTranslations } from "next-intl";
 import Section from "@/components/ui/Section/Section";
 import Container from "@/components/ui/Container/Container";
-import Btn from "@/components/ui/Btn/Btn";
-import { useTranslations } from "next-intl";
-import ServicesList from "@/components/layout/ServicesList/ServicesList";
-import ServicesItem from "@/components/layout/ServicesItem/ServicesItem";
 import Approach from "@/components/layout/Approach/Approach";
+import ServicesList from "@/components/layout/ServicesList/ServicesList";
+import Btn from "@/components/ui/Btn/Btn";
+import ServicesItem from "@/components/layout/ServicesItem/ServicesItem";
 
 export default function Pricing() {
   const t = useTranslations("services");

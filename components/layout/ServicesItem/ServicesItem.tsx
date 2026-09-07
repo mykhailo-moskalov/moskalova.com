@@ -1,7 +1,7 @@
-import { useTranslations } from "next-intl";
-import BenefitsList from "../BenefitsList/BenefitsList";
 import css from "./ServicesItem.module.css";
+import { useTranslations } from "next-intl";
 import Heading from "@/components/ui/Heading/Heading";
+import BenefitsList from "../BenefitsList/BenefitsList";
 
 type ServicesItemProps = {
   className?: string;

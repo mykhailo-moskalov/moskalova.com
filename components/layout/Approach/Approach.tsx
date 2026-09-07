@@ -1,8 +1,8 @@
-import { useTranslations } from "next-intl";
 import css from "./Approach.module.css";
+import { useTranslations } from "next-intl";
 import Container from "@/components/ui/Container/Container";
-import BenefitsList from "@/components/layout/BenefitsList/BenefitsList";
 import Heading from "@/components/ui/Heading/Heading";
+import BenefitsList from "@/components/layout/BenefitsList/BenefitsList";
 
 export default function Approach() {
   const t = useTranslations("services.approach");

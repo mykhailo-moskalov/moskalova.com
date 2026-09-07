@@ -1,8 +1,8 @@
 "use client";
 
+import css from "./Reveal.module.css";
 import { createElement, CSSProperties, ReactNode } from "react";
 import useInView from "@/lib/hooks/useInView";
-import css from "./Reveal.module.css";
 
 type RevealProps = {
   children: ReactNode;

@@ -1,7 +1,7 @@
-import Container from "@/components/ui/Container/Container";
-import Section from "@/components/ui/Section/Section";
 import css from "./Motto.module.css";
 import { useTranslations } from "next-intl";
+import Section from "@/components/ui/Section/Section";
+import Container from "@/components/ui/Container/Container";
 import Btn from "@/components/ui/Btn/Btn";
 
 type MottoProps = {

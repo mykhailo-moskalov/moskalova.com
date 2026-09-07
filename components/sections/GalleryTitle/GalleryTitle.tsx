@@ -1,7 +1,7 @@
 import css from "./GalleryTitle.module.css";
 import { useTranslations } from "next-intl";
-import Container from "@/components/ui/Container/Container";
 import Section from "@/components/ui/Section/Section";
+import Container from "@/components/ui/Container/Container";
 import Image from "next/image";
 import { OUR_TOGETHER, SOPHIIA } from "@/lib/data/personal";
 import { IN_FORM } from "@/lib/data/creatives";

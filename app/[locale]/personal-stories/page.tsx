@@ -1,6 +1,6 @@
+import GalleryTitle from "@/components/sections/GalleryTitle/GalleryTitle";
 import Motto from "@/components/sections/Motto/Motto";
 import GallerySection from "@/components/sections/GallerySection/GallerySection";
-import GalleryTitle from "@/components/sections/GalleryTitle/GalleryTitle";
 
 export default function PersonalStories() {
   return (

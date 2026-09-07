@@ -1,14 +1,12 @@
 "use client";
 
 import css from "./Sidebar.module.css";
-
-import Navigation from "../Navigation/Navigation";
-
-import { useEffect } from "react";
-import { useSidebarStore } from "@/lib/store/sidebarStore";
-import { IoCloseSharp } from "react-icons/io5";
-import Container from "../../ui/Container/Container";
 import { useTranslations } from "next-intl";
+import Container from "../../ui/Container/Container";
+import Navigation from "../Navigation/Navigation";
+import { useEffect } from "react";
+import { IoCloseSharp } from "react-icons/io5";
+import { useSidebarStore } from "@/lib/store/sidebarStore";
 import { useWidthStore } from "@/lib/store/widthStore";
 
 export default function Sidebar() {

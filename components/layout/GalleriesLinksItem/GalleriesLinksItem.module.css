@@ -9,7 +9,7 @@
   }
 }
 
-.link {
+a.link {
   display: block;
   &:hover,
   &:focus-visible {

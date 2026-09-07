@@ -1,10 +1,10 @@
 "use client";
 
+import css from "./BackToTop.module.css";
+import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { IoChevronUp } from "react-icons/io5";
 import { smoothScrollTo } from "@/lib/utils/smoothScroll";
-import css from "./BackToTop.module.css";
-import { useTranslations } from "next-intl";
 
 export default function BackToTop() {
   const [visible, setVisible] = useState(false);

@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { routing } from "@/i18n/routing";
-import { getTransporter, isTestInbox, logPreviewUrl } from "@/lib/mail";
 import { perIp, perRecipient, global as globalLimit } from "@/lib/rateLimit";
+import { getTransporter, isTestInbox, logPreviewUrl } from "@/lib/mail";
 import { buildOwnerEmail, buildVisitorEmail } from "@/lib/contactEmails";
 
 export const runtime = "nodejs";

@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
 import css from "./Section.module.css";
+import { ReactNode } from "react";
 
 interface SectionProps {
   children: ReactNode;

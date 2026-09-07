@@ -1,6 +1,6 @@
-import { photosOf } from "@/lib/data/galleries";
 import HeroSwiper from "./Hero.Client";
 import { Photo } from "@/lib/types/gallery";
+import { photosOf } from "@/lib/data/galleries";
 
 const HERO_GROUPS = [
   [1],

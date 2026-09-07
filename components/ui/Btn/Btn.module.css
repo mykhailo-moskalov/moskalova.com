@@ -20,8 +20,10 @@
     box-shadow: none;
   }
 
-  &:hover,
-  &:focus-visible {
+  &:first-child:hover,
+  &:last-child:hover,
+  &:focus-visible:first-child,
+  &:focus-visible:last-child {
     background-color: var(--dark-grey);
     box-shadow: var(--box-shadow);
     transform: none;

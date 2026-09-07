@@ -1,15 +1,15 @@
+import css from "./SetPage.module.css";
+import { getTranslations } from "next-intl/server";
+import Section from "@/components/ui/Section/Section";
+import Container from "@/components/ui/Container/Container";
+import Heading from "@/components/ui/Heading/Heading";
+import PhotoGrid from "@/components/layout/PhotoGrid/PhotoGrid";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
-import { Link } from "@/lib/navigation";
 import { allSetParams, getSet } from "@/lib/data/galleries";
 import { localize } from "@/lib/types/gallery";
-import Container from "@/components/ui/Container/Container";
-import Section from "@/components/ui/Section/Section";
-import PhotoGrid from "@/components/layout/PhotoGrid/PhotoGrid";
-import css from "./SetPage.module.css";
-import Heading from "@/components/ui/Heading/Heading";
+import { Link } from "@/lib/navigation";
 
 type Props = {
   params: Promise<{ locale: string; category: string; set: string }>;

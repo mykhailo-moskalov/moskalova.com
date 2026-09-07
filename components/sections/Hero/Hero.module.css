@@ -12,9 +12,6 @@ section.hero {
   @media screen and (min-width: 1440px) {
     height: 75svh;
   }
-  --swiper-navigation-color: var(--white);
-  --swiper-navigation-size: 28px;
-  --swiper-navigation-sides-offset: 24px;
 }
 
 .slide {

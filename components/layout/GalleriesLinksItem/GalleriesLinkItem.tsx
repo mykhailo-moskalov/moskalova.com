@@ -1,12 +1,12 @@
 import css from "./GalleriesLinksItem.module.css";
 import { useTranslations } from "next-intl";
+import Heading from "@/components/ui/Heading/Heading";
 import Btn from "@/components/ui/Btn/Btn";
 import Image from "next/image";
-import { YULIIA } from "@/lib/data/personal";
-import { THE_BODY_SPEAKS } from "@/lib/data/creatives";
 import { Link } from "@/lib/navigation";
 import { HREFS } from "@/lib/constants/navLinks";
-import Heading from "@/components/ui/Heading/Heading";
+import { YULIIA } from "@/lib/data/personal";
+import { THE_BODY_SPEAKS } from "@/lib/data/creatives";
 
 type GalleriesLinksItemProps = {
   className?: string;
@@ -28,7 +28,7 @@ export default function GalleriesLinksItem({
     id === "gallery1"
       ? YULIIA[3]
       : id === "gallery2"
-        ? YULIIA[3] // !
+        ? YULIIA[3]
         : THE_BODY_SPEAKS[11];
 
   return (

@@ -1,13 +1,13 @@
 "use client";
 
+import css from "./PhotoGrid.module.css";
+import "yet-another-react-lightbox/styles.css";
+import Reveal from "@/components/ui/Reveal/Reveal";
 import { useState } from "react";
 import Image from "next/image";
 import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
-import "yet-another-react-lightbox/styles.css";
 import type { Photo } from "@/lib/types/gallery";
-import css from "./PhotoGrid.module.css";
-import Reveal from "@/components/ui/Reveal/Reveal";
 
 type PhotoGridProps = {
   photos: Photo[];

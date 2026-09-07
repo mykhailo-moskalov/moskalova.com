@@ -1,8 +1,8 @@
-import Image from "next/image";
-import { useLocale } from "next-intl";
-import { Link } from "@/lib/navigation";
-import { localize, type GallerySet } from "@/lib/types/gallery";
 import css from "./GalleryItem.module.css";
+import { useLocale } from "next-intl";
+import Image from "next/image";
+import { localize, type GallerySet } from "@/lib/types/gallery";
+import { Link } from "@/lib/navigation";
 
 type GalleryItemProps = {
   category: string;

@@ -2,9 +2,9 @@ import css from "@/app/[locale]/about/About.module.css";
 import { useTranslations } from "next-intl";
 import Section from "@/components/ui/Section/Section";
 import Container from "@/components/ui/Container/Container";
+import Heading from "@/components/ui/Heading/Heading";
 import Image from "next/image";
 import { photosOf } from "@/lib/data/galleries";
-import Heading from "@/components/ui/Heading/Heading";
 
 const ABOUT = photosOf("about");
 

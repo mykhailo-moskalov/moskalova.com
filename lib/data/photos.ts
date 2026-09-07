@@ -1,5 +1,5 @@
-import type { GallerySet, Photo } from "@/lib/types/gallery";
 import manifest from "./galleries.generated.json";
+import type { GallerySet, Photo } from "@/lib/types/gallery";
 
 export function photosOf(folder: string): Photo[] {
   const entries = (

@@ -1,21 +1,15 @@
 "use client";
 
-import Image from "next/image";
+import css from "./Hero.module.css";
+import Section from "@/components/ui/Section/Section";
 import { Swiper, SwiperSlide } from "swiper/react";
 import type { Swiper as SwiperInstance } from "swiper";
-import {
-  Autoplay,
-  EffectFade,
-  Navigation,
-  Keyboard,
-  A11y,
-} from "swiper/modules";
+import { Autoplay, EffectFade, Keyboard, A11y } from "swiper/modules";
+import { CSSProperties } from "react";
+import Image from "next/image";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import type { Photo } from "@/lib/types/gallery";
-import css from "./Hero.module.css";
-import Section from "@/components/ui/Section/Section";
-import { CSSProperties } from "react";
 
 type HeroSwiperProps = {
   slides: Photo[][];
@@ -34,7 +28,7 @@ export default function HeroSwiper({ slides }: HeroSwiperProps) {
   return (
     <Section className={css.hero} aria-label="Photo slideshow">
       <Swiper
-        modules={[Autoplay, EffectFade, Navigation, Keyboard, A11y]}
+        modules={[Autoplay, EffectFade, Keyboard, A11y]}
         effect="fade"
         fadeEffect={{ crossFade: true }}
         speed={2000}
@@ -44,7 +38,6 @@ export default function HeroSwiper({ slides }: HeroSwiperProps) {
           pauseOnMouseEnter: true,
         }}
         loop
-        navigation
         keyboard={{ enabled: true }}
         onSwiper={stopIfReducedMotion}
         className={css.slider}

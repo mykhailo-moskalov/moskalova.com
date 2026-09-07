@@ -1,11 +1,11 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import { useRouter, usePathname } from "@/lib/navigation";
 import css from "./LangSwitcher.module.css";
-import * as Accordion from "@radix-ui/react-accordion";
+import { useTranslations } from "next-intl";
 import { useEffect, useRef, useState } from "react";
+import * as Accordion from "@radix-ui/react-accordion";
 import { CiGlobe } from "react-icons/ci";
+import { useRouter, usePathname } from "@/lib/navigation";
 
 interface LangSwitcherProps {
   className?: string;

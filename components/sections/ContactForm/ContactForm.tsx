@@ -1,14 +1,14 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import css from "./ContactForm.module.css";
 import { useLocale, useTranslations } from "next-intl";
-import toast from "react-hot-toast";
-import { ClipLoader } from "react-spinners";
 import Section from "@/components/ui/Section/Section";
 import Container from "@/components/ui/Container/Container";
-import css from "./ContactForm.module.css";
-import Btn from "@/components/ui/Btn/Btn";
 import Heading from "@/components/ui/Heading/Heading";
+import Btn from "@/components/ui/Btn/Btn";
+import { FormEvent, useState } from "react";
+import toast from "react-hot-toast";
+import { ClipLoader } from "react-spinners";
 
 const HONEYPOT_FIELD = "nm_extra";
 

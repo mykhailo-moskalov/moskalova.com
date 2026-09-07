@@ -1,7 +1,7 @@
-import Feedback from "@/components/sections/Feedback/Feedback";
-import GalleriesLinks from "@/components/sections/GalleriesLinks/GalleriesLinks";
 import Hero from "@/components/sections/Hero/Hero";
 import Motto from "@/components/sections/Motto/Motto";
+import GalleriesLinks from "@/components/sections/GalleriesLinks/GalleriesLinks";
+import Feedback from "@/components/sections/Feedback/Feedback";
 
 export default function Home() {
   return (

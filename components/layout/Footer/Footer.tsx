@@ -1,12 +1,12 @@
 "use client";
 
-import { Link } from "@/lib/navigation";
 import css from "./Footer.module.css";
-import { IoLogoInstagram, IoLogoWhatsapp } from "react-icons/io5";
+import Navigation from "../Navigation/Navigation";
 import { useEffect, useRef } from "react";
+import { IoLogoInstagram, IoLogoWhatsapp } from "react-icons/io5";
 import { FiFacebook } from "react-icons/fi";
 import { SlSocialLinkedin } from "react-icons/sl";
-import Navigation from "../Navigation/Navigation";
+import { Link } from "@/lib/navigation";
 
 export default function Footer() {
   const footerRef = useRef<HTMLElement>(null);

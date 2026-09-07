@@ -1,11 +1,9 @@
-import type { Metadata, Viewport } from "next";
-import { Alice, Forum } from "next/font/google";
-import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
-
 import "../globals.css";
-
+import { getMessages } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
 import MobileLayout from "@/components/layout/MobileLayout/MobileLayout";
+import { Alice, Forum } from "next/font/google";
+import type { Metadata, Viewport } from "next";
 
 const alice = Alice({
   weight: ["400"],

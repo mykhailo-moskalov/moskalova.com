@@ -1,14 +1,14 @@
 "use client";
 
-import { ReactNode, useEffect } from "react";
+import Sidebar from "@/components/layout/Sidebar/Sidebar";
+import ScreenWidthWatcher from "../ScreenWidthWatcher/ScreenWidthWatcher";
 import Header from "@/components/layout/Header/Header";
 import Footer from "@/components/layout/Footer/Footer";
-import Sidebar from "@/components/layout/Sidebar/Sidebar";
-import { useWidthStore } from "@/lib/store/widthStore";
-import { useSidebarStore } from "@/lib/store/sidebarStore";
-import ScreenWidthWatcher from "../ScreenWidthWatcher/ScreenWidthWatcher";
-import { Toaster } from "react-hot-toast";
 import BackToTop from "@/components/ui/BackToTop/BackToTop";
+import { ReactNode, useEffect } from "react";
+import { Toaster } from "react-hot-toast";
+import { useSidebarStore } from "@/lib/store/sidebarStore";
+import { useWidthStore } from "@/lib/store/widthStore";
 
 export default function MobileLayout({ children }: { children: ReactNode }) {
   const setIsOpen = useSidebarStore((state) => state.setIsOpen);

@@ -1,7 +1,7 @@
-import { getGroup } from "@/lib/data/galleries";
-import GalleryItem from "../GalleryItem/GalleryItem";
-import Reveal from "@/components/ui/Reveal/Reveal";
 import css from "./Gallery.module.css";
+import Reveal from "@/components/ui/Reveal/Reveal";
+import GalleryItem from "../GalleryItem/GalleryItem";
+import { getGroup } from "@/lib/data/galleries";
 
 type GalleryProps = {
   category: string;

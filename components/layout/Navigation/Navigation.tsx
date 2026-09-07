@@ -1,13 +1,12 @@
 "use client";
 
-import { Link, usePathname } from "@/lib/navigation";
 import css from "./Navigation.module.css";
-
 import { useTranslations } from "next-intl";
 import Logo from "@/components/ui/Logo/Logo";
 import LangSwitcher from "@/components/ui/LangSwitcher/LangSwitcher";
 import * as Accordion from "@radix-ui/react-accordion";
 import { IoChevronDown } from "react-icons/io5";
+import { Link, usePathname } from "@/lib/navigation";
 import { HREFS, LEFT_LINKS, RIGHT_LINKS } from "@/lib/constants/navLinks";
 
 interface NavigationProps {

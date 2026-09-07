@@ -1,8 +1,8 @@
-import { Metadata } from "next";
 import Section from "@/components/ui/Section/Section";
 import Container from "@/components/ui/Container/Container";
 import Heading from "@/components/ui/Heading/Heading";
 import ClientRedirect from "./NotFound.client";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Non-existent page",

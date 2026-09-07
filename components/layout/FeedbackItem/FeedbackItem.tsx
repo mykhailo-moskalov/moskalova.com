@@ -1,5 +1,5 @@
-import { useTranslations } from "next-intl";
 import css from "./FeedbackItem.module.css";
+import { useTranslations } from "next-intl";
 import { IoMdQuote } from "react-icons/io";
 
 type FeedbackItemProps = {
