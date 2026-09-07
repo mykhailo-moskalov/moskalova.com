@@ -1,7 +1,33 @@
+import { getTranslations } from "next-intl/server";
 import Hero from "@/components/sections/Hero/Hero";
 import Motto from "@/components/sections/Motto/Motto";
 import GalleriesLinks from "@/components/sections/GalleriesLinks/GalleriesLinks";
 import Feedback from "@/components/sections/Feedback/Feedback";
+import type { Metadata } from "next";
+import { alternatesFor } from "@/lib/seo/alternates";
+
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "home.meta" });
+  const site = await getTranslations({ locale, namespace: "meta" });
+  // this page shares the layout's segment, so the layout's title.template
+  // is not applied here — compose the full title ourselves
+  const title = `${t("title")} — ${site("siteName")}`;
+  return {
+    title: { absolute: title },
+    description: t("description"),
+    alternates: alternatesFor(locale, ""),
+    openGraph: {
+      title,
+      description: t("description"),
+      url: `/${locale}`,
+    },
+  };
+}
 
 export default function Home() {
   return (

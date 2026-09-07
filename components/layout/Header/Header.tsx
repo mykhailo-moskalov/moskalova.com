@@ -22,7 +22,7 @@ export default function Header() {
 
   const isLegal = pathname === "/impressum";
 
-  const [scrolled, setScrolled] = useState(isLegal);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const updateHeight = () => {
@@ -39,10 +39,8 @@ export default function Header() {
     updateHeight();
     window.addEventListener("resize", updateHeight);
 
-    if (isLegal)
-      return () => window.removeEventListener("resize", updateHeight);
-
     const handleScroll = () => setScrolled(window.scrollY > 0);
+    handleScroll();
 
     window.addEventListener("scroll", handleScroll);
 
@@ -50,7 +48,7 @@ export default function Header() {
       window.removeEventListener("resize", updateHeight);
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [isLegal]);
+  }, []);
 
   return (
     <header

@@ -71,6 +71,10 @@
       "heading": "Let's create your story together.",
       "text1": "Tell me what you're planning, and we'll taker it from there.",
       "btn": "Get in touch"
+    },
+    "meta": {
+      "description": "Natalia Moskalova — Vienna-based photographer for personal, couple & family, brand and artist portraits. Natural, cinematic, editorial images that tell your story.",
+      "title": "Photographer in Vienna"
     }
   },
   "personal": {
@@ -101,6 +105,10 @@
         "text1": "Let's create something you'll want to return to.",
         "btn": "Get in touch"
       }
+    },
+    "meta": {
+      "title": "Personal Stories · Couples & Families",
+      "description": "Portrait sessions for individuals, couples and families in Vienna — natural, cinematic photos of people being themselves."
     }
   },
   "brand": {
@@ -116,6 +124,10 @@
       "heading": "",
       "text1": "",
       "btn": "Get in touch"
+    },
+    "meta": {
+      "title": "Brand Photography",
+      "description": "Personal branding and commercial photography for entrepreneurs, businesses and hospitality in Vienna — visual stories for your brand."
     }
   },
   "creatives": {
@@ -130,6 +142,10 @@
       "heading": "",
       "text1": "",
       "btn": "Get in touch"
+    },
+    "meta": {
+      "title": "Artists & Performers",
+      "description": "Portraits of musicians, dancers, actors and creatives in Vienna — expressive, editorial images for artists and performers."
     }
   },
   "services": {
@@ -195,7 +211,11 @@
         "price": "Custom quote"
       }
     },
-    "btn": "Book a shoot"
+    "btn": "Book a shoot",
+    "meta": {
+      "title": "Services & Pricing",
+      "description": "Photo sessions in Vienna: Quick Story, Portrait Story, Personal Brand Story and commercial brand photography — packages, what's included, and prices."
+    }
   },
   "about": {
     "preHeading1": "about natalia",
@@ -206,7 +226,11 @@
     "text4": "I'll guide you throughout the shoot, help with the concept, styling and location when needed — so you don't have to know how to pose or worry about what to do in front of the camera.",
     "preHeading2": "a little more about me",
     "text5": "My background is in design, and it continues to shape the way I see. I notice spaces, light, proportions and details everywhere — and that way of seeing naturally became part of my photography.",
-    "text6": "I'm based in Vienna and work across Europe, photographing people, brands, creatives and the stories that matter to them."
+    "text6": "I'm based in Vienna and work across Europe, photographing people, brands, creatives and the stories that matter to them.",
+    "meta": {
+      "title": "About Natalia",
+      "description": "Vienna-based photographer with an editorial eye and a lifestyle feel — who I am, how I work, and why I photograph people, not poses."
+    }
   },
   "contact": {
     "form": {
@@ -237,6 +261,10 @@
       "signoff": "Warm regards,",
       "signature": "Natalia Moskalova",
       "footer": "This is an automated confirmation from moskalova.com. If you would like to add anything, simply reply to this email."
+    },
+    "meta": {
+      "title": "Contact",
+      "description": "Book a photo session in Vienna or ask a question — write to Natalia Moskalova and get a personal reply."
     }
   },
   "impressum": {
@@ -284,9 +312,35 @@
           "Zum Zeitpunkt der Verlinkung waren keine Rechtsverstöße erkennbar. Bei Bekanntwerden von Rechtsverletzungen werden derartige Links umgehend entfernt."
         ]
       }
+    },
+    "meta": {
+      "title": "Impressum",
+      "description": "Legal notice (Impressum) of Natalia Moskalova Photography, Vienna."
     }
   },
   "gallery": {
     "back": "Back to gallery"
+  },
+  "meta": {
+    "siteName": "Natalia Moskalova Photography",
+    "description": "Natalia Moskalova — Vienna-based photographer for personal, couple & family, brand and artist portraits. Natural, cinematic, editorial images that tell your story.",
+    "keywords": [
+      "photographer Vienna",
+      "portrait photographer Vienna",
+      "personal branding photographer Vienna",
+      "family photographer Vienna",
+      "couple photoshoot Vienna",
+      "brand photography Austria",
+      "lifestyle photography Vienna",
+      "editorial portraits Vienna",
+      "artist portraits Vienna",
+      "Fotografin Wien",
+      "Fotograf Wien",
+      "Porträtfotografie Wien",
+      "Businessfotografie Wien",
+      "Familienfotograf Wien",
+      "Paarshooting Wien",
+      "Künstlerporträts Wien"
+    ]
   }
 }
