@@ -1,17 +1,13 @@
-.btn {
+.accordionTrigger {
   width: 24px;
   height: 24px;
   color: var(--black);
+  text-align: left;
+  transform: none;
 }
 
 .accordionItem {
   position: relative;
-}
-
-.accordionTrigger {
-  text-align: left;
-
-  transform: none !important;
 }
 
 .accordionContent {
@@ -37,11 +33,6 @@
 }
 
 .subNavigation {
-  display: flex;
-  flex-direction: column;
-  gap: 12px !important;
-  margin-top: 12px;
-
   & li {
     cursor: pointer;
   }

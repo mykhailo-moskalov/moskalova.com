@@ -19,13 +19,15 @@ export default function Heading({
   contClassName,
   parent = false,
 }: HeadingProps) {
-  const heading = <Tag className={`${className} ${css.title}`}>{text}</Tag>;
+  const heading = (
+    <Tag className={`${className ?? ""} ${css.title}`}>{text}</Tag>
+  );
 
   if (!parent) return heading;
 
   return (
-    <Section className={sectClassName}>
-      <Container className={contClassName}>{heading}</Container>
+    <Section className={sectClassName ?? ""}>
+      <Container className={contClassName ?? ""}>{heading}</Container>
     </Section>
   );
 }

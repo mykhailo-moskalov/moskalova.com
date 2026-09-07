@@ -1,13 +1,13 @@
 import css from "./GalleriesLinks.module.css";
 import Section from "@/components/ui/Section/Section";
 import Container from "@/components/ui/Container/Container";
-import GalleriesItem from "@/components/layout/GalleriesItem/GalleriesItem";
+import GalleriesItem from "@/components/layout/GalleriesLinksItem/GalleriesLinkItem";
 import { useTranslations } from "next-intl";
 
 export default function GalleriesLinks() {
   const t = useTranslations("home");
   return (
-    <Section className={css.section}>
+    <Section>
       <Container>
         <ul className={css.galleries}>
           {Object.keys(

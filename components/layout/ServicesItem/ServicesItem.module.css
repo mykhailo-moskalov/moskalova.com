@@ -20,9 +20,6 @@
 
 .heading {
   height: 2lh;
-  @media screen and (min-width: 1440px) {
-    height: auto;
-  }
 }
 
 .subHeading {
@@ -36,4 +33,13 @@
 .price {
   font-family: var(--font-alice);
   font-size: 24px;
+}
+
+.custom {
+  max-width: 549px;
+  & .heading {
+    @media screen and (max-width: 767px) {
+      height: 3lh;
+    }
+  }
 }

@@ -1,4 +1,4 @@
-import css from "./GalleriesItem.module.css";
+import css from "./GalleriesLinksItem.module.css";
 import { useTranslations } from "next-intl";
 import Btn from "@/components/ui/Btn/Btn";
 import Image from "next/image";
@@ -6,13 +6,17 @@ import { YULIIA } from "@/lib/data/personal";
 import { THE_BODY_SPEAKS } from "@/lib/data/creatives";
 import { Link } from "@/lib/navigation";
 import { HREFS } from "@/lib/constants/navLinks";
+import Heading from "@/components/ui/Heading/Heading";
 
-type GalleriesItemProps = {
+type GalleriesLinksItemProps = {
   className?: string;
   id: string;
 };
 
-export default function GalleriesItem({ className, id }: GalleriesItemProps) {
+export default function GalleriesLinksItem({
+  className,
+  id,
+}: GalleriesLinksItemProps) {
   const t = useTranslations(`home.galleries.${id}`);
   const href =
     id === "gallery1"
@@ -39,7 +43,7 @@ export default function GalleriesItem({ className, id }: GalleriesItemProps) {
           />
         </span>
       </Link>
-      <h3 className={css.title}>{t("title")}</h3>
+      <Heading className={css.title} text={t("title")} />
       <p className={css.subtitle}>{t("subtitle")}</p>
       <Btn href={href}>{t("btn")}</Btn>
     </li>

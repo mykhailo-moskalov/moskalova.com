@@ -9,7 +9,7 @@ export default function Feedback() {
   const t = useTranslations("home.feedback");
   return (
     <Section>
-      <Container className={css.container}>
+      <Container>
         <Heading text={t("heading")} className={css.heading} />
         <FeedbackList />
       </Container>

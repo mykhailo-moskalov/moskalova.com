@@ -24,6 +24,7 @@ type HeroSwiperProps = {
 const stopIfReducedMotion = (swiper: SwiperInstance) => {
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     swiper.autoplay.stop();
+    swiper.params.speed = 0;
   }
 };
 

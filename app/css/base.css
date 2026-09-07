@@ -41,8 +41,8 @@ a {
   }
 }
 
-a:hover,
-a:focus-visible {
+a:not(.logo):hover,
+a:not(.logo):focus-visible {
   transform: translateY(-10%);
   box-shadow: none;
 }
@@ -50,4 +50,31 @@ a:focus-visible {
 svg {
   width: 100%;
   height: 100%;
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+section.headingSection:first-of-type {
+  padding-top: calc(var(--header-height) + 64px);
+}
+
+ul.accordionDropdownUl:first-child,
+ul.accordionDropdownUl:first-of-type,
+ul.accordionDropdownUl:last-child,
+ul.accordionDropdownUl:last-of-type {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
 }

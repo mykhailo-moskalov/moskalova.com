@@ -7,15 +7,10 @@ import ServicesList from "@/components/layout/ServicesList/ServicesList";
 import ServicesItem from "@/components/layout/ServicesItem/ServicesItem";
 import Approach from "@/components/layout/Approach/Approach";
 
-interface PricingProps {
-  sectClassName?: string;
-}
-
-export default function Pricing({ sectClassName }: PricingProps) {
+export default function Pricing() {
   const t = useTranslations("services");
-
   return (
-    <Section className={sectClassName}>
+    <Section>
       <Container className={css.container}>
         <Approach />
         <ServicesList exclude={["service4"]} />

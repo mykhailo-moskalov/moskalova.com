@@ -58,10 +58,6 @@ ul.navRight {
 }
 
 .subMenu {
-  display: flex;
-  flex-direction: column;
-  gap: 12px !important;
-  margin-top: 12px;
   font-size: 16px;
 }
 

@@ -11,7 +11,7 @@ interface LangSwitcherProps {
   className?: string;
 }
 
-const LangSwitcher = ({ className }: LangSwitcherProps) => {
+export default function LangSwitcher({ className }: LangSwitcherProps) {
   const router = useRouter();
   const pathname = usePathname();
   const triggerRef = useRef<HTMLButtonElement>(null);
@@ -55,7 +55,7 @@ const LangSwitcher = ({ className }: LangSwitcherProps) => {
   }, []);
 
   return (
-    <li className={className && className} ref={accordionRef}>
+    <li className={className ?? ""} ref={accordionRef}>
       <Accordion.Root
         type="single"
         collapsible
@@ -73,7 +73,7 @@ const LangSwitcher = ({ className }: LangSwitcherProps) => {
             className={css.accordionContent}
             style={{ minWidth: dropdownWidth }}
           >
-            <ul className={css.subNavigation}>
+            <ul className={`${css.subNavigation} accordionDropdownUl`}>
               <li
                 className={css.subNavigationItem}
                 onClick={() => changeLanguage("en")}
@@ -94,6 +94,4 @@ const LangSwitcher = ({ className }: LangSwitcherProps) => {
       </Accordion.Root>
     </li>
   );
-};
-
-export default LangSwitcher;
+}

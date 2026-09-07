@@ -7,5 +7,7 @@ interface ContainerProps {
 }
 
 export default function Container({ children, className }: ContainerProps) {
-  return <div className={`${css.container} ${className}`}>{children}</div>;
+  return (
+    <div className={`${css.container} ${className ?? ""}`}>{children}</div>
+  );
 }

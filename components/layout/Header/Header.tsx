@@ -11,7 +11,7 @@ import { useEffect, useRef, useState } from "react";
 import { usePathname, useRouter } from "@/lib/navigation";
 import { useTranslations } from "next-intl";
 
-const Header = () => {
+export default function Header() {
   const setIsOpen = useSidebarStore((state) => state.setIsOpen);
   const isDesktop = useWidthStore((state) => state.isDesktop);
   const headerRef = useRef<HTMLElement>(null);
@@ -82,11 +82,13 @@ const Header = () => {
             </button>
           </>
         ) : (
-          <Navigation className={css.nav} isLogo />
+          <Navigation
+            className={css.nav}
+            isLogo
+            langClassName={css.langSwitcher}
+          />
         )}
       </Container>
     </header>
   );
-};
-
-export default Header;
+}

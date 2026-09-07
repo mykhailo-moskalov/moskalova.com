@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import BenefitsList from "../BenefitsList/BenefitsList";
 import css from "./ServicesItem.module.css";
+import Heading from "@/components/ui/Heading/Heading";
 
 type ServicesItemProps = {
   className?: string;
@@ -16,10 +17,11 @@ export default function ServicesItem({
   as: Tag = "li",
 }: ServicesItemProps) {
   const t = useTranslations(`services.services.${id}`);
-
   return (
-    <Tag className={`${css.item} ${className ?? ""}`}>
-      <h3 className={css.heading}>{t("heading")}</h3>
+    <Tag
+      className={`${css.item} ${className ?? ""} ${!hasBenefits ? css.custom : ""}`}
+    >
+      <Heading className={css.heading} text={t("heading")} />
       <p className={css.subHeading}>{t("subHeading")}</p>
       {hasBenefits && (
         <BenefitsList

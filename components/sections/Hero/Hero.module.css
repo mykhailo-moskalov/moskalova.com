@@ -15,20 +15,10 @@ section.hero {
   --swiper-navigation-color: var(--white);
   --swiper-navigation-size: 28px;
   --swiper-navigation-sides-offset: 24px;
-
-  & :global(.swiper-slide) {
-    @media (prefers-reduced-motion: reduce) {
-      transition-duration: 0ms !important;
-    }
-  }
 }
 
 .slide {
   position: relative;
-}
-
-.img {
-  object-fit: cover;
 }
 
 .group {
@@ -40,4 +30,8 @@ section.hero {
 
 .cell {
   position: relative;
+}
+
+.img {
+  object-fit: cover;
 }

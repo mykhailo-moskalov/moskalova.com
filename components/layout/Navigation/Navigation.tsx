@@ -12,6 +12,7 @@ import { HREFS, LEFT_LINKS, RIGHT_LINKS } from "@/lib/constants/navLinks";
 
 interface NavigationProps {
   className?: string;
+  langClassName?: string;
   isLogo?: boolean;
   isLang?: boolean;
   withSubmenu?: boolean;
@@ -21,6 +22,7 @@ interface NavigationProps {
 
 export default function Navigation({
   className,
+  langClassName,
   isLogo = false,
   isLang = true,
   withSubmenu = true,
@@ -37,7 +39,7 @@ export default function Navigation({
 
     const subLinks = (
       <ul
-        className={`${css.subMenu} ${subAsAccordion ? css.subMenuStatic : ""}`}
+        className={`${css.subMenu} ${subAsAccordion ? css.subMenuStatic : ""} accordionDropdownUl`}
       >
         <li>
           <Link className={css.subLink} href={href} onClick={onLinkClick}>
@@ -129,7 +131,11 @@ export default function Navigation({
         <li className={css.navigationItem}>
           <ul className={css.navRight}>
             {RIGHT_LINKS.map(renderLink)}
-            {isLang && <LangSwitcher className={css.navItem} />}
+            {isLang && (
+              <LangSwitcher
+                className={`${css.navItem} ${langClassName ?? ""}`}
+              />
+            )}
           </ul>
         </li>
       </ul>

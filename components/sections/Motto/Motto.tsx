@@ -22,7 +22,7 @@ export default function Motto({
   const t = useTranslations(namespace);
   return (
     <Section className={`${backg && css.section}`}>
-      <Container className={css.container}>
+      <Container>
         <div className={`${css.textBox} ${backg && css.noBorder}`}>
           <Heading className={`${css.heading} ${caps ? css.caps : ""}`}>
             {t("heading")}
@@ -38,11 +38,7 @@ export default function Motto({
           {t.has("text2") && <p className={css.subText}>{t("text2")}</p>}
           {t.has("text3") && <p className={css.subText}>{t("text3")}</p>}
 
-          {t.has("btn") && (
-            <Btn href={href} className={css.btn}>
-              {t("btn")}
-            </Btn>
-          )}
+          {t.has("btn") && <Btn href={href}>{t("btn")}</Btn>}
         </div>
       </Container>
     </Section>

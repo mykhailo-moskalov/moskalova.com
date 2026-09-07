@@ -8,7 +8,7 @@ import { FiFacebook } from "react-icons/fi";
 import { SlSocialLinkedin } from "react-icons/sl";
 import Navigation from "../Navigation/Navigation";
 
-const Footer = () => {
+export default function Footer() {
   const footerRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -33,7 +33,7 @@ const Footer = () => {
     <footer id="footer" className={css.footer} ref={footerRef}>
       <Navigation className={css.nav} isLang={false} withSubmenu={false} />
       <ul className={css.socialsList}>
-        <li className={css.socialsItem}>
+        <li>
           <Link
             href="https://www.instagram.com/natali.moskalova"
             target="_blank"
@@ -44,7 +44,7 @@ const Footer = () => {
             <IoLogoInstagram />
           </Link>
         </li>
-        <li className={css.socialsItem}>
+        <li>
           <Link
             href="https://www.facebook.com/nataly.moskalyova"
             target="_blank"
@@ -55,7 +55,7 @@ const Footer = () => {
             <FiFacebook />
           </Link>
         </li>
-        <li className={css.socialsItem}>
+        <li>
           <Link
             href="https://www.linkedin.com/in/natalia-moskalova/"
             target="_blank"
@@ -66,7 +66,7 @@ const Footer = () => {
             <SlSocialLinkedin />
           </Link>
         </li>
-        <li className={css.socialsItem}>
+        <li>
           <Link
             href="https://wa.me/4368110652997"
             target="_blank"
@@ -86,6 +86,4 @@ const Footer = () => {
       </p>
     </footer>
   );
-};
-
-export default Footer;
+}

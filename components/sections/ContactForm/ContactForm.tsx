@@ -12,7 +12,7 @@ import Heading from "@/components/ui/Heading/Heading";
 
 const HONEYPOT_FIELD = "nm_extra";
 
-const ContactForm = () => {
+export default function ContactForm() {
   const t = useTranslations("contact.form");
   const locale = useLocale();
   const [isSending, setIsSending] = useState(false);
@@ -56,9 +56,9 @@ const ContactForm = () => {
   };
 
   return (
-    <Section id="contact" className={css.contact}>
-      <Container className={css.container}>
-        <Heading text={t("heading")} />
+    <Section id="contact" className="headingSection">
+      <Container>
+        <Heading text={t("heading")} as="h1" />
 
         <form
           className={css.form}
@@ -135,6 +135,4 @@ const ContactForm = () => {
       </Container>
     </Section>
   );
-};
-
-export default ContactForm;
+}

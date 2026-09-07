@@ -7,10 +7,9 @@
   z-index: 999;
   background-color: var(--white);
   box-shadow: none;
-}
-
-.header.scrolled {
-  box-shadow: var(--box-shadow);
+  &.scrolled {
+    box-shadow: var(--box-shadow);
+  }
 }
 
 .headerContainer {
