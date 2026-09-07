@@ -1,6 +1,7 @@
 import "../globals.css";
 import { getMessages, getTranslations } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
+import { routing } from "@/i18n/routing";
 import MobileLayout from "@/components/layout/MobileLayout/MobileLayout";
 import { Alice, Forum } from "next/font/google";
 import type { Metadata, Viewport } from "next";
@@ -65,7 +66,7 @@ export async function generateMetadata({
       // TODO: images: ["/og.jpg"]
     },
     icons: {
-      icon: [{ url: "/manifest/icon0.svg", type: "image/svg+xml" }],
+      icon: [{ url: "/manifest/icon.svg", type: "image/svg+xml" }],
       apple: "/manifest/apple-icon.png",
     },
     robots: {
@@ -76,25 +77,18 @@ export async function generateMetadata({
   };
 }
 
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
 export default async function RootLayout({
   children,
   params,
-}: Readonly<{
-  children: React.ReactNode;
-  params: Promise<{ locale: string }>;
-}>) {
+}: LayoutProps & { children: React.ReactNode }) {
   const { locale } = await params;
   const messages = await getMessages();
   return (
     <html lang={locale}>
-      <head>
-        <link
-          rel="preload"
-          as="image"
-          href="/logo/logo-black_low-res.png"
-          fetchPriority="high"
-        />
-      </head>
       <body
         className={`${alice.variable} ${forum.variable} ${forum.className}`}
       >

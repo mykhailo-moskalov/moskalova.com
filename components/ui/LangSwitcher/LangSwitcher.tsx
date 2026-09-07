@@ -65,9 +65,10 @@ export default function LangSwitcher({ className }: LangSwitcherProps) {
         <Accordion.Item value="teams" className={css.accordionItem}>
           <Accordion.Trigger
             ref={triggerRef}
-            className={`${css.btn} ${css.accordionTrigger}`}
+            className={css.accordionTrigger}
+            aria-label={t("switchLanguage")}
           >
-            <CiGlobe />
+            <CiGlobe aria-hidden="true" />
           </Accordion.Trigger>
           <Accordion.Content
             className={css.accordionContent}

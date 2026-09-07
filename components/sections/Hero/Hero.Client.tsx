@@ -5,7 +5,7 @@ import Section from "@/components/ui/Section/Section";
 import { Swiper, SwiperSlide } from "swiper/react";
 import type { Swiper as SwiperInstance } from "swiper";
 import { Autoplay, EffectFade, Keyboard, A11y } from "swiper/modules";
-import { CSSProperties } from "react";
+import { CSSProperties, useState } from "react";
 import Image from "next/image";
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -23,11 +23,24 @@ const stopIfReducedMotion = (swiper: SwiperInstance) => {
 };
 
 export default function HeroSwiper({ slides }: HeroSwiperProps) {
+  const [mounted, setMounted] = useState(() => new Set([0, 1]));
+
+  const handleSlideChange = (sw: SwiperInstance) => {
+    const current = sw.realIndex;
+    const next = (current + 1) % slides.length;
+    setMounted((prev) =>
+      prev.has(current) && prev.has(next)
+        ? prev
+        : new Set(prev).add(current).add(next),
+    );
+  };
+
   if (slides.length === 0) return null;
 
   return (
     <Section className={css.hero} aria-label="Photo slideshow">
       <Swiper
+        onSlideChange={handleSlideChange}
         modules={[Autoplay, EffectFade, Keyboard, A11y]}
         effect="fade"
         fadeEffect={{ crossFade: true }}
@@ -50,14 +63,17 @@ export default function HeroSwiper({ slides }: HeroSwiperProps) {
             >
               {group.map((photo) => (
                 <div key={photo.src} className={css.cell}>
-                  <Image
-                    src={photo.src}
-                    alt=""
-                    fill
-                    sizes={`${Math.round(100 / group.length)}vw`}
-                    priority={s === 0}
-                    className={css.img}
-                  />
+                  {mounted.has(s) && (
+                    <Image
+                      src={photo.src}
+                      alt=""
+                      fill
+                      sizes={`${Math.round(100 / group.length)}vw`}
+                      priority={s === 0}
+                      fetchPriority={s === 0 ? "high" : undefined}
+                      className={css.img}
+                    />
+                  )}
                 </div>
               ))}
             </div>

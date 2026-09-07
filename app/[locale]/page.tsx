@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import Hero from "@/components/sections/Hero/Hero";
 import Motto from "@/components/sections/Motto/Motto";
 import GalleriesLinks from "@/components/sections/GalleriesLinks/GalleriesLinks";
@@ -14,8 +14,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "home.meta" });
   const site = await getTranslations({ locale, namespace: "meta" });
-  // this page shares the layout's segment, so the layout's title.template
-  // is not applied here — compose the full title ourselves
   const title = `${t("title")} — ${site("siteName")}`;
   return {
     title: { absolute: title },
@@ -29,7 +27,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function Home() {
+export default async function Home({ params }: Props) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <main>
       <Hero />

@@ -24,10 +24,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function BrandStories() {
+export default async function BrandStories() {
   return (
     <main>
-      <GalleryTitle namespace="brand" backg="brands" />
+      <GalleryTitle namespace="brand" backg="brands" priority />
       <Motto namespace="brand.motto" href="/services" />
       <GallerySection category="brand-stories" group="brand" />
       <Motto namespace="brand.mottoEnd" href="/contact" backg />

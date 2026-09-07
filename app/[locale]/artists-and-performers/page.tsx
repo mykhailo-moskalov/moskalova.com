@@ -24,10 +24,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function ArtistsAndPerformers() {
+export default async function ArtistsAndPerformers() {
   return (
     <main>
-      <GalleryTitle namespace="creatives" backg="creatives" />
+      <GalleryTitle namespace="creatives" backg="creatives" priority />
       <Motto namespace="creatives.motto" href="/services" />
       <GallerySection category="artists-and-performers" group="creatives" />
       <Motto namespace="creatives.mottoEnd" href="/contact" backg />

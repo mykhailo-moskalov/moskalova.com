@@ -24,10 +24,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function PersonalStories() {
+export default async function PersonalStories() {
   return (
     <main>
-      <GalleryTitle namespace="personal.personal" backg="personal" />
+      <GalleryTitle namespace="personal.personal" backg="personal" priority />
       <Motto namespace="personal.personal.motto" href="/services" />
       <GallerySection category="personal-stories" group="personal" />
       <Motto namespace="personal.personal.mottoEnd" href="/contact" backg />

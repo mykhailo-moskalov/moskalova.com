@@ -1,6 +1,4 @@
 import { getTranslations } from "next-intl/server";
-import { useTranslations } from "next-intl";
-import Heading from "@/components/ui/Heading/Heading";
 import Pricing from "@/components/sections/Pricing/Pricing";
 import type { Metadata } from "next";
 import { alternatesFor } from "@/lib/seo/alternates";
@@ -24,16 +22,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function Services() {
-  const t = useTranslations("services");
+export default async function Services() {
   return (
     <main>
-      <Heading
-        text={t("heading")}
-        as="h1"
-        parent
-        sectClassName="headingSection"
-      />
       <Pricing />
     </main>
   );

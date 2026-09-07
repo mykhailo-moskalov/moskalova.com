@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function Impressum() {
+export default async function Impressum() {
   return (
     <main>
       <ImpressumSection />

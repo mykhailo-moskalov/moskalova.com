@@ -123,7 +123,7 @@ export default function Navigation({
 
         {isLogo && (
           <li className={css.navigationItem}>
-            <Logo height={64} />
+            <Logo />
           </li>
         )}
 

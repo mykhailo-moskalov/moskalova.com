@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function ArtistsAndPerformers() {
+export default async function ArtistsAndPerformers() {
   return (
     <main>
       <AboutMe />

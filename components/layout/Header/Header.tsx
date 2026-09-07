@@ -59,7 +59,7 @@ export default function Header() {
       <Container className={css.headerContainer}>
         {isLegal ? (
           <>
-            <Logo height={!isDesktop ? 48 : 64} />
+            <Logo />
             <button
               aria-label={ta("goBack")}
               onClick={router.back}
@@ -70,7 +70,7 @@ export default function Header() {
           </>
         ) : !isDesktop ? (
           <>
-            <Logo height={48} />
+            <Logo />
             <button
               aria-label={ta("openMenu")}
               className={css.burger}

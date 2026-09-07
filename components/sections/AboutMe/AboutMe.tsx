@@ -17,13 +17,14 @@ export default function AboutMe() {
           <Image
             src={ABOUT[0]}
             alt=""
+            fill
             sizes="100vw (min-width: 1440px) 600px, 60vw"
             className={css.img}
           />
         </span>
         <div className={css.textDiv}>
           <p className={css.preHeading}>{t("preHeading1")}</p>
-          <Heading text={t("heading")} className={css.heading} />
+          <Heading text={t("heading")} className={css.heading} as="h1" />
           <p className={css.text}>{t("text1")}</p>
           <p className={css.text}>{t("text2")}</p>
           <p className={css.text}>{t("text3")}</p>

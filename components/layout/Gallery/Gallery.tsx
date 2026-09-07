@@ -16,7 +16,7 @@ export default function Gallery({ category, group }: GalleryProps) {
     <ul className={css.gallery}>
       {sets.map((set, index) => (
         <Reveal key={set.slug} as="li" index={index % 2} className={css.item}>
-          <GalleryItem category={category} set={set} priority={index < 2} />
+          <GalleryItem category={category} set={set} />
         </Reveal>
       ))}
     </ul>

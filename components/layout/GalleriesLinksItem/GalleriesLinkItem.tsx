@@ -33,13 +33,14 @@ export default function GalleriesLinksItem({
 
   return (
     <li className={`${css.item} ${className ?? ""}`}>
-      <Link className={css.link} href={href} aria-label={t("btn")}>
+      <Link className={css.link} href={href} aria-label={t("title")}>
         <span className={css.thumb}>
           <Image
             src={src}
             alt=""
             className={css.img}
-            sizes="(min-width: 1440px) 33vw, (min-width: 768px) 50vw, 100vw"
+            fill
+            sizes="(min-width: 1440px) 373px, (min-width: 768px) 50vw, min(100vw - 40px, 335px)"
           />
         </span>
       </Link>

@@ -7,14 +7,9 @@ import { Link } from "@/lib/navigation";
 type GalleryItemProps = {
   category: string;
   set: GallerySet;
-  priority?: boolean;
 };
 
-export default function GalleryItem({
-  category,
-  set,
-  priority = false,
-}: GalleryItemProps) {
+export default function GalleryItem({ category, set }: GalleryItemProps) {
   const locale = useLocale();
   const title = localize(set.title, locale);
   const subtitle = localize(set.subtitle, locale);
@@ -27,7 +22,6 @@ export default function GalleryItem({
           alt={localize(set.cover.alt, locale) || title}
           fill
           sizes="(min-width: 1440px) 560px, (min-width: 768px) 50vw, 100vw"
-          priority={priority}
           className={css.img}
         />
       </span>
