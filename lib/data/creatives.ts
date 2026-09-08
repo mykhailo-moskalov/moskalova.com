@@ -1,63 +1,37 @@
-import { photosOf, set } from "./photos";
-
-const C = "creatives/";
-
-const THEATRE_STORY = photosOf(`${C}theatre-story`);
-const DANCE_IN_LIGHT = photosOf(`${C}dance-in-light`);
-const HIS_OWN_STAGE = photosOf(`${C}his-own-stage`);
-const URBAN_MOTION = photosOf(`${C}urban-motion`);
-export const THE_BODY_SPEAKS = photosOf(`${C}the-body-speaks`);
-const THE_MUSE = photosOf(`${C}the-muse`);
-const IN_TRANSIT = photosOf(`${C}in-transit`);
-export const IN_FORM = photosOf(`${C}in-form`);
-const POETRY_IN_MOTION = photosOf(`${C}poetry-in-motion`);
-const IN_THE_SHADOWS = photosOf(`${C}in-the-shadows`);
-const CITY_AS_STAGE = photosOf(`${C}city-as-stage`);
+import { set } from "./photos";
 
 export const CREATIVES_SETS = [
-  set("theatre-story", "Theatre Story", THEATRE_STORY[1], THEATRE_STORY, {
+  set("theatre-story", "creatives/theatre-story", 1, {
     title: { en: "Theatre Story", uk: "Театральна історія" },
   }),
-  set("dance-in-light", "Dance in Light", DANCE_IN_LIGHT[7], DANCE_IN_LIGHT, {
+  set("dance-in-light", "creatives/dance-in-light", 7, {
     title: { en: "Dance in Light", uk: "Танець у світлі" },
   }),
-  set("his-own-stage", "His Own Stage", HIS_OWN_STAGE[12], HIS_OWN_STAGE, {
+  set("his-own-stage", "creatives/his-own-stage", 12, {
     title: { en: "His Own Stage", uk: "Його власна сцена" },
   }),
-  set("urban-motion", "Urban Motion", URBAN_MOTION[6], URBAN_MOTION, {
+  set("urban-motion", "creatives/urban-motion", 6, {
     title: { en: "Urban Motion", uk: "Рух міста" },
   }),
-  set(
-    "the-body-speaks",
-    "The Body Speaks",
-    THE_BODY_SPEAKS[0],
-    THE_BODY_SPEAKS,
-    {
-      title: { en: "The Body Speaks", uk: "Тіло говорить" },
-    },
-  ),
-  set("the-muse", "The Muse", THE_MUSE[2], THE_MUSE, {
+  set("the-body-speaks", "creatives/the-body-speaks", 0, {
+    title: { en: "The Body Speaks", uk: "Тіло говорить" },
+  }),
+  set("the-muse", "creatives/the-muse", 2, {
     title: { en: "The Muse", uk: "Муза" },
   }),
-  set("in-transit", "In Transit", IN_TRANSIT[0], IN_TRANSIT, {
+  set("in-transit", "creatives/in-transit", 0, {
     title: { en: "In Transit", uk: "У дорозі" },
   }),
-  set("in-form", "In Form", IN_FORM[1], IN_FORM, {
+  set("in-form", "creatives/in-form", 1, {
     title: { en: "In Form", uk: "У формі" },
   }),
-  set(
-    "poetry-in-motion",
-    "Poetry in Motion",
-    POETRY_IN_MOTION[4],
-    POETRY_IN_MOTION,
-    {
-      title: { en: "Poetry in Motion", uk: "Поезія в русі" },
-    },
-  ),
-  set("in-the-shadows", "In the Shadows", IN_THE_SHADOWS[0], IN_THE_SHADOWS, {
+  set("poetry-in-motion", "creatives/poetry-in-motion", 4, {
+    title: { en: "Poetry in Motion", uk: "Поезія в русі" },
+  }),
+  set("in-the-shadows", "creatives/in-the-shadows", 0, {
     title: { en: "In the Shadows", uk: "У тіні" },
   }),
-  set("city-as-stage", "City as Stage", CITY_AS_STAGE[0], CITY_AS_STAGE, {
+  set("city-as-stage", "creatives/city-as-stage", 0, {
     title: { en: "City as Stage", uk: "Місто як сцена" },
   }),
 ];

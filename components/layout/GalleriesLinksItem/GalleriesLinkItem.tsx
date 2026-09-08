@@ -5,8 +5,7 @@ import Btn from "@/components/ui/Btn/Btn";
 import Image from "next/image";
 import { Link } from "@/lib/navigation";
 import { HREFS } from "@/lib/constants/navLinks";
-import { YULIIA } from "@/lib/data/personal";
-import { THE_BODY_SPEAKS } from "@/lib/data/creatives";
+import { photo } from "@/lib/data/galleries";
 
 type GalleriesLinksItemProps = {
   className?: string;
@@ -26,10 +25,10 @@ export default function GalleriesLinksItem({
         : HREFS.creatives;
   const src =
     id === "gallery1"
-      ? YULIIA[3]
+      ? photo("personal/yuliia", 3)
       : id === "gallery2"
-        ? YULIIA[3]
-        : THE_BODY_SPEAKS[11];
+        ? photo("brand/at-work", 2)
+        : photo("creatives/the-body-speaks", 11);
 
   return (
     <li className={`${css.item} ${className ?? ""}`}>

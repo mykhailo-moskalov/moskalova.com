@@ -15,7 +15,8 @@ interface NavigationProps {
   isLogo?: boolean;
   isLang?: boolean;
   withSubmenu?: boolean;
-  subAsAccordion?: boolean;
+  subAccordionPersonal?: boolean;
+  subAccordionBrand?: boolean;
   onLinkClick?: () => void;
 }
 
@@ -25,7 +26,8 @@ export default function Navigation({
   isLogo = false,
   isLang = true,
   withSubmenu = true,
-  subAsAccordion = false,
+  subAccordionPersonal = false,
+  subAccordionBrand = false,
   onLinkClick,
 }: NavigationProps) {
   const t = useTranslations("nav");
@@ -36,9 +38,9 @@ export default function Navigation({
     const href = HREFS.personal;
     const isActive = pathname.startsWith(href);
 
-    const subLinks = (
+    const subLinksPersonal = (
       <ul
-        className={`${css.subMenu} ${subAsAccordion ? css.subMenuStatic : ""} accordionDropdownUl`}
+        className={`${css.subMenu} ${subAccordionPersonal ? css.subMenuStatic : ""} accordionDropdownUl`}
       >
         <li>
           <Link className={css.subLink} href={href} onClick={onLinkClick}>
@@ -57,7 +59,7 @@ export default function Navigation({
       </ul>
     );
 
-    if (subAsAccordion) {
+    if (subAccordionPersonal) {
       return (
         <li key="personal" className={css.navItem}>
           <Accordion.Root type="single" collapsible>
@@ -69,7 +71,7 @@ export default function Navigation({
                 <IoChevronDown aria-hidden="true" />
               </Accordion.Trigger>
               <Accordion.Content className={css.accordionContent}>
-                {subLinks}
+                {subLinksPersonal}
               </Accordion.Content>
             </Accordion.Item>
           </Accordion.Root>
@@ -87,13 +89,83 @@ export default function Navigation({
         >
           {t("personal.main")}
         </Link>
-        <div className={css.subPanel}>{subLinks}</div>
+        <div className={css.subPanel}>{subLinksPersonal}</div>
+      </li>
+    );
+  };
+
+  const renderBrand = () => {
+    const href = HREFS.brand;
+    const isActive = pathname.startsWith(href);
+
+    const subLinksBrand = (
+      <ul
+        className={`${css.subMenu} ${subAccordionBrand ? css.subMenuStatic : ""} accordionDropdownUl`}
+      >
+        <li>
+          <Link className={css.subLink} href={href} onClick={onLinkClick}>
+            {t("brand.personalBrand")}
+          </Link>
+        </li>
+        <li>
+          <Link
+            className={css.subLink}
+            href={`${href}#brands`}
+            onClick={onLinkClick}
+          >
+            {t("brand.brand")}
+          </Link>
+        </li>
+        <li>
+          <Link
+            className={css.subLink}
+            href={`${href}#hospitality`}
+            onClick={onLinkClick}
+          >
+            {t("brand.interior")}
+          </Link>
+        </li>
+      </ul>
+    );
+
+    if (subAccordionBrand) {
+      return (
+        <li key="brand" className={css.navItem}>
+          <Accordion.Root type="single" collapsible>
+            <Accordion.Item value="brand">
+              <Accordion.Trigger
+                className={`${css.accordionTrigger} ${isActive ? css.activeTrigger : ""}`}
+              >
+                {t("brand.main")}
+                <IoChevronDown aria-hidden="true" />
+              </Accordion.Trigger>
+              <Accordion.Content className={css.accordionContent}>
+                {subLinksBrand}
+              </Accordion.Content>
+            </Accordion.Item>
+          </Accordion.Root>
+        </li>
+      );
+    }
+
+    return (
+      <li key="brand" className={`${css.navItem} ${css.hasSub}`}>
+        <Link
+          className={css.navigationLink}
+          href={href}
+          aria-current={isActive ? "page" : undefined}
+          onClick={onLinkClick}
+        >
+          {t("brand.main")}
+        </Link>
+        <div className={css.subPanel}>{subLinksBrand}</div>
       </li>
     );
   };
 
   const renderLink = (key: keyof typeof HREFS) => {
     if (key === "personal" && withSubmenu) return renderPersonal();
+    if (key === "brand" && withSubmenu) return renderBrand();
     const href = HREFS[key];
     const isActive =
       href === "/" ? pathname === "/" : pathname.startsWith(href);
@@ -105,7 +177,11 @@ export default function Navigation({
           aria-current={isActive ? "page" : undefined}
           onClick={onLinkClick}
         >
-          {key === "personal" ? t("personal.main") : t(key)}
+          {key === "personal"
+            ? t("personal.main")
+            : key === "brand"
+              ? t("brand.main")
+              : t(key)}
         </Link>
       </li>
     );

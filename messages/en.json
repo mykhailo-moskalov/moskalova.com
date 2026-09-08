@@ -9,7 +9,12 @@
       "personal": "Personal Stories",
       "couples": "Couples & Families"
     },
-    "brand": "Brand",
+    "brand": {
+      "main": "Brand",
+      "personalBrand": "personal brands",
+      "brand": "brands & small businesses",
+      "interior": "travel & hospitality"
+    },
     "creatives": "Creatives",
     "services": "Services",
     "about": "About",
@@ -112,18 +117,47 @@
     }
   },
   "brand": {
-    "heading": "brand stories",
-    "motto": {
-      "heading": "Your brand has a story to tell.",
-      "text1": "Your business is more than a logo, a product or a service. It's the people behind it, the way you work, the spaces you create, the details, the atmosphere — everything that makes it yours.",
-      "text2": "I create natural, thoughtful imagery for personal brands, small businesses and creative projects — from portraits and everyday content to campaigns, interiors and visual stories.",
-      "text3": "Whether you need images for your website, social media, a new launch or simply a stronger visual presence, we'll create photographs that feel authentic to your brand.",
-      "btn": "To services"
+    "personalBrand": {
+      "heading": "personal brands",
+      "motto": {
+        "heading": "Your brand has a story to tell.",
+        "text1": "Your business is more than a logo, a product or a service. It's the people behind it, the way you work, the spaces you create, the details, the atmosphere — everything that makes it yours.",
+        "text2": "Whether you need images for your website, social media, a new launch or simply a stronger visual presence, we'll create photographs that feel authentic to your brand.",
+        "btn": "To services"
+      },
+      "mottoEnd": {
+        "heading": "Your brand, in focus.",
+        "text1": "Tell me about your business, and we'll plan a shoot that looks unmistakably like you.",
+        "btn": "Get in touch"
+      }
     },
-    "mottoEnd": {
-      "heading": "Your brand, in focus.",
-      "text1": "Tell me about your business, and we'll plan a shoot that looks unmistakably like you.",
-      "btn": "Get in touch"
+    "brand": {
+      "heading": "brands & small businesses",
+      "motto": {
+        "heading": "Your brand has a story to tell.",
+        "text1": "Your business is more than a logo, a product or a service. It's the people behind it, the way you work, the spaces you create, the details, the atmosphere — everything that makes it yours.",
+        "text2": "Whether you need images for your website, social media, a new launch or simply a stronger visual presence, we'll create photographs that feel authentic to your brand.",
+        "btn": "To services"
+      },
+      "mottoEnd": {
+        "heading": "Your brand, in focus.",
+        "text1": "Tell me about your business, and we'll plan a shoot that looks unmistakably like you.",
+        "btn": "Get in touch"
+      }
+    },
+    "interior": {
+      "heading": "travel & hospitality",
+      "motto": {
+        "heading": "Your brand has a story to tell.",
+        "text1": "Your business is more than a logo, a product or a service. It's the people behind it, the way you work, the spaces you create, the details, the atmosphere — everything that makes it yours.",
+        "text2": "Whether you need images for your website, social media, a new launch or simply a stronger visual presence, we'll create photographs that feel authentic to your brand.",
+        "btn": "To services"
+      },
+      "mottoEnd": {
+        "heading": "Your brand, in focus.",
+        "text1": "Tell me about your business, and we'll plan a shoot that looks unmistakably like you.",
+        "btn": "Get in touch"
+      }
     },
     "meta": {
       "title": "Brand Photography",

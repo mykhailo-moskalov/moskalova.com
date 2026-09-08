@@ -18,12 +18,24 @@ export function photosOf(folder: string): Photo[] {
   }));
 }
 
+export function photo(folder: string, index: number): Photo {
+  const p = photosOf(folder)[index];
+  if (!p) {
+    throw new Error(
+      `"${folder}" has ${photosOf(folder).length} photos, index ${index} does not exist`,
+    );
+  }
+  return p;
+}
+
+type SetMeta = Pick<GallerySet, "title" | "subtitle">;
+
 export function set(
   slug: string,
-  title: string,
-  cover: Photo,
-  photos: Photo[],
-  extra?: Partial<GallerySet>,
+  folder: string,
+  coverIndex: number,
+  meta: SetMeta,
 ): GallerySet {
-  return { slug, title: { en: title }, cover, photos, ...extra };
+  const photos = photosOf(folder);
+  return { slug, ...meta, cover: photo(folder, coverIndex), photos };
 }

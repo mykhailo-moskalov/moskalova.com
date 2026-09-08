@@ -31,6 +31,7 @@ export default async function PersonalStories() {
       <Motto namespace="personal.personal.motto" href="/services" />
       <GallerySection category="personal-stories" group="personal" />
       <Motto namespace="personal.personal.mottoEnd" href="/contact" backg />
+
       <GalleryTitle id="couples" namespace="personal.couples" backg="couples" />
       <Motto namespace="personal.couples.motto" href="/services" />
       <GallerySection category="personal-stories" group="couples" />

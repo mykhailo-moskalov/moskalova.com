@@ -1,21 +1,10 @@
-import { BRAND_SETS } from "./brand";
-import { COUPLES_SETS, PERSONAL_SETS } from "./personal";
-import { CREATIVES_SETS } from "./creatives";
 import type { GalleryCategory } from "@/lib/types/gallery";
-
-// re-exported so components keep importing from here; data files import "./photos"
-export { photosOf, set } from "./photos";
+import { COUPLES_SETS, PERSONAL_SETS } from "./personal";
+import { PERSONAL_BRAND_SETS, BRAND_SETS, INTERIOR_SETS } from "./brand";
+import { CREATIVES_SETS } from "./creatives";
+export { photosOf, photo } from "./photos";
 
 export const GALLERIES: GalleryCategory[] = [
-  {
-    slug: "brand-stories",
-    groups: [
-      {
-        id: "brand",
-        sets: BRAND_SETS,
-      },
-    ],
-  },
   {
     slug: "personal-stories",
     groups: [
@@ -26,6 +15,23 @@ export const GALLERIES: GalleryCategory[] = [
       {
         id: "couples",
         sets: COUPLES_SETS,
+      },
+    ],
+  },
+  {
+    slug: "brand-stories",
+    groups: [
+      {
+        id: "personalBrand",
+        sets: PERSONAL_BRAND_SETS,
+      },
+      {
+        id: "brand",
+        sets: BRAND_SETS,
+      },
+      {
+        id: "interior",
+        sets: INTERIOR_SETS,
       },
     ],
   },

@@ -3,17 +3,31 @@ import { useTranslations } from "next-intl";
 import Section from "@/components/ui/Section/Section";
 import Container from "@/components/ui/Container/Container";
 import Image from "next/image";
-import { OUR_TOGETHER, SOPHIIA } from "@/lib/data/personal";
-import { IN_FORM } from "@/lib/data/creatives";
-import { COASTAL_STORY } from "@/lib/data/brand";
+import { Photo } from "@/lib/types/gallery";
+import { photo } from "@/lib/data/galleries";
 
 type GalleryTitleProps = {
   namespace: string;
   as?: "h1" | "h2";
-  backg: "personal" | "couples" | "brands" | "creatives";
+  backg:
+    | "personal"
+    | "couples"
+    | "brand"
+    | "personalBrand"
+    | "interior"
+    | "creatives";
   id?: string;
   priority?: boolean;
 };
+
+const BACKGROUNDS = {
+  personal: photo("personal/sofiia", 14),
+  couples: photo("personal/our-together", 4),
+  personalBrand: photo("brand/the-coach", 3),
+  brand: photo("brand/coastal-story", 12),
+  interior: photo("brand/a-french-escape", 5),
+  creatives: photo("creatives/in-form", 0),
+} satisfies Record<GalleryTitleProps["backg"], Photo>;
 
 export default function GalleryTitle({
   namespace,
@@ -23,14 +37,7 @@ export default function GalleryTitle({
   priority,
 }: GalleryTitleProps) {
   const t = useTranslations(namespace);
-  const src =
-    backg === "personal"
-      ? SOPHIIA[14]
-      : backg === "couples"
-        ? OUR_TOGETHER[4]
-        : backg === "brands"
-          ? COASTAL_STORY[12]
-          : IN_FORM[0];
+  const src = BACKGROUNDS[backg];
   return (
     <Section id={id} className={css.section}>
       <Image

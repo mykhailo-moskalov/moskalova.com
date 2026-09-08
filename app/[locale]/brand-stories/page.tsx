@@ -27,10 +27,28 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function BrandStories() {
   return (
     <main>
-      <GalleryTitle namespace="brand" backg="brands" priority />
-      <Motto namespace="brand.motto" href="/services" />
+      <GalleryTitle
+        namespace="brand.personalBrand"
+        backg="personalBrand"
+        priority
+      />
+      <Motto namespace="brand.personalBrand.motto" href="/services" />
+      <GallerySection category="brand-stories" group="personalBrand" />
+      <Motto namespace="brand.personalBrand.mottoEnd" href="/contact" backg />
+
+      <GalleryTitle id="brands" namespace="brand.brand" backg="brand" />
+      <Motto namespace="brand.brand.motto" href="/services" />
       <GallerySection category="brand-stories" group="brand" />
-      <Motto namespace="brand.mottoEnd" href="/contact" backg />
+      <Motto namespace="brand.brand.mottoEnd" href="/contact" backg />
+
+      <GalleryTitle
+        id="hospitality"
+        namespace="brand.interior"
+        backg="interior"
+      />
+      <Motto namespace="brand.interior.motto" href="/services" />
+      <GallerySection category="brand-stories" group="interior" />
+      <Motto namespace="brand.interior.mottoEnd" href="/contact" backg />
     </main>
   );
 }
