@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import Pricing from "@/components/sections/Pricing/Pricing";
+import FAQ from "@/components/sections/FAQ/FAQ";
 import type { Metadata } from "next";
 import { alternatesFor } from "@/lib/seo/alternates";
 
@@ -26,6 +27,7 @@ export default async function Services() {
   return (
     <main>
       <Pricing />
+      <FAQ />
     </main>
   );
 }

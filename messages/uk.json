@@ -3,17 +3,22 @@
     "goBack": "На головну"
   },
   "nav": {
-    "home": "Головна",
+    "home": "головна",
     "personal": {
-      "main": "Персональні",
-      "personal": "Особисті історії",
-      "couples": "Пари & сімʼї"
+      "main": "персональні",
+      "personal": "особисті історії",
+      "couples": "пари & сімʼї"
     },
-    "brand": "Бренд",
-    "creatives": "Творчі",
-    "services": "Послуги",
-    "about": "Про мене",
-    "contact": "Контакти"
+    "brand": {
+      "main": "бренд",
+      "personalBrand": "персональні бренди",
+      "brand": "бренди та малий бізнес",
+      "interior": "подорожі та гостинність"
+    },
+    "creatives": "творчі",
+    "services": "послуги",
+    "about": "про мене",
+    "contact": "контакти"
   },
   "aria": {
     "mainNavigation": "Головна навігація",
@@ -26,11 +31,11 @@
   },
   "home": {
     "motto": {
-      "heading": "погляд editorial.",
-      "subHeading": "відчуття lifestyle.",
-      "text1": "Мій стиль — десь між editorial і lifestyle: продумана композиція, але без надмірного позування.",
-      "text2": "Я люблю природний рух, гарне світло, продуманий стайлінг і справжній контакт між людьми.",
-      "text3": "Результат? Знімки — невимушені, особисті й по-справжньому ваші.",
+      "heading": "редакційний погляд.",
+      "subHeading": "відчуття лайфстайлу.",
+      "text1": "Мій стиль — десь між редакційною зйомкою та лайфстайлом: продумана композиція, але без надмірного позування.",
+      "text2": "Я люблю природний рух, красиве світло, продуманий стиль і справжній людський звʼязок.",
+      "text3": "Результат? Знімки, що виглядають невимушено, особисто й по-справжньому вашими.",
       "btn": "Більше про мене"
     },
     "galleries": {
@@ -68,8 +73,8 @@
       }
     },
     "mottoEnd": {
-      "heading": "Створімо вашу історію разом.",
-      "text1": "Розкажіть, що ви плануєте, а решту ми продумаємо разом.",
+      "heading": "Створимо Вашу Історію разом",
+      "text1": "Розкажіть про свою ідею, — а я допоможу втілити її у знімках.",
       "btn": "Звʼязатися"
     },
     "meta": {
@@ -113,11 +118,11 @@
   },
   "brand": {
     "personalBrand": {
-      "heading": "особисті бренди",
+      "heading": "персональні бренди",
       "motto": {
-        "heading": "У вашого бренду є своя історія.",
-        "text1": "Ваш бізнес — це більше, ніж логотип, продукт чи послуга. Це люди, які за ним стоять, те, як ви працюєте, простір, який ви створюєте, деталі, атмосфера — усе, що робить його саме вашим.",
-        "text2": "Чи потрібні вам фотографії для сайту, соціальних мереж, запуску нового продукту або просто сильнішої візуальної присутності — ми створимо зображення, які будуть справжніми та відповідатимуть вашому бренду.",
+        "heading": "Візуальні історії про людей, які стоять за своєю справою",
+        "text1": "Я створюю фотографії, які передають не лише те, чим ви займаєтесь, а й те, хто ви та яке відчуття стоїть за вашим особистим брендом.",
+        "text2": "Від продуманих портретів до природних моментів у роботі — мені важливо створювати образи, які відчуваються особистими, автентичними та відповідають вашому баченню.",
         "btn": "До послуг"
       },
       "mottoEnd": {
@@ -127,11 +132,11 @@
       }
     },
     "brand": {
-      "heading": "бренди та малі підприємства",
+      "heading": "бренди та малий бізнес",
       "motto": {
-        "heading": "У вашого бренду є своя історія.",
-        "text1": "Ваш бізнес — це більше, ніж логотип, продукт чи послуга. Це люди, які за ним стоять, те, як ви працюєте, простір, який ви створюєте, деталі, атмосфера — усе, що робить його саме вашим.",
-        "text2": "Чи потрібні вам фотографії для сайту, соціальних мереж, запуску нового продукту або просто сильнішої візуальної присутності — ми створимо зображення, які будуть справжніми та відповідатимуть вашому бренду.",
+        "heading": "Фотографії, які втілюють вашу ідею",
+        "text1": "У кожного бренду є своя історія — іноді вона в самому продукті, іноді в процесі його створення, людях за ним, просторі чи деталях.",
+        "text2": "Від кампаній для slow fashion і предметної зйомки до творчих бізнесів, майстрів та процесу створення — я створюю візуальні історії, які виглядають природно, продумано й точно передають характер вашого бренду.",
         "btn": "До послуг"
       },
       "mottoEnd": {
@@ -141,11 +146,11 @@
       }
     },
     "interior": {
-      "heading": "туризм та готельний бізнес",
+      "heading": "подорожі та гостинність",
       "motto": {
-        "heading": "У вашого бренду є своя історія.",
-        "text1": "Ваш бізнес — це більше, ніж логотип, продукт чи послуга. Це люди, які за ним стоять, те, як ви працюєте, простір, який ви створюєте, деталі, атмосфера — усе, що робить його саме вашим.",
-        "text2": "Чи потрібні вам фотографії для сайту, соціальних мереж, запуску нового продукту або просто сильнішої візуальної присутності — ми створимо зображення, які будуть справжніми та відповідатимуть вашому бренду.",
+        "heading": "Відчуття місця — більше, ніж просто інтерʼєр",
+        "text1": "У зйомці для сфери гостинності та подорожей я показую більше, ніж просто простір.",
+        "text2": "Я передаю атмосферу, деталі, оточення та маленькі моменти, які допомагають уявити, як це — бути в цьому місці, створюючи візуальну історію не лише про простір, а й про досвід перебування в ньому.",
         "btn": "До послуг"
       },
       "mottoEnd": {
@@ -162,14 +167,14 @@
   "creatives": {
     "heading": "артисти & виконавці",
     "motto": {
-      "heading": "Там, де оживає образ.",
-      "text1": "Я фотографую артистів і виконавців — їхній характер, рух, атмосферу та емоції.",
-      "text2": "Від театру й танцю до музики та перформансу — створюю портрети та історії про людей, які стоять за творчістю.",
+      "heading": "Там, де на першому місці — самовираження.",
+      "text1": "Я фотографую творчих людей через характер, рух, атмосферу та емоцію — створюючи образи, які передають ту саму енергію, що й ваша творчість.",
+      "text2": "Від музики й танцю до театру та перформансу — створюю виразні портрети й візуальні історії з редакційним поглядом.",
       "btn": "До послуг"
     },
     "mottoEnd": {
-      "heading": "Ваша творчість заслуговує на те, щоб її побачили.",
-      "text1": "Розкажіть про своє мистецтво чи виступ — і ми створимо знімки, що передають його енергію.",
+      "heading": "Ваша творчість варта того, щоб її побачили.",
+      "text1": "Розкажіть мені про своє мистецтво чи проєкт — і ми створимо образи, які передадуть його енергію.",
       "btn": "Звʼязатися"
     },
     "meta": {
@@ -241,6 +246,35 @@
       }
     },
     "btn": "Замовити фотосесію",
+    "faq": {
+      "heading": "Q&A",
+      "items": [
+        {
+          "question": "How far ahead should I book?",
+          "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae est nam distinctio nostrum aspernatur ullam. Dolore voluptates assumenda autem quaerat quas excepturi. Quasi, maxime quibusdam! Delectus omnis magni minima laboriosam inventore. Excepturi iste enim obcaecati nam perferendis facere quae id!"
+        },
+        {
+          "question": "Where do the sessions take place?",
+          "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae est nam distinctio nostrum aspernatur ullam. Dolore voluptates assumenda autem quaerat quas excepturi. Quasi, maxime quibusdam! Delectus omnis magni minima laboriosam inventore. Excepturi iste enim obcaecati nam perferendis facere quae id!"
+        },
+        {
+          "question": "Lorem ipsum dolor sit amet?",
+          "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae est nam distinctio nostrum aspernatur ullam. Dolore voluptates assumenda autem quaerat quas excepturi. Quasi, maxime quibusdam! Delectus omnis magni minima laboriosam inventore. Excepturi iste enim obcaecati nam perferendis facere quae id!"
+        },
+        {
+          "question": "Lorem ipsum dolor sit?",
+          "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae est nam distinctio nostrum aspernatur ullam. Dolore voluptates assumenda autem quaerat quas excepturi. Quasi, maxime quibusdam! Delectus omnis magni minima laboriosam inventore. Excepturi iste enim obcaecati nam perferendis facere quae id!"
+        },
+        {
+          "question": "Lorem ipsum dolor sit amet consectetur?",
+          "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae est nam distinctio nostrum aspernatur ullam. Dolore voluptates assumenda autem quaerat quas excepturi. Quasi, maxime quibusdam! Delectus omnis magni minima laboriosam inventore. Excepturi iste enim obcaecati nam perferendis facere quae id!"
+        },
+        {
+          "question": "Lorem ipsum dolor sit, amet consectetur adipisicing?",
+          "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae est nam distinctio nostrum aspernatur ullam. Dolore voluptates assumenda autem quaerat quas excepturi. Quasi, maxime quibusdam! Delectus omnis magni minima laboriosam inventore. Excepturi iste enim obcaecati nam perferendis facere quae id!"
+        }
+      ]
+    },
     "meta": {
       "title": "Фотосесія у Відні · Ціни",
       "description": "Фотосесії у Відні: Quick Story, Portrait Story, Personal Brand Story та комерційна бренд-зйомка — що входить у кожен пакет і скільки це коштує."

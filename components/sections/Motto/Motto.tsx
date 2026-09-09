@@ -29,7 +29,7 @@ export default function Motto({
           </Heading>
           {t.has("subHeading") && (
             <span className={`${css.subHeading} ${caps ? css.caps : ""}`}>
-              <strong>{t("subHeading")}</strong>
+              {t("subHeading")}
             </span>
           )}
           <p className={css.subText}>
@@ -38,7 +38,11 @@ export default function Motto({
           {t.has("text2") && <p className={css.subText}>{t("text2")}</p>}
           {t.has("text3") && <p className={css.subText}>{t("text3")}</p>}
 
-          {t.has("btn") && <Btn href={href}>{t("btn")}</Btn>}
+          {t.has("btn") && (
+            <Btn href={href} className={css.btn}>
+              {t("btn")}
+            </Btn>
+          )}
         </div>
       </Container>
     </Section>

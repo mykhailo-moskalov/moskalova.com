@@ -3,8 +3,8 @@ import { useTranslations } from "next-intl";
 import Section from "@/components/ui/Section/Section";
 import Container from "@/components/ui/Container/Container";
 import Image from "next/image";
-import { Photo } from "@/lib/types/gallery";
 import { photo } from "@/lib/data/galleries";
+import { Photo } from "@/lib/types/gallery";
 
 type GalleryTitleProps = {
   namespace: string;

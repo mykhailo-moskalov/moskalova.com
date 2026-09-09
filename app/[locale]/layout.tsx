@@ -1,24 +1,24 @@
 import "../globals.css";
 import { getMessages, getTranslations } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
-import { routing } from "@/i18n/routing";
 import MobileLayout from "@/components/layout/MobileLayout/MobileLayout";
-import { Alice, Forum } from "next/font/google";
+import { Cormorant_Garamond, Forum } from "next/font/google";
 import type { Metadata, Viewport } from "next";
 import { alternatesFor, ogLocale, SITE_URL } from "@/lib/seo/alternates";
+import { routing } from "@/i18n/routing";
 
-const alice = Alice({
-  weight: ["400"],
-  variable: "--font-alice",
+const cormorant = Cormorant_Garamond({
+  weight: ["400", "500"],
+  variable: "--font-cormorant",
   display: "swap",
-  subsets: ["latin"],
+  subsets: ["latin", "cyrillic"],
 });
 
 const forum = Forum({
   weight: ["400"],
   variable: "--font-forum",
   display: "swap",
-  subsets: ["latin"],
+  subsets: ["latin", "cyrillic"],
 });
 
 export const viewport: Viewport = {
@@ -90,7 +90,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body
-        className={`${alice.variable} ${forum.variable} ${forum.className}`}
+        className={`${cormorant.variable} ${forum.variable} ${forum.className}`}
       >
         <NextIntlClientProvider messages={messages}>
           <MobileLayout>{children}</MobileLayout>

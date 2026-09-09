@@ -1,7 +1,7 @@
 import Image from "next/image";
+import { useWidthStore } from "@/lib/store/widthStore";
 import { Link } from "@/lib/navigation";
 import logo from "@/public/logo/logo-black_low-res.png";
-import { useWidthStore } from "@/lib/store/widthStore";
 
 export default function Logo() {
   const isDesktop = useWidthStore((state) => state.isDesktop);

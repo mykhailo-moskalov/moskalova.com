@@ -31,8 +31,9 @@
 }
 
 .price {
-  font-family: var(--font-alice);
+  font-family: var(--font-cormorant);
   font-size: 24px;
+  font-weight: 500;
 }
 
 .custom {

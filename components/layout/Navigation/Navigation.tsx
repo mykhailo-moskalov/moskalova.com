@@ -40,7 +40,7 @@ export default function Navigation({
 
     const subLinksPersonal = (
       <ul
-        className={`${css.subMenu} ${subAccordionPersonal ? css.subMenuStatic : ""} accordionDropdownUl`}
+        className={`${css.subMenu} ${subAccordionPersonal ? css.subMenuStatic : ""} accordionDropdownUl subMenu`}
       >
         <li>
           <Link className={css.subLink} href={href} onClick={onLinkClick}>
@@ -61,7 +61,7 @@ export default function Navigation({
 
     if (subAccordionPersonal) {
       return (
-        <li key="personal" className={css.navItem}>
+        <li key="personal" className={css.navigationItem}>
           <Accordion.Root type="single" collapsible>
             <Accordion.Item value="personal">
               <Accordion.Trigger
@@ -80,7 +80,7 @@ export default function Navigation({
     }
 
     return (
-      <li key="personal" className={`${css.navItem} ${css.hasSub}`}>
+      <li key="personal" className={`${css.navigationItem} ${css.hasSub}`}>
         <Link
           className={css.navigationLink}
           href={href}
@@ -100,7 +100,7 @@ export default function Navigation({
 
     const subLinksBrand = (
       <ul
-        className={`${css.subMenu} ${subAccordionBrand ? css.subMenuStatic : ""} accordionDropdownUl`}
+        className={`${css.subMenu} ${subAccordionBrand ? css.subMenuStatic : ""} accordionDropdownUl subMenu`}
       >
         <li>
           <Link className={css.subLink} href={href} onClick={onLinkClick}>
@@ -130,7 +130,7 @@ export default function Navigation({
 
     if (subAccordionBrand) {
       return (
-        <li key="brand" className={css.navItem}>
+        <li key="brand" className={css.navigationItem}>
           <Accordion.Root type="single" collapsible>
             <Accordion.Item value="brand">
               <Accordion.Trigger
@@ -149,7 +149,7 @@ export default function Navigation({
     }
 
     return (
-      <li key="brand" className={`${css.navItem} ${css.hasSub}`}>
+      <li key="brand" className={`${css.navigationItem} ${css.hasSub}`}>
         <Link
           className={css.navigationLink}
           href={href}
@@ -170,7 +170,7 @@ export default function Navigation({
     const isActive =
       href === "/" ? pathname === "/" : pathname.startsWith(href);
     return (
-      <li key={key} className={css.navItem}>
+      <li key={key} className={css.navigationItem}>
         <Link
           className={css.navigationLink}
           href={href}
@@ -208,7 +208,7 @@ export default function Navigation({
             {RIGHT_LINKS.map(renderLink)}
             {isLang && (
               <LangSwitcher
-                className={`${css.navItem} ${langClassName ?? ""}`}
+                className={`${css.navigationItem} ${langClassName ?? ""}`}
               />
             )}
           </ul>

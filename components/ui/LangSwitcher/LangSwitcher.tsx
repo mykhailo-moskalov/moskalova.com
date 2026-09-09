@@ -62,7 +62,7 @@ export default function LangSwitcher({ className }: LangSwitcherProps) {
         value={openItem}
         onValueChange={setOpenItem}
       >
-        <Accordion.Item value="teams" className={css.accordionItem}>
+        <Accordion.Item value="langs" className={css.accordionItem}>
           <Accordion.Trigger
             ref={triggerRef}
             className={css.accordionTrigger}

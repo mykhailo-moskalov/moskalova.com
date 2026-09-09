@@ -1,6 +1,6 @@
 .navigation {
   text-transform: capitalize;
-  font-family: var(--font-alice);
+  font-family: var(--font-cormorant);
   text-align: center;
 
   display: flex;
@@ -26,6 +26,7 @@ ul.navRight {
 
 .navigationItem {
   position: relative;
+  font-weight: 500;
 }
 
 .navigationLink {
@@ -53,7 +54,7 @@ ul.navRight {
     top: 100%;
     left: -24px;
     right: -24px;
-    height: 40px;
+    height: 43px;
   }
 }
 
@@ -122,8 +123,10 @@ ul.navRight {
 
 @media only screen and (min-width: 1440px) {
   .subPanel {
-    position: fixed;
-    top: var(--header-height);
+    position: absolute;
+    top: 100%;
+    left: -16px;
+    text-align: left;
     z-index: 100;
 
     display: grid;
@@ -147,6 +150,7 @@ ul.navRight {
   .subPanel > .subMenu {
     overflow: hidden;
     min-height: 0;
+    min-width: fit-content;
     margin: 0;
     padding: 0 16px;
 

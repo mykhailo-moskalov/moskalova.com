@@ -1,7 +1,7 @@
-import type { GalleryCategory } from "@/lib/types/gallery";
 import { COUPLES_SETS, PERSONAL_SETS } from "./personal";
 import { PERSONAL_BRAND_SETS, BRAND_SETS, INTERIOR_SETS } from "./brand";
 import { CREATIVES_SETS } from "./creatives";
+import type { GalleryCategory } from "@/lib/types/gallery";
 export { photosOf, photo } from "./photos";
 
 export const GALLERIES: GalleryCategory[] = [

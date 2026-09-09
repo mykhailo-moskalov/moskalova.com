@@ -8,6 +8,7 @@
 
 .accordionItem {
   position: relative;
+  font-weight: 500;
 }
 
 .accordionContent {

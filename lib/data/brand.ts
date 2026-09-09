@@ -51,7 +51,7 @@ export const PERSONAL_BRAND_SETS = [
       uk: "Персональний бренд для стиліста",
     },
   }),
-  set("behind-the-suit", "brand/behind-the-suit", 8, {
+  set("behind-the-suit", "brand/behind-the-suit", 5, {
     title: { en: "Behind the Suit", uk: "По той бік костюма" },
     subtitle: {
       en: "Crisis & Reputation Advisor",
@@ -82,7 +82,7 @@ export const BRAND_SETS = [
 ];
 
 export const INTERIOR_SETS = [
-  set("the-hotel", "brand/the-hotel", 5, {
+  set("the-hotel", "brand/the-hotel", 6, {
     title: { en: "The Hotel", uk: "Готель" },
     subtitle: {
       en: "Hotel & hospitality photography",
@@ -96,7 +96,7 @@ export const INTERIOR_SETS = [
       uk: "Фотографія вілли та нерухомості",
     },
   }),
-  set("viennese-living", "brand/viennese-living", 95, {
+  set("viennese-living", "brand/viennese-living", 10, {
     title: { en: "Viennese Living", uk: "Віденське життя" },
     subtitle: {
       en: "Interior & property photography",
