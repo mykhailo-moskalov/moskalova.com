@@ -296,11 +296,6 @@
   ],
   "brand/coastal-story": [
     {
-      "file": "11.jpg",
-      "width": 1707,
-      "height": 2560
-    },
-    {
       "file": "coastal-story_01.jpg",
       "width": 1706,
       "height": 2560
@@ -348,6 +343,11 @@
     {
       "file": "coastal-story_10.jpg",
       "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "coastal-story_11.jpg",
+      "width": 1707,
       "height": 2560
     },
     {
@@ -531,13 +531,13 @@
     },
     {
       "file": "italian-countryside_13.jpg",
-      "width": 2560,
-      "height": 1707
+      "width": 1707,
+      "height": 2560
     },
     {
       "file": "italian-countryside_14.jpg",
-      "width": 1707,
-      "height": 2560
+      "width": 2560,
+      "height": 1707
     },
     {
       "file": "italian-countryside_15.jpg",
@@ -556,16 +556,21 @@
     },
     {
       "file": "italian-countryside_18.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "italian-countryside_19.jpg",
       "width": 1707,
       "height": 2560
     },
     {
+      "file": "italian-countryside_19.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
       "file": "italian-countryside_20.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "italian-countryside_21.jpg",
       "width": 1707,
       "height": 2560
     }
@@ -685,23 +690,23 @@
     },
     {
       "file": "the-coach_04.jpg",
-      "width": 2560,
-      "height": 1707
+      "width": 1706,
+      "height": 2560
     },
     {
       "file": "the-coach_05.jpg",
-      "width": 2560,
-      "height": 1707
-    },
-    {
-      "file": "the-coach_06.jpg",
       "width": 1707,
       "height": 2560
     },
     {
-      "file": "the-coach_07.jpg",
+      "file": "the-coach_06.jpg",
       "width": 1728,
       "height": 2560
+    },
+    {
+      "file": "the-coach_07.jpg",
+      "width": 2560,
+      "height": 1707
     },
     {
       "file": "the-coach_08.jpg",
@@ -726,30 +731,25 @@
     {
       "file": "the-coach_12.jpg",
       "width": 2560,
-      "height": 1706
-    },
-    {
-      "file": "the-coach_13.jpg",
-      "width": 2560,
       "height": 1707
     },
     {
-      "file": "the-coach_14.jpg",
+      "file": "the-coach_13.jpg",
       "width": 1706,
       "height": 2560
     },
     {
-      "file": "the-coach_15.jpg",
+      "file": "the-coach_14.jpg",
       "width": 1707,
       "height": 2560
     },
     {
-      "file": "the-coach_16.jpg",
+      "file": "the-coach_15.jpg",
       "width": 2560,
       "height": 1706
     },
     {
-      "file": "the-coach_17.jpg",
+      "file": "the-coach_16.jpg",
       "width": 2560,
       "height": 1707
     }
@@ -1075,6 +1075,73 @@
       "file": "the-practice_11.jpg",
       "width": 1706,
       "height": 2560
+    }
+  ],
+  "brand/the-story-of-one-sweater": [
+    {
+      "file": "the-story-of-one-sweater_01.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "the-story-of-one-sweater_02.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "the-story-of-one-sweater_03.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "the-story-of-one-sweater_04.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "the-story-of-one-sweater_05.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "the-story-of-one-sweater_06.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "the-story-of-one-sweater_07.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "the-story-of-one-sweater_08.jpg",
+      "width": 1706,
+      "height": 2560
+    },
+    {
+      "file": "the-story-of-one-sweater_09.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "the-story-of-one-sweater_10.jpg",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "file": "the-story-of-one-sweater_11.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "the-story-of-one-sweater_12.jpg",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "file": "the-story-of-one-sweater_13.jpg",
+      "width": 2560,
+      "height": 1707
     }
   ],
   "brand/the-style-edit": [

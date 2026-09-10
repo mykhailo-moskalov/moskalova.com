@@ -64,7 +64,7 @@ export const COUPLES_SETS = [
     title: { en: "Sisterhood", uk: "Сестри" },
   }),
   set("summer-story", "personal/summer-story", 12, {
-    title: { en: "Summer story", uk: "Літо" },
+    title: { en: "Summer Story", uk: "Літо" },
   }),
   set("the-three-of-us", "personal/the-three-of-us", 0, {
     title: { en: "The Three of Us", uk: "Втрьох" },

@@ -54,8 +54,8 @@ export const PERSONAL_BRAND_SETS = [
   set("behind-the-suit", "brand/behind-the-suit", 5, {
     title: { en: "Behind the Suit", uk: "По той бік костюма" },
     subtitle: {
-      en: "Crisis & Reputation Advisor",
-      uk: "Радник із кризових комунікацій та репутації",
+      en: "Content for Crisis & Reputation Advisor",
+      uk: "Контент для радника із кризових комунікацій та репутації",
     },
   }),
 ];
@@ -79,6 +79,13 @@ export const BRAND_SETS = [
       uk: "Кампанія для slow-fashion-бренду",
     },
   }),
+  set("the-story-of-one-sweater", "brand/the-story-of-one-sweater", 4, {
+    title: { en: "The Story of One Sweater", uk: "Історія одного светра" },
+    subtitle: {
+      en: "Slow fashion brand campaign",
+      uk: "Кампанія для slow-fashion-бренду",
+    },
+  }),
 ];
 
 export const INTERIOR_SETS = [
@@ -96,7 +103,7 @@ export const INTERIOR_SETS = [
       uk: "Фотографія вілли та нерухомості",
     },
   }),
-  set("viennese-living", "brand/viennese-living", 10, {
+  set("viennese-living", "brand/viennese-living", 14, {
     title: { en: "Viennese Living", uk: "Віденське життя" },
     subtitle: {
       en: "Interior & property photography",

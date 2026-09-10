@@ -23,7 +23,7 @@ type GalleryTitleProps = {
 const BACKGROUNDS = {
   personal: photo("personal/sofiia", 14),
   couples: photo("personal/our-together", 4),
-  personalBrand: photo("brand/the-coach", 3),
+  personalBrand: photo("brand/the-coach", 6),
   brand: photo("brand/coastal-story", 12),
   interior: photo("brand/a-french-escape", 5),
   creatives: photo("creatives/in-form", 0),

@@ -23,8 +23,7 @@
   right: 0;
   z-index: 1001;
 
-  width: max-content;
-  min-width: calc(144.5px + 32px * 2);
+  width: min(100%, 208.5px);
   height: 100%;
   padding: 36px 32px 128px;
 
@@ -32,7 +31,7 @@
   box-shadow: var(--box-shadow);
   @media screen and (min-width: 768px) {
     padding: 36px 64px 128px;
-    min-width: calc(144.5px + 64px * 2);
+    width: min(100%, 272.5px);
   }
   &.closed {
     transform: translateX(100%);
@@ -58,10 +57,11 @@ div.sidebarContainer {
 }
 
 .btnClose {
-  align-self: flex-start;
+  position: absolute;
+  top: 36px;
+  left: 36px;
   width: 24px;
   height: 24px;
-  margin-left: -16px;
   &:hover,
   &:focus-visible {
     transform: scale(1.1);

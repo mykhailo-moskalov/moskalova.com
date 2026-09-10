@@ -23,7 +23,21 @@
 }
 
 .subHeading {
-  height: 2lh;
+  @media screen and (max-width: 339px) {
+    height: 3lh;
+  }
+  @media screen and (min-width: 340px) and (max-width: 767px) {
+    height: 2lh;
+  }
+  @media screen and (min-width: 768px) and (max-width: 807px) {
+    height: 4lh;
+  }
+  @media screen and (min-width: 808px) and (max-width: 1025px) {
+    height: 3lh;
+  }
+  @media screen and (min-width: 1026px) {
+    height: 2lh;
+  }
 }
 
 .benefits {
