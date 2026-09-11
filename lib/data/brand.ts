@@ -51,13 +51,6 @@ export const PERSONAL_BRAND_SETS = [
       uk: "Персональний бренд для стиліста",
     },
   }),
-  set("behind-the-suit", "brand/behind-the-suit", 5, {
-    title: { en: "Behind the Suit", uk: "По той бік костюма" },
-    subtitle: {
-      en: "Content for Crisis & Reputation Advisor",
-      uk: "Контент для радника із кризових комунікацій та репутації",
-    },
-  }),
 ];
 
 export const BRAND_SETS = [
