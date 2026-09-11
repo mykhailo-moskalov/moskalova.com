@@ -82,8 +82,8 @@ export const BRAND_SETS = [
   set("the-story-of-one-sweater", "brand/the-story-of-one-sweater", 4, {
     title: { en: "The Story of One Sweater", uk: "Історія одного светра" },
     subtitle: {
-      en: "Slow fashion brand campaign",
-      uk: "Кампанія для slow-fashion-бренду",
+      en: "Slow fashion — visual story",
+      uk: "Зйомка для бренду slow fashion",
     },
   }),
 ];

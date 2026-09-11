@@ -245,33 +245,54 @@
         "price": "Custom quote"
       }
     },
+    "disclaimer": "Styling, makeup, studio rental, and additional locations are quoted separately and not included in the package price.",
     "btn": "Book a shoot",
-    "faq": {
+    "qa": {
       "heading": "Q&A",
       "items": [
         {
-          "question": "How far ahead should I book?",
-          "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae est nam distinctio nostrum aspernatur ullam. Dolore voluptates assumenda autem quaerat quas excepturi. Quasi, maxime quibusdam! Delectus omnis magni minima laboriosam inventore. Excepturi iste enim obcaecati nam perferendis facere quae id!"
+          "question": "How do I book a session?",
+          "answer": "Simply send me a message. We'll discuss your idea, choose the right package, find the perfect location, and schedule your session. A session is confirmed with a €50 deposit. If your plans change, you can cancel or reschedule free of charge up to 24 hours before the shoot."
         },
         {
-          "question": "Where do the sessions take place?",
-          "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae est nam distinctio nostrum aspernatur ullam. Dolore voluptates assumenda autem quaerat quas excepturi. Quasi, maxime quibusdam! Delectus omnis magni minima laboriosam inventore. Excepturi iste enim obcaecati nam perferendis facere quae id!"
+          "question": "How should I prepare?",
+          "answer": "You don't have to figure everything out on your own. I'll help you with outfit selection, moodboards, and choosing a location that fits your story. The better we prepare, the more natural your photos will feel."
         },
         {
-          "question": "Lorem ipsum dolor sit amet?",
-          "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae est nam distinctio nostrum aspernatur ullam. Dolore voluptates assumenda autem quaerat quas excepturi. Quasi, maxime quibusdam! Delectus omnis magni minima laboriosam inventore. Excepturi iste enim obcaecati nam perferendis facere quae id!"
+          "question": "I've never done a photoshoot before — will you guide me?",
+          "answer": "Most of my clients say the same thing. You don't need to know how to pose. I'll guide you naturally throughout the session so you can simply enjoy the experience."
         },
         {
-          "question": "Lorem ipsum dolor sit?",
-          "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae est nam distinctio nostrum aspernatur ullam. Dolore voluptates assumenda autem quaerat quas excepturi. Quasi, maxime quibusdam! Delectus omnis magni minima laboriosam inventore. Excepturi iste enim obcaecati nam perferendis facere quae id!"
+          "question": "What if it rains on the day of the shoot?",
+          "answer": "We'll keep an eye on the forecast together and adjust if needed — moving to a covered location, shifting the time, or rescheduling. Weather is never a reason to lose the shot."
         },
         {
-          "question": "Lorem ipsum dolor sit amet consectetur?",
-          "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae est nam distinctio nostrum aspernatur ullam. Dolore voluptates assumenda autem quaerat quas excepturi. Quasi, maxime quibusdam! Delectus omnis magni minima laboriosam inventore. Excepturi iste enim obcaecati nam perferendis facere quae id!"
+          "question": "Do you offer styling and makeup?",
+          "answer": "A professional stylist and makeup artist are available upon request. Studio rental, stylist, makeup artist, and any additional location fees are booked separately and are not included in the session price."
         },
         {
-          "question": "Lorem ipsum dolor sit, amet consectetur adipisicing?",
-          "answer": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae est nam distinctio nostrum aspernatur ullam. Dolore voluptates assumenda autem quaerat quas excepturi. Quasi, maxime quibusdam! Delectus omnis magni minima laboriosam inventore. Excepturi iste enim obcaecati nam perferendis facere quae id!"
+          "question": "When will I receive my photos?",
+          "answer": "Your gallery will be delivered within 10 days. Every image is carefully selected and professionally edited with attention to every detail."
+        },
+        {
+          "question": "Who chooses the final photos?",
+          "answer": "I carefully select every image myself, choosing what best captures the story and the mood of the shoot. For business and brand sessions, if you'd like to be part of that process, you're welcome to choose the final images together with me."
+        },
+        {
+          "question": "Do you deliver RAW files?",
+          "answer": "No — and here's why. RAW files are working files and are part of my creative process. You'll receive carefully selected, colour-corrected, and professionally edited photographs that reflect my artistic style."
+        },
+        {
+          "question": "What does the final price depend on?",
+          "answer": "For brand and business sessions, the price depends on the concept and complexity of the shoot, the number of hours involved, and where the photos will be used — social media, a website, print, or advertising."
+        },
+        {
+          "question": "Do you travel?",
+          "answer": "Yes. I'm based in Vienna and work across Europe — for personal sessions, brand shoots, and hospitality projects alike."
+        },
+        {
+          "question": "Still have questions?",
+          "answer": "I'd love to hear your ideas. Send me a message, and let's create something meaningful together."
         }
       ]
     },

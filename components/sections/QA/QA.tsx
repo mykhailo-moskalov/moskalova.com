@@ -2,19 +2,19 @@ import { useTranslations } from "next-intl";
 import Section from "@/components/ui/Section/Section";
 import Container from "@/components/ui/Container/Container";
 import Heading from "@/components/ui/Heading/Heading";
-import FAQList from "@/components/layout/FAQList/FAQList";
+import QAList from "@/components/layout/QAList/QAList";
 
-export type FAQEntry = { question: string; answer: string };
+export type QAEntry = { question: string; answer: string };
 
-export default function FAQ() {
-  const t = useTranslations("services.faq");
-  const items = t.raw("items") as FAQEntry[];
+export default function QA() {
+  const t = useTranslations("services.qa");
+  const items = t.raw("items") as QAEntry[];
 
   return (
     <Section>
       <Container>
         <Heading as="h2" text={t("heading")} />
-        <FAQList items={items} />
+        <QAList items={items} />
       </Container>
     </Section>
   );

@@ -22,6 +22,7 @@ export default function Pricing() {
         <Container className={css.container}>
           <Approach />
           <ServicesList exclude={["service4"]} />
+          <p className={css.disclaimer}>{t("disclaimer")}</p>
           <Btn href="/contact" className={css.btn}>
             {t("btn")}
           </Btn>

@@ -1,11 +1,11 @@
 "use client";
 
-import css from "./FAQList.module.css";
-import type { FAQEntry } from "@/components/sections/FAQ/FAQ";
+import css from "./QAList.module.css";
+import type { QAEntry } from "@/components/sections/QA/QA";
 import * as Accordion from "@radix-ui/react-accordion";
 import { IoChevronDown } from "react-icons/io5";
 
-export default function FAQList({ items }: { items: FAQEntry[] }) {
+export default function QAList({ items }: { items: QAEntry[] }) {
   return (
     <Accordion.Root type="single" collapsible asChild>
       <ul className={css.list}>

@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import Pricing from "@/components/sections/Pricing/Pricing";
-import FAQ from "@/components/sections/FAQ/FAQ";
+import FAQ from "@/components/sections/QA/QA";
 import type { Metadata } from "next";
 import { alternatesFor } from "@/lib/seo/alternates";
 
