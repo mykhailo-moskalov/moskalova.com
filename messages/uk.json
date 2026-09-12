@@ -402,6 +402,9 @@
       "description": "Юридична інформація (Impressum) сайту Natalia Moskalova Photography, Відень."
     }
   },
+  "footer": {
+    "credit": "Розробка сайту: <link>Михайло Москалов</link>"
+  },
   "gallery": {
     "back": "Назад до галереї"
   },

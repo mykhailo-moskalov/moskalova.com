@@ -7,8 +7,10 @@ import { IoLogoInstagram, IoLogoWhatsapp } from "react-icons/io5";
 import { FiFacebook } from "react-icons/fi";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { Link } from "@/lib/navigation";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+  const t = useTranslations("footer");
   const footerRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -79,11 +81,26 @@ export default function Footer() {
         </li>
       </ul>
       <Link href="/impressum" className={css.legalLink}>
-        Impressum &amp; Datenschutz
+        {t("impressum")}
       </Link>
-      <p className={css.copyright}>
-        &copy; {new Date().getFullYear()} Natalia Moskalova Photography
-      </p>
+      <div className={css.meta}>
+        <p className={css.copyright}>
+          &copy; {new Date().getFullYear()} {t("copyright")}
+        </p>
+        <p className={css.credit}>
+          {t.rich("credit", {
+            link: (chunks) => (
+              <a
+                href="https://github.com/mykhailo-moskalov"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {chunks}
+              </a>
+            ),
+          })}
+        </p>
+      </div>
     </footer>
   );
 }

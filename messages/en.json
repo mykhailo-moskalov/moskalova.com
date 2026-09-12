@@ -402,6 +402,11 @@
       "description": "Legal notice (Impressum) of Natalia Moskalova Photography, Vienna."
     }
   },
+  "footer": {
+    "impressum": "Impressum & Datenschutz",
+    "copyright": "Natalia Moskalova Photography",
+    "credit": "Website by <link>Mykhailo Moskalov</link>"
+  },
   "gallery": {
     "back": "Back to gallery"
   },
