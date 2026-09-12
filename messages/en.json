@@ -46,12 +46,12 @@
       },
       "gallery2": {
         "title": "brand",
-        "subtitle": "Visuals on brands & interiors",
+        "subtitle": "Visuals for brands & interiors",
         "btn": "Explore →"
       },
       "gallery3": {
         "title": "creatives",
-        "subtitle": "Artists, brands & creative people",
+        "subtitle": "Artists, performers & creative people",
         "btn": "Explore →"
       }
     },
@@ -189,8 +189,8 @@
       "benefits": {
         "text1": "Personal consultation before the session",
         "text2": "Outfit and styling guidance",
-        "text3": "location selection tailored to your vision",
-        "text4": "Natural posing direction throughout the shoot",
+        "text3": "Location selection tailored to your vision",
+        "text4": "Natural posing guidance throughout the shoot",
         "text5": "Relaxed, enjoyable experience",
         "text6": "Carefully curated and edited online gallery delivered within 10 days"
       }
@@ -234,7 +234,7 @@
           "text4": "moodboard creation",
           "text5": "outfit & styling guidance",
           "text6": "location selection",
-          "text7": "posing direction",
+          "text7": "posing guidance",
           "text8": "online gallery delivered within 10 days"
         },
         "price": "from €300"
@@ -252,7 +252,7 @@
       "items": [
         {
           "question": "How do I book a session?",
-          "answer": "Simply send me a message. We'll discuss your idea, choose the right package, find the perfect location, and schedule your session. A session is confirmed with a €50 deposit. If your plans change, you can cancel or reschedule free of charge up to 24 hours before the shoot."
+          "answer": "Simply send me a message. We'll discuss your idea, choose the right package, find the perfect location, and schedule your session. A session is confirmed with a €50 deposit. If your plans change, you can cancel or reschedule free of charge up to 24 hours before the shoot. After that point, the deposit is non-refundable, as preparation for your session has already begun."
         },
         {
           "question": "How should I prepare?",
@@ -280,10 +280,10 @@
         },
         {
           "question": "Do you deliver RAW files?",
-          "answer": "No — and here's why. RAW files are working files and are part of my creative process. You'll receive carefully selected, colour-corrected, and professionally edited photographs that reflect my artistic style."
+          "answer": "No — and here's why. RAW files are working files and are part of my creative process. You'll receive carefully selected, color-corrected, and professionally edited photographs that reflect my artistic style."
         },
         {
-          "question": "What does the final price depend on?",
+          "question": "What does the final price depend on for brand & business sessions?",
           "answer": "For brand and business sessions, the price depends on the concept and complexity of the shoot, the number of hours involved, and where the photos will be used — social media, a website, print, or advertising."
         },
         {

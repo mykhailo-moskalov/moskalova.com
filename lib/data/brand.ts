@@ -48,7 +48,7 @@ export const PERSONAL_BRAND_SETS = [
     title: { en: "Autumn Muse", uk: "Осіння муза" },
     subtitle: {
       en: "Personal branding for a stylist",
-      uk: "Персональний бренд для стиліста",
+      uk: "Персональний бренд для стилістки",
     },
   }),
 ];
@@ -58,7 +58,7 @@ export const BRAND_SETS = [
     title: { en: "Coastal Story", uk: "Історія на узбережжі" },
     subtitle: {
       en: "Slow fashion brand campaign",
-      uk: "Кампанія для slow-fashion-бренду",
+      uk: "Кампанія для slow fashion бренду",
     },
   }),
   set("in-the-studio", "brand/in-the-studio", 9, {
@@ -69,7 +69,7 @@ export const BRAND_SETS = [
     title: { en: "The Autumn Edit", uk: "Осіння добірка" },
     subtitle: {
       en: "Slow fashion brand campaign",
-      uk: "Кампанія для slow-fashion-бренду",
+      uk: "Кампанія для slow fashion бренду",
     },
   }),
   set("the-story-of-one-sweater", "brand/the-story-of-one-sweater", 4, {

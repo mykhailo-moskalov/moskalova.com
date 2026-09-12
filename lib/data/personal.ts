@@ -17,8 +17,8 @@ export const PERSONAL_SETS = [
     title: { en: "Yuliia", uk: "Юлія" },
     subtitle: { en: "Intimate Story", uk: "Чуттєвий портрет" },
   }),
-  set("olexandra", "personal/olexandra", 3, {
-    title: { en: "Olexandra", uk: "Олександра" },
+  set("oleksandra", "personal/oleksandra", 3, {
+    title: { en: "Oleksandra", uk: "Олександра" },
     subtitle: { en: "Urban Story", uk: "Міський ритм" },
   }),
   set("anna", "personal/anna", 12, {
@@ -33,8 +33,8 @@ export const PERSONAL_SETS = [
     title: { en: "Taya", uk: "Тая" },
     subtitle: { en: "Little Vienna Story", uk: "Віденський день" },
   }),
-  set("olexandra-sea", "personal/olexandra-sea", 0, {
-    title: { en: "Olexandra", uk: "Олександра" },
+  set("oleksandra-sea", "personal/oleksandra-sea", 0, {
+    title: { en: "Oleksandra", uk: "Олександра" },
     subtitle: { en: "Stone Story", uk: "Каміння і світло" },
   }),
   set("anastasiia", "personal/anastasiia", 0, {
