@@ -8,7 +8,10 @@ type CommonProps = {
   className?: string;
 };
 type BtnProps = CommonProps &
-  ({ href: string } | { href?: never; type?: "button" | "submit" | "reset" });
+  (
+    | { href: string; file?: boolean }
+    | { href?: never; type?: "button" | "submit" | "reset" }
+  );
 
 export default function Btn({
   children,
@@ -22,13 +25,23 @@ export default function Btn({
     ...(ariaLabel && { "aria-label": t(ariaLabel) }),
   };
 
-  return rest.href !== undefined ? (
+  if (rest.href === undefined) {
+    return (
+      <button type={rest.type ?? "button"} {...shared}>
+        {children}
+      </button>
+    );
+  }
+  if (rest.file) {
+    return (
+      <a href={rest.href} target="_blank" rel="noopener" {...shared}>
+        {children}
+      </a>
+    );
+  }
+  return (
     <Link href={rest.href} {...shared}>
       {children}
     </Link>
-  ) : (
-    <button type={rest.type ?? "button"} {...shared}>
-      {children}
-    </button>
   );
 }

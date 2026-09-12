@@ -2,10 +2,14 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-
   margin-bottom: 64px;
+
   @media only screen and (min-width: 768px) {
-    flex-direction: row;
-    gap: 32px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto 1fr auto;
+    column-gap: 32px;
+    row-gap: 16px;
   }
 }

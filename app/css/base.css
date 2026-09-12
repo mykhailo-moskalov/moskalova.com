@@ -42,8 +42,8 @@ a {
   }
 }
 
-a:not(.logo):hover,
-a:not(.logo):focus-visible {
+:where(a:not(.logo)):hover,
+:where(a:not(.logo)):focus-visible {
   transform: translateY(-10%);
   box-shadow: none;
 }

@@ -10,6 +10,7 @@ type MottoProps = {
   href?: string;
   backg?: boolean;
   caps?: boolean;
+  file?: boolean;
 };
 
 export default function Motto({
@@ -18,6 +19,7 @@ export default function Motto({
   href,
   backg = false,
   caps = false,
+  file,
 }: MottoProps) {
   const t = useTranslations(namespace);
   return (
@@ -39,7 +41,7 @@ export default function Motto({
           {t.has("text3") && <p className={css.subText}>{t("text3")}</p>}
 
           {t.has("btn") && (
-            <Btn href={href} className={css.btn}>
+            <Btn href={href} file={file} className={css.btn}>
               {t("btn")}
             </Btn>
           )}

@@ -21,7 +21,7 @@ export default function LangSwitcher({ className }: LangSwitcherProps) {
   const t = useTranslations("aria");
 
   const changeLanguage = (newLocale: "en" | "uk") => {
-    router.replace(pathname, { locale: newLocale });
+    router.replace(pathname, { locale: newLocale, scroll: false });
   };
 
   useEffect(() => {
