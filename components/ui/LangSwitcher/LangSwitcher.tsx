@@ -72,6 +72,14 @@ export default function LangSwitcher({ className }: LangSwitcherProps) {
           </Accordion.Trigger>
           <Accordion.Content
             className={css.accordionContent}
+            onAnimationEnd={(e) => {
+              if (e.currentTarget.dataset.state === "open") {
+                e.currentTarget.scrollIntoView({
+                  block: "nearest",
+                  behavior: "smooth",
+                });
+              }
+            }}
             style={{ minWidth: dropdownWidth }}
           >
             <ul className={`${css.subNavigation} accordionDropdownUl`}>

@@ -24,13 +24,15 @@
   z-index: 1001;
 
   width: min(100%, 208.5px);
-  height: 100%;
-  padding: 36px 32px 128px;
+  height: 100dvh;
+  padding: 36px 32px 48px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
 
   background-color: var(--transparent-light-green);
   box-shadow: var(--box-shadow);
   @media screen and (min-width: 768px) {
-    padding: 36px 64px 128px;
+    padding: 36px 64px 48px;
     width: min(100%, 272.5px);
   }
   &.closed {
@@ -43,8 +45,8 @@
 
 div.sidebarContainer {
   min-width: 0;
-  height: 100%;
-  padding: 0;
+  min-height: 100%;
+  padding-top: 72px;
   max-width: max-content;
 
   display: flex;
@@ -69,7 +71,7 @@ div.sidebarContainer {
 }
 
 .nav {
-  margin-top: 196px;
+  margin-block: auto;
 
   color: var(--white);
 }
