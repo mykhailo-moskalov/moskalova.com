@@ -19,5 +19,16 @@ export function alternatesFor(
   };
 }
 
+type OgImage = NonNullable<
+  Extract<NonNullable<Metadata["openGraph"]>["images"], unknown[]>[number]
+>;
+
 export const ogLocale = (locale: string) =>
   locale === "uk" ? "uk_UA" : "en_US";
+
+export const OG_IMAGE = {
+  url: "/og.jpg",
+  width: 1200,
+  height: 630,
+  alt: "Natalia Moskalova, photographer in Vienna",
+} satisfies OgImage;

@@ -20,15 +20,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...allSetParams().map((p) => `/${p.category}/${p.set}`),
   ];
 
-  return paths.map((path) => ({
-    url: `${SITE_URL}/${routing.defaultLocale}${path}`,
-    lastModified: new Date(),
-    changeFrequency: path === "" ? "weekly" : "monthly",
-    priority: path === "" ? 1 : path.split("/").length > 2 ? 0.6 : 0.8,
-    alternates: {
-      languages: Object.fromEntries(
-        routing.locales.map((l) => [l, `${SITE_URL}/${l}${path}`]),
-      ),
-    },
-  }));
+  return routing.locales.flatMap((locale) =>
+    paths.map((path) => ({
+      url: `${SITE_URL}/${locale}${path}`,
+      changeFrequency: path === "" ? "weekly" : "monthly",
+      priority: path === "" ? 1 : path.split("/").length > 2 ? 0.6 : 0.8,
+      alternates: {
+        languages: Object.fromEntries(
+          routing.locales.map((l) => [l, `${SITE_URL}/${l}${path}`]),
+        ),
+      },
+    })),
+  );
 }

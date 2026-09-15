@@ -4,7 +4,12 @@ import { NextIntlClientProvider } from "next-intl";
 import MobileLayout from "@/components/layout/MobileLayout/MobileLayout";
 import { Cormorant_Garamond, Forum } from "next/font/google";
 import type { Metadata, Viewport } from "next";
-import { alternatesFor, ogLocale, SITE_URL } from "@/lib/seo/alternates";
+import {
+  alternatesFor,
+  OG_IMAGE,
+  ogLocale,
+  SITE_URL,
+} from "@/lib/seo/alternates";
 import { routing } from "@/i18n/routing";
 
 const cormorant = Cormorant_Garamond({
@@ -22,7 +27,7 @@ const forum = Forum({
 });
 
 export const viewport: Viewport = {
-  themeColor: "#000001",
+  themeColor: "#fff",
   width: "device-width",
   initialScale: 1,
 };
@@ -57,13 +62,11 @@ export async function generateMetadata({
       description,
       url: `/${locale}`,
       locale: ogLocale(locale),
-      // TODO: images: [{ url: "/og.jpg", width: 1200, height: 630 }]
+      images: [OG_IMAGE],
     },
     twitter: {
       card: "summary_large_image",
-      title: siteName,
-      description,
-      // TODO: images: ["/og.jpg"]
+      images: ["/og.jpg"],
     },
     icons: {
       icon: [{ url: "/manifest/icon.svg", type: "image/svg+xml" }],

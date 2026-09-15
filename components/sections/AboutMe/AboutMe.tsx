@@ -4,18 +4,17 @@ import Section from "@/components/ui/Section/Section";
 import Container from "@/components/ui/Container/Container";
 import Heading from "@/components/ui/Heading/Heading";
 import Image from "next/image";
-import { photosOf } from "@/lib/data/galleries";
-
-const ABOUT = photosOf("about");
+import { photo } from "@/lib/data/galleries";
 
 export default function AboutMe() {
   const t = useTranslations("about");
+  const src = photo("about", 0);
   return (
     <Section className={css.section}>
       <Container className={css.container}>
         <span className={css.thumb}>
           <Image
-            src={ABOUT[0]}
+            src={src}
             alt=""
             fill
             sizes="100vw (min-width: 1440px) 600px, 60vw"

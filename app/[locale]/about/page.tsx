@@ -3,7 +3,7 @@ import AboutMe from "@/components/sections/AboutMe/AboutMe";
 import MoreAbout from "@/components/sections/MoreAbout/MoreAbout";
 import Motto from "@/components/sections/Motto/Motto";
 import type { Metadata } from "next";
-import { alternatesFor } from "@/lib/seo/alternates";
+import { alternatesFor, OG_IMAGE } from "@/lib/seo/alternates";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -20,6 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: t("title"),
       description: t("description"),
       url: `/${locale}/about`,
+      images: [OG_IMAGE],
     },
   };
 }

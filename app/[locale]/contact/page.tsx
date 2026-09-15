@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import ContactForm from "@/components/sections/ContactForm/ContactForm";
 import type { Metadata } from "next";
-import { alternatesFor } from "@/lib/seo/alternates";
+import { alternatesFor, OG_IMAGE } from "@/lib/seo/alternates";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -18,6 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: t("title"),
       description: t("description"),
       url: `/${locale}/contact`,
+      images: [OG_IMAGE],
     },
   };
 }

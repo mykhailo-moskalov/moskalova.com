@@ -10,6 +10,7 @@ import { routing } from "@/i18n/routing";
 import { allSetParams, getSet } from "@/lib/data/galleries";
 import { localize } from "@/lib/types/gallery";
 import { Link } from "@/lib/navigation";
+import { alternatesFor } from "@/lib/seo/alternates";
 
 type Props = {
   params: Promise<{ locale: string; category: string; set: string }>;
@@ -26,15 +27,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const set = getSet(category, setSlug);
   if (!set) return {};
   const title = localize(set.title, locale);
+  const subtitle = localize(set.subtitle, locale);
   return {
-    title: `${title} — Natalia Moskalova Photography`,
+    title,
+    description: subtitle ? `${title} — ${subtitle}` : title,
+    alternates: alternatesFor(locale, `/${category}/${set.slug}`),
     openGraph: {
       title,
+      url: `/${locale}/${category}/${set.slug}`,
       images: [
         {
-          url: set.cover.src,
+          url: `/_next/image?url=${encodeURIComponent(set.cover.src)}&w=1200&q=75`,
           width: set.cover.width,
-          height: set.cover.height,
+          height: Math.round((set.cover.height / set.cover.width) * 1200),
         },
       ],
     },

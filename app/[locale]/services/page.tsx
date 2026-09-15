@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 import Pricing from "@/components/sections/Pricing/Pricing";
 import FAQ from "@/components/sections/QA/QA";
 import type { Metadata } from "next";
-import { alternatesFor } from "@/lib/seo/alternates";
+import { alternatesFor, OG_IMAGE } from "@/lib/seo/alternates";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -19,6 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: t("title"),
       description: t("description"),
       url: `/${locale}/services`,
+      images: [OG_IMAGE],
     },
   };
 }
